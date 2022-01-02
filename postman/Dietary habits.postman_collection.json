@@ -14,14 +14,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/users/users",
+							"raw": "localhost:8080/users/all",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"users",
-								"users"
+								"all"
 							]
 						}
 					},
@@ -89,15 +89,40 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/users/user/61d19f4e912bd529346318a1",
+							"raw": "localhost:8080/users/delete/61d1a1ed19589c25240bed8b",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"users",
-								"user",
-								"61d19f4e912bd529346318a1"
+								"delete",
+								"61d1a1ed19589c25240bed8b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER PROFILE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQxYTFlZDE5NTg5YzI1MjQwYmVkOGIiLCJlbWFpbCI6Im1hcmtvQGdtYWlsLmNvbSIsIm5hbWUiOiJNYXJrbyBNYXJrb3ZpxIciLCJyb2xlIjoidXNlciIsImV4cCI6MTY0MTczMzI0MSwiaWF0IjoxNjQxMTI4NDQxfQ.r9rMbC5PoF0l3TPtgMmGrtUQHj74W2JP3z3hrCesiYo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/users/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"profile"
 							]
 						}
 					},
