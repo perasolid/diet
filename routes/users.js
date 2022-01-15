@@ -4,9 +4,10 @@ var jwt = require('express-jwt');
 const User = require('../models/users');
 const multer = require('multer');
 const path=require('path');
+var config = require('../config');
 
 var auth = jwt({
-  secret: 'MY_SECRET',
+  secret: config.jwt.secret,
   userProperty: 'payload',
   algorithms: ['HS256']
 });
