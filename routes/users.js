@@ -4,7 +4,6 @@ var jwt = require('express-jwt');
 const User = require('../models/users');
 const multer = require('multer');
 const path=require('path');
-var config = require('../config');
 
 var auth = jwt({
   secret: process.env.config.jwt.secret,
