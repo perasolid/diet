@@ -7,7 +7,7 @@ const path=require('path');
 var config = require('../config');
 
 var auth = jwt({
-  secret: config.jwt.secret,
+  secret: process.env.config.jwt.secret,
   userProperty: 'payload',
   algorithms: ['HS256']
 });
