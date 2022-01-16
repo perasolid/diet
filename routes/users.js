@@ -6,7 +6,7 @@ const multer = require('multer');
 const path=require('path');
 
 var auth = jwt({
-  secret: process.env.config.jwt.secret,
+  secret: process.env.SECRET,
   userProperty: 'payload',
   algorithms: ['HS256']
 });
