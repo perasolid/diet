@@ -1383,7 +1383,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SignInComponent, [{
         key: "login",
         value: function login() {
-          this.auth.login(this.credentials).subscribe(function () {// this.router.navigateByUrl('/profile');
+          var _this4 = this;
+
+          this.auth.login(this.credentials).subscribe(function () {
+            _this4.router.navigateByUrl('/profile');
           }, function (err) {
             console.error(err);
           });
@@ -1696,7 +1699,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'http://localhost:8080/users';
+        this.BACKEND_URL_USERS = 'https://dietary-habits.herokuapp.com/users';
       }
 
       _createClass(AuthenticationService, [{
@@ -1757,7 +1760,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "request",
         value: function request(method, type, user) {
-          var _this4 = this;
+          var _this5 = this;
 
           var base;
 
@@ -1773,7 +1776,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var request = base.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
             if (data.token) {
-              _this4.saveToken(data.token);
+              _this5.saveToken(data.token);
             }
 
             return data;

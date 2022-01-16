@@ -704,7 +704,7 @@ class SignInComponent {
     }
     login() {
         this.auth.login(this.credentials).subscribe(() => {
-            // this.router.navigateByUrl('/profile');
+            this.router.navigateByUrl('/profile');
         }, (err) => {
             console.error(err);
         });
@@ -853,7 +853,7 @@ class AuthenticationService {
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'http://localhost:8080/users';
+        this.BACKEND_URL_USERS = 'https://dietary-habits.herokuapp.com/users';
     }
     saveToken(token) {
         localStorage.setItem('mean-token', token);
