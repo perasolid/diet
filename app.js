@@ -9,6 +9,7 @@ var passport = require('passport');
 
 //load services
 const users = require('./routes/users');
+const nutrition = require('./routes/nutrition');
 
 const app=express();
 //connecting to database
@@ -32,6 +33,7 @@ app.use(bodyParser.json());
 
 //nasted routes from services
 app.use('/users', users);
+app.use('/nutrition', nutrition);
 
 app.get('**', (req, res)=>{
     res.sendFile(__dirname+'/public/index.html');
