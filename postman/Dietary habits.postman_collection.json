@@ -135,7 +135,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"role\": \"admin\",\r\n    \"newPassword\": \"Marko123!\",\r\n    \"name\": \"Marko Marković\",\r\n    \"email\": \"marko@gmail.com\",\r\n    \"salt\": \"6595eae9bfb25e63b00340165edc57e2\",\r\n    \"hash\": \"4e98c6086ef1e6d054cf1b39a5acba8672edd1e84bd5da34d080da77ffbd0c12c2514b94559436853d0bbe0febc1d136472a51c2446f47c26c09b5f64f038a58\"\r\n}",
+							"raw": "{\r\n    \"role\": \"admin\",\r\n    \"newPassword\": \"Marko123!\",\r\n    \"name\": \"Marko Marković\",\r\n    \"email\": \"marko@gmail.com\",\r\n    \"salt\": \"c475480f63460f2a39e1ab6f90bd3c35\",\r\n    \"hash\": \"dffe6326674a960a5f426abe92957e14ab49d121fae71679984a9a00e5fa8269b7913a86b38dcb6501b143a4678db56386974511fb13aec083e9920dc9aa5dd0\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -143,7 +143,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/users/update/61c851ac0bdf632a888e31dd",
+							"raw": "localhost:8080/users/update/61e30744bcc53406e070d34c",
 							"host": [
 								"localhost"
 							],
@@ -151,7 +151,7 @@
 							"path": [
 								"users",
 								"update",
-								"61c851ac0bdf632a888e31dd"
+								"61e30744bcc53406e070d34c"
 							]
 						}
 					},
@@ -180,6 +180,113 @@
 							"path": [
 								"users",
 								"hash"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nutritions",
+			"item": [
+				{
+					"name": "GET SEARCH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/nutritions/all?search=test",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nutritions",
+								"all"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NUTRITION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Testtest\",\r\n        \"calories\": 1000,\r\n        \"total_fat_g\": 72,\r\n        \"saturated_fat_g\": 6.2,\r\n        \"cholesterol_mg\": 0,\r\n        \"sodium_mg\": 0,\r\n        \"choline_mg\": 40.5,\r\n        \"folate_mcg\": 22,\r\n        \"folic_acid_mcg\": 0,\r\n        \"niacin_mg\": 1.167,\r\n        \"pantothenic_acid_mg\": 0.863,\r\n        \"riboflavin_mg\": 0.13,\r\n        \"thiamin_mg\": 0.66,\r\n        \"vitamin_a_IU\": 56,\r\n        \"vitamin_a_rae_mcg\": 3,\r\n        \"carotene_alpha_mcg\": 0,\r\n        \"carotene_beta_mcg\": 29,\r\n        \"cryptoxanthin_beta_mcg\": 9,\r\n        \"lutein_zeaxanthin_mcg\": 17,\r\n        \"vitamin_b12_mcg\": 0,\r\n        \"vitamin_b6_mg\": 0.21,\r\n        \"vitamin_c_mg\": 1.1,\r\n        \"vitamin_d_IU\": 0,\r\n        \"vitamin_e_mg\": 1.4,\r\n        \"tocopherol_alpha_mg\": 1.4,\r\n        \"vitamin_k_mcg\": 3.5,\r\n        \"calcium_mg\": 70,\r\n        \"copper_mg\": 1.2,\r\n        \"irom_mg\": 2.53,\r\n        \"magnesium_mg\": 121,\r\n        \"manganese_mg\": 4.5,\r\n        \"phosphorous_mg\": 277,\r\n        \"potassium_mg\": 410,\r\n        \"selenium_mcg\": 3.8,\r\n        \"zink_mg\": 4.53,\r\n        \"protein_g\": 9.17,\r\n        \"alanine_g\": 0.397,\r\n        \"arginine_g\": 1.177,\r\n        \"aspartic_acid_g\": 0.929,\r\n        \"cystine_g\": 0.152,\r\n        \"glutamic_acid_g\": 1.829,\r\n        \"glycine_g\": 0.453,\r\n        \"histidine_g\": 0.262,\r\n        \"hydroxyproline_g\": 0,\r\n        \"isoleucine_g\": 0.336,\r\n        \"leucine_g\": 0.598,\r\n        \"lysine_g\": 0.287,\r\n        \"methionine_g\": 0.183,\r\n        \"phenylalanine_g\": 0.426,\r\n        \"proline_g\": 0.363,\r\n        \"serine_g\": 0.474,\r\n        \"threonine_g\": 0.306,\r\n        \"tryptophan_g\": 0.093,\r\n        \"tyrosine_g\": 0.215,\r\n        \"valine_g\": 0.411,\r\n        \"carbohydrate_g\": 13.86,\r\n        \"fiber_g\": 9.6,\r\n        \"sugars_g\": 3.97,\r\n        \"fructose_g\": 0.04,\r\n        \"galactose_g\": 0,\r\n        \"glucose_g\": 0.04,\r\n        \"lactose_g\": 0,\r\n        \"maltose_g\": 0,\r\n        \"sucrose_g\": 3.9,\r\n        \"fat_g\": 71.97,\r\n        \"saturated_fatty_acids_g\": 6.18,\r\n        \"monounsaturated_fatty_acids_g\": 40.801,\r\n        \"polyunsaturated_fatty_acids_g\": 21.614,\r\n        \"fatty_acids_total_trans_g\": 0,\r\n        \"alcohol_g\": 0,\r\n        \"ash_g\": 1.49,\r\n        \"caffeine_mg\": 0,\r\n        \"theobromine_mg\": 0,\r\n        \"water_g\": 55.55\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/nutritions/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nutritions",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NUTRITION",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Testic\",\r\n        \"calories\": 852,\r\n        \"total_fat_g\": 72,\r\n        \"saturated_fat_g\": 6.2,\r\n        \"cholesterol_mg\": 0,\r\n        \"sodium_mg\": 0,\r\n        \"choline_mg\": 40.5,\r\n        \"folate_mcg\": 22,\r\n        \"folic_acid_mcg\": 0,\r\n        \"niacin_mg\": 1.167,\r\n        \"pantothenic_acid_mg\": 0.863,\r\n        \"riboflavin_mg\": 0.13,\r\n        \"thiamin_mg\": 0.66,\r\n        \"vitamin_a_IU\": 56,\r\n        \"vitamin_a_rae_mcg\": 3,\r\n        \"carotene_alpha_mcg\": 0,\r\n        \"carotene_beta_mcg\": 29,\r\n        \"cryptoxanthin_beta_mcg\": 9,\r\n        \"lutein_zeaxanthin_mcg\": 17,\r\n        \"vitamin_b12_mcg\": 0,\r\n        \"vitamin_b6_mg\": 0.21,\r\n        \"vitamin_c_mg\": 1.1,\r\n        \"vitamin_d_IU\": 0,\r\n        \"vitamin_e_mg\": 1.4,\r\n        \"tocopherol_alpha_mg\": 1.4,\r\n        \"vitamin_k_mcg\": 3.5,\r\n        \"calcium_mg\": 70,\r\n        \"copper_mg\": 1.2,\r\n        \"irom_mg\": 2.53,\r\n        \"magnesium_mg\": 121,\r\n        \"manganese_mg\": 4.5,\r\n        \"phosphorous_mg\": 277,\r\n        \"potassium_mg\": 410,\r\n        \"selenium_mcg\": 3.8,\r\n        \"zink_mg\": 4.53,\r\n        \"protein_g\": 9.17,\r\n        \"alanine_g\": 0.397,\r\n        \"arginine_g\": 1.177,\r\n        \"aspartic_acid_g\": 0.929,\r\n        \"cystine_g\": 0.152,\r\n        \"glutamic_acid_g\": 1.829,\r\n        \"glycine_g\": 0.453,\r\n        \"histidine_g\": 0.262,\r\n        \"hydroxyproline_g\": 0,\r\n        \"isoleucine_g\": 0.336,\r\n        \"leucine_g\": 0.598,\r\n        \"lysine_g\": 0.287,\r\n        \"methionine_g\": 0.183,\r\n        \"phenylalanine_g\": 0.426,\r\n        \"proline_g\": 0.363,\r\n        \"serine_g\": 0.474,\r\n        \"threonine_g\": 0.306,\r\n        \"tryptophan_g\": 0.093,\r\n        \"tyrosine_g\": 0.215,\r\n        \"valine_g\": 0.411,\r\n        \"carbohydrate_g\": 13.86,\r\n        \"fiber_g\": 9.6,\r\n        \"sugars_g\": 3.97,\r\n        \"fructose_g\": 0.04,\r\n        \"galactose_g\": 0,\r\n        \"glucose_g\": 0.04,\r\n        \"lactose_g\": 0,\r\n        \"maltose_g\": 0,\r\n        \"sucrose_g\": 3.9,\r\n        \"fat_g\": 71.97,\r\n        \"saturated_fatty_acids_g\": 6.18,\r\n        \"monounsaturated_fatty_acids_g\": 40.801,\r\n        \"polyunsaturated_fatty_acids_g\": 21.614,\r\n        \"fatty_acids_total_trans_g\": 0,\r\n        \"alcohol_g\": 0,\r\n        \"ash_g\": 1.49,\r\n        \"caffeine_mg\": 0,\r\n        \"theobromine_mg\": 0,\r\n        \"water_g\": 69\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/nutritions/update/61e9afc46f7ea230d83c7446",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nutritions",
+								"update",
+								"61e9afc46f7ea230d83c7446"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NUTRITION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/nutritions/delete/61e9af2a6f7ea230d83c7443",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nutritions",
+								"delete",
+								"61e9af2a6f7ea230d83c7443"
 							]
 						}
 					},
