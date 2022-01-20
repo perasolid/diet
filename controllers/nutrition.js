@@ -57,24 +57,6 @@ module.exports.updateNutrition = function(req, res) {
     .catch(function (error) {
         res.status(404).send(err);
     });
-	/*
-	Nutrition.findOneAndUpdate({_id: req.params.id},{
-		$set:{
-		  country: req.body.country,
-		  city: req.body.city,
-		  street: req.body.street,
-		  street_number: req.body.street_number,
-		  contact_email: req.body.contact_email
-		}
-	},
-	function(err,result){
-		if(err){
-			res.json(err);
-		}
-		else{
-			res.json(result);
-		}	
-	});*/
 };
 
 module.exports.deleteNutrition = function(req, res) {
