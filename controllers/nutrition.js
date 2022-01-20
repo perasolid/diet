@@ -24,42 +24,22 @@ module.exports.addNutrition = function(req, res) {
 		});
     return;
 	}
-
-  Nutrition.findOne({name: req.body.name}, function(err, nutrition){
-    if(err) {
-      console.log(err);
-    }
-    if(nutrition) {
-      sendJSONresponse(res, 400, {
-        "message": "Name taken"
-      });
-      return;
-    } else {
-		Nutrition.insertOne(req.body)
-			.then(result => {
-				console.log(result);
-				res.status(200);
-			    res.json({
-				  "message" : "Nutrition created successfully"
-			    });
-			})
-		.catch(error => console.error(error))
-		/*
-      var nutrition = new Nutrition();
-
-      nutrition.country = req.body.country;
-      nutrition.city = req.body.city;
-	  nutrition.street = req.body.street;
-      nutrition.street_number = req.body.street_number;
-      nutrition.contact_email = req.body.contact_email;
-
-	  res.status(200);
-	  res.json({
-	    "message" : "Nutrition created successfully"
-	  });
-      nutrition.save();*/
-    }
-  });
+	
+	var nutrition = new Nutrition(req.body);
+	
+	nutrition.save(function(err) {
+        if(err) {
+            console.log(err);
+            res.status(400);
+            res.send(err);
+        }
+        else {
+            res.status(200);
+            res.json({
+                message: req.body.name + ' successfully created!'
+            });
+        }
+    });
 };
 
 module.exports.updateNutrition = function(req, res) {
