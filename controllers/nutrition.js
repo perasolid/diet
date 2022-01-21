@@ -18,13 +18,6 @@ module.exports.getAll = function(req, res) {
 };
 
 module.exports.addNutrition = function(req, res) {
-	if(!req.body.name || !req.body.calories || !req.body.total_fat_g) {
-		sendJSONresponse(res, 400, {
-		  "message": "All fields required"
-		});
-    return;
-	}
-	
 	var nutrition = new Nutrition(req.body);
 	
 	nutrition.save(function(err) {
@@ -43,13 +36,6 @@ module.exports.addNutrition = function(req, res) {
 };
 
 module.exports.updateNutrition = function(req, res) {
-	if(!req.body.name || !req.body.calories || !req.body.total_fat_g) {
-		sendJSONresponse(res, 400, {
-		  "message": "All fields required"
-		});
-		return;
-	}
-	
 	Nutrition.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
     .then(function (success) {
       res.json();
