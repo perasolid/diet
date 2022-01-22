@@ -16,6 +16,25 @@ module.exports.getAll = function(req, res) {
     });
 };
 
+module.exports.getUser_nutrition = function(req, res) {
+	var id = mongoose.Types.ObjectId(req.body.id);
+	var date = req.body.date_of_consumption;
+	//var id = mongoose.Types.ObjectId(req.params.id);
+	User_nutrition.aggregate([
+		{   
+			$match: {
+				user_id: id,
+				date_of_consumption: date
+			}
+		},
+		{ $sort : { _id: -1 } }
+	]).exec( (err, list) => {
+        if (err) throw err;
+		res.status(200);
+		res.json(list);
+    }); 
+};
+
 module.exports.addUser_nutrition = function(req, res) {
 	var user_nutrition = new User_nutrition(req.body);
 
