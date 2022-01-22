@@ -191,7 +191,7 @@
 			"name": "Nutritions",
 			"item": [
 				{
-					"name": "GET SEARCH",
+					"name": "NUTRITIONS",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -209,6 +209,31 @@
 								{
 									"key": "search",
 									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ONLY ID AND NAME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/nutritions/getNutritionsNameAndId?search=bananas, raw",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nutritions",
+								"getNutritionsNameAndId"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "bananas, raw"
 								}
 							]
 						}
@@ -287,6 +312,138 @@
 								"nutritions",
 								"delete",
 								"61e9af2a6f7ea230d83c7443"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User_nutrition",
+			"item": [
+				{
+					"name": "USER_NUTRITIONS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user-nutrition/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-nutrition",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER_NUTRITION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 50,\r\n    \"date_of_consumption\":\"2022-01-22T12:00:00\",\r\n    \"user_id\":\"61e5c51c7a1fa80016a74b1d\",\r\n    \"nutrition_id\":\"61e9a600407e9d84bb766f7d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user-nutrition/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-nutrition",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER_NUTRITION",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 80,\r\n    \"date_of_consumption\":\"2022-01-22T00:00:00\",\r\n    \"user_id\":\"61e5c51c7a1fa80016a74b1d\",\r\n    \"nutrition_id\":\"61e9a600407e9d84bb7671e9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user-nutrition/update/61ec0d2241080f0d60eec71e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-nutrition",
+								"update",
+								"61ec0d2241080f0d60eec71e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER_NUTRITION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user-nutrition/delete/61ec0d2241080f0d60eec71e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-nutrition",
+								"delete",
+								"61ec0d2241080f0d60eec71e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SPECIFIC USER NUTRITIONS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"61e5c51c7a1fa80016a74b1d\",\r\n    \"date_of_consumption\": \"2022-01-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user-nutrition/get-user-nutritions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-nutrition",
+								"get-user-nutritions"
 							]
 						}
 					},
