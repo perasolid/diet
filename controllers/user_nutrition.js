@@ -18,16 +18,26 @@ module.exports.getAll = function(req, res) {
 
 module.exports.getUser_nutrition = function(req, res) {
 	var id = mongoose.Types.ObjectId(req.body.id);
-	var date = req.body.date_of_consumption;
-	//var id = mongoose.Types.ObjectId(req.params.id);
+	var startOfDay = new Date(req.body.date_of_consumption);
+	var date = new Date(req.body.date_of_consumption);
+	var endOfDay = new Date(date.setDate(date.getDate() + 1));
 	User_nutrition.aggregate([
 		{   
 			$match: {
 				user_id: id,
-				date_of_consumption: date
+				date_of_consumption: { $gte: startOfDay, $lt: endOfDay }
 			}
 		},
-		{ $sort : { _id: -1 } }
+		{
+			$lookup:
+			{
+				from: "nutritions",
+				localField: "nutrition_id",
+				foreignField: "_id",
+				as: "nutrition"
+			}
+		},
+		{ $unwind : "$nutrition" }
 	]).exec( (err, list) => {
         if (err) throw err;
 		res.status(200);
