@@ -17,9 +17,9 @@ module.exports.getAll = function(req, res) {
 };
 
 module.exports.getUser_nutrition = function(req, res) {
-	var id = mongoose.Types.ObjectId(req.body.id);
-	var startOfDay = new Date(req.body.date_of_consumption);
-	var date = new Date(req.body.date_of_consumption);
+	var id = mongoose.Types.ObjectId(req.query.id);
+	var startOfDay = new Date(req.query.date_of_consumption);
+	var date = new Date(req.query.date_of_consumption);
 	var endOfDay = new Date(date.setDate(date.getDate() + 1));
 	User_nutrition.aggregate([
 		{   
