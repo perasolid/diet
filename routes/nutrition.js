@@ -8,6 +8,7 @@ var ctrlNutrition = require('../controllers/nutrition');
 
 //retreving data from database
 router.get('/all', ctrlNutrition.getAll);
+router.get('/getNutritionsNameAndId', ctrlNutrition.getNutritionsNameAndId);
 router.get('/withPagination', ctrlNutrition.getNutritionsByPagination);
 router.get('/numberOfNutritions', ctrlNutrition.numberOfNutritions);
 router.post('/add', ctrlNutrition.addNutrition);

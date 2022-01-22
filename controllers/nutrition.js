@@ -17,6 +17,17 @@ module.exports.getAll = function(req, res) {
     });
 };
 
+module.exports.getNutritionsNameAndId = function(req, res) {
+	const regex = new RegExp(req.query.search, 'i')
+	Nutrition.find({name: {$regex: regex}}, 'name')
+	.sort({ _id: -1 })
+	.exec(function (err, doc) {
+		console.log(doc);
+        if(err) { res.status(500).json(err); return; };
+        res.status(200).json(doc);
+    });
+};
+
 module.exports.addNutrition = function(req, res) {
 	var nutrition = new Nutrition(req.body);
 	
