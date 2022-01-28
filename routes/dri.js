@@ -1,0 +1,13 @@
+var express = require('express');
+var router = express.Router();
+const Dri = require('../models/dri');
+
+var ctrlDri = require('../controllers/dri');
+
+//retreving data from database
+router.get('/all', ctrlDri.getAll);
+router.post('/add', ctrlDri.addDri);
+router.put('/update/:id', ctrlDri.updateDri);
+router.delete('/delete/:id', ctrlDri.deleteDri);
+
+module.exports = router;

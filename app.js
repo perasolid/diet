@@ -11,6 +11,7 @@ var passport = require('passport');
 const users = require('./routes/users');
 const nutritions = require('./routes/nutrition');
 const user_nutrition = require('./routes/user_nutrition');
+const dri = require('./routes/dri');
 
 const app=express();
 //connecting to database
@@ -36,6 +37,7 @@ app.use(bodyParser.json());
 app.use('/users', users);
 app.use('/nutritions', nutritions);
 app.use('/user-nutrition', user_nutrition);
+app.use('/dri', dri);
 
 app.get('**', (req, res)=>{
     res.sendFile(__dirname+'/public/index.html');
