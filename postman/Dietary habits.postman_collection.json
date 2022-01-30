@@ -450,6 +450,107 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Dris",
+			"item": [
+				{
+					"name": "ALL DRIS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/dri/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dri",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DRI",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"61e5c51c7a1fa80016a74b1d\",\r\n    \"name\": \"My DRIs\",\r\n    \"active\": \"true\",\r\n    \"calories_min\": 3020,\r\n    \"total_fat_g_min\": 67,\r\n    \"saturated_fat_g_min\": 0,\r\n    \"cholesterol_mg_min\": 0,\r\n    \"sodium_mg_min\": 1500,\r\n    \"choline_mg_min\": 550,\r\n    \"folate_mcg_min\": 400,\r\n    \"folic_acid_mcg_min\": null,\r\n    \"niacin_mg_min\": 16,\r\n    \"pantothenic_acid_mg_min\": 5,\r\n    \"riboflavin_mg_min\": 1.3,\r\n    \"thiamin_mg_min\": 1.2,\r\n    \"vitamin_a_IU_min\": 3000,\r\n    \"vitamin_a_rae_mcg_min\": 900,\r\n    \"carotene_alpha_mcg_min\": null,\r\n    \"carotene_beta_mcg_min\": null,\r\n    \"cryptoxanthin_beta_mcg_min\": null,\r\n    \"lutein_zeaxanthin_mcg_min\": null,\r\n    \"vitamin_b12_mcg_min\": 2.4,\r\n    \"vitamin_b6_mg_min\": 1.3,\r\n    \"vitamin_c_mg_min\": 90,\r\n    \"vitamin_d_IU_min\": 600,\r\n    \"vitamin_e_mg_min\": 15,\r\n    \"tocopherol_alpha_mg_min\": null,\r\n    \"vitamin_k_mcg_min\": 120,\r\n    \"calcium_mg_min\": 1000,\r\n    \"copper_mg_min\": 0.9,\r\n    \"irom_mg_min\": 8,\r\n    \"magnesium_mg_min\": 400,\r\n    \"manganese_mg_min\": 2.3,\r\n    \"phosphorous_mg_min\": 700,\r\n    \"potassium_mg_min\": 3400,\r\n    \"selenium_mcg_min\": 55,\r\n    \"zink_mg_min\": 11,\r\n    \"protein_g_min\": 54,\r\n    \"alanine_g_min\": null,\r\n    \"arginine_g_min\": null,\r\n    \"aspartic_acid_g_min\": null,\r\n    \"cystine_g_min\": null,\r\n    \"glutamic_acid_g_min\": null,\r\n    \"glycine_g_min\": null,\r\n    \"histidine_g_min\": null,\r\n    \"hydroxyproline_g_min\": null,\r\n    \"isoleucine_g_min\": null,\r\n    \"leucine_g_min\": null,\r\n    \"lysine_g_min\": null,\r\n    \"methionine_g_min\": null,\r\n    \"phenylalanine_g_min\": null,\r\n    \"proline_g_min\": null,\r\n    \"serine_g_min\": null,\r\n    \"threonine_g_min\": null,\r\n    \"tryptophan_g_min\": null,\r\n    \"tyrosine_g_min\": null,\r\n    \"valine_g_min\": null,\r\n    \"carbohydrate_g_min\": 340,\r\n    \"fiber_g_min\": 38,\r\n    \"sugars_g_min\": 0,\r\n    \"fructose_g_min\": null,\r\n    \"galactose_g_min\": null,\r\n    \"glucose_g_min\": null,\r\n    \"lactose_g_min\": null,\r\n    \"maltose_g_min\": null,\r\n    \"sucrose_g_min\": null,\r\n    \"fat_g_min\": null,\r\n    \"saturated_fatty_acids_g_min\": null,\r\n    \"monounsaturated_fatty_acids_g_min\": null,\r\n    \"polyunsaturated_fatty_acids_g_min\": null,\r\n    \"fatty_acids_total_trans_g_min\": 0,\r\n    \"alcohol_g_min\": null,\r\n    \"ash_g_min\": null,\r\n    \"caffeine_mg_min\": null,\r\n    \"theobromine_mg_min\": null,\r\n    \"water_g_min\": 3700,\r\n    \"calories_max\": 3020,\r\n    \"total_fat_g_max\": 117,\r\n    \"saturated_fat_g_max\": 0,\r\n    \"cholesterol_mg_max\": 0,\r\n    \"sodium_mg_max\": null,\r\n    \"choline_mg_max\": 3500,\r\n    \"folate_mcg_max\": 1000,\r\n    \"folic_acid_mcg_max\": null,\r\n    \"niacin_mg_max\": 35,\r\n    \"pantothenic_acid_mg_max\": null,\r\n    \"riboflavin_mg_max\": null,\r\n    \"thiamin_mg_max\": null,\r\n    \"vitamin_a_IU_max\": 10000,\r\n    \"vitamin_a_rae_mcg_max\": 3000,\r\n    \"carotene_alpha_mcg_max\": null,\r\n    \"carotene_beta_mcg_max\": null,\r\n    \"cryptoxanthin_beta_mcg_max\": null,\r\n    \"lutein_zeaxanthin_mcg_max\": null,\r\n    \"vitamin_b12_mcg_max\": null,\r\n    \"vitamin_b6_mg_max\": 100,\r\n    \"vitamin_c_mg_max\": 2000,\r\n    \"vitamin_d_IU_max\": 4000,\r\n    \"vitamin_e_mg_max\": 1000,\r\n    \"tocopherol_alpha_mg_max\": null,\r\n    \"vitamin_k_mcg_max\": null,\r\n    \"calcium_mg_max\": 2500,\r\n    \"copper_mg_max\": 10,\r\n    \"irom_mg_max\": 45,\r\n    \"magnesium_mg_max\": 400,\r\n    \"manganese_mg_max\": 11,\r\n    \"phosphorous_mg_max\": 4000,\r\n    \"potassium_mg_max\": null,\r\n    \"selenium_mcg_max\": 400,\r\n    \"zink_mg_max\": 40,\r\n    \"protein_g_max\": 54,\r\n    \"alanine_g_max\": null,\r\n    \"arginine_g_max\": null,\r\n    \"aspartic_acid_g_max\": null,\r\n    \"cystine_g_max\": null,\r\n    \"glutamic_acid_g_max\": null,\r\n    \"glycine_g_max\": null,\r\n    \"histidine_g_max\": null,\r\n    \"hydroxyproline_g_max\": null,\r\n    \"isoleucine_g_max\": null,\r\n    \"leucine_g_max\": null,\r\n    \"lysine_g_max\": null,\r\n    \"methionine_g_max\": null,\r\n    \"phenylalanine_g_max\": null,\r\n    \"proline_g_max\": null,\r\n    \"serine_g_max\": null,\r\n    \"threonine_g_max\": null,\r\n    \"tryptophan_g_max\": null,\r\n    \"tyrosine_g_max\": null,\r\n    \"valine_g_max\": null,\r\n    \"carbohydrate_g_max\": 491,\r\n    \"fiber_g_max\": 38,\r\n    \"sugars_g_max\": null,\r\n    \"fructose_g_max\": null,\r\n    \"galactose_g_max\": null,\r\n    \"glucose_g_max\": null,\r\n    \"lactose_g_max\": null,\r\n    \"maltose_g_max\": null,\r\n    \"sucrose_g_max\": null,\r\n    \"fat_g_max\": null,\r\n    \"saturated_fatty_acids_g_max\": null,\r\n    \"monounsaturated_fatty_acids_g_max\": null,\r\n    \"polyunsaturated_fatty_acids_g_max\": null,\r\n    \"fatty_acids_total_trans_g_max\": 0,\r\n    \"alcohol_g_max\": null,\r\n    \"ash_g_max\": null,\r\n    \"caffeine_mg_max\": null,\r\n    \"theobromine_mg_max\": null,\r\n    \"water_g_max\": 3700\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/dri/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dri",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DRI",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"61e5c51c7a1fa80016a74b1d\",\r\n    \"name\": \"This the shit\",\r\n    \"active\": \"false\",\r\n    \"calories_min\": 666,\r\n    \"total_fat_g_min\": 67,\r\n    \"saturated_fat_g_min\": 0,\r\n    \"cholesterol_mg_min\": 0,\r\n    \"sodium_mg_min\": 1500,\r\n    \"choline_mg_min\": 550,\r\n    \"folate_mcg_min\": 400,\r\n    \"folic_acid_mcg_min\": null,\r\n    \"niacin_mg_min\": 16,\r\n    \"pantothenic_acid_mg_min\": 5,\r\n    \"riboflavin_mg_min\": 1.3,\r\n    \"thiamin_mg_min\": 1.2,\r\n    \"vitamin_a_IU_min\": 3000,\r\n    \"vitamin_a_rae_mcg_min\": 900,\r\n    \"carotene_alpha_mcg_min\": null,\r\n    \"carotene_beta_mcg_min\": null,\r\n    \"cryptoxanthin_beta_mcg_min\": null,\r\n    \"lutein_zeaxanthin_mcg_min\": null,\r\n    \"vitamin_b12_mcg_min\": 2.4,\r\n    \"vitamin_b6_mg_min\": 1.3,\r\n    \"vitamin_c_mg_min\": 90,\r\n    \"vitamin_d_IU_min\": 600,\r\n    \"vitamin_e_mg_min\": 15,\r\n    \"tocopherol_alpha_mg_min\": null,\r\n    \"vitamin_k_mcg_min\": 120,\r\n    \"calcium_mg_min\": 1000,\r\n    \"copper_mg_min\": 0.9,\r\n    \"irom_mg_min\": 8,\r\n    \"magnesium_mg_min\": 400,\r\n    \"manganese_mg_min\": 2.3,\r\n    \"phosphorous_mg_min\": 700,\r\n    \"potassium_mg_min\": 3400,\r\n    \"selenium_mcg_min\": 55,\r\n    \"zink_mg_min\": 11,\r\n    \"protein_g_min\": 54,\r\n    \"alanine_g_min\": null,\r\n    \"arginine_g_min\": null,\r\n    \"aspartic_acid_g_min\": null,\r\n    \"cystine_g_min\": null,\r\n    \"glutamic_acid_g_min\": null,\r\n    \"glycine_g_min\": null,\r\n    \"histidine_g_min\": null,\r\n    \"hydroxyproline_g_min\": null,\r\n    \"isoleucine_g_min\": null,\r\n    \"leucine_g_min\": null,\r\n    \"lysine_g_min\": null,\r\n    \"methionine_g_min\": null,\r\n    \"phenylalanine_g_min\": null,\r\n    \"proline_g_min\": null,\r\n    \"serine_g_min\": null,\r\n    \"threonine_g_min\": null,\r\n    \"tryptophan_g_min\": null,\r\n    \"tyrosine_g_min\": null,\r\n    \"valine_g_min\": null,\r\n    \"carbohydrate_g_min\": 340,\r\n    \"fiber_g_min\": 38,\r\n    \"sugars_g_min\": 0,\r\n    \"fructose_g_min\": null,\r\n    \"galactose_g_min\": null,\r\n    \"glucose_g_min\": null,\r\n    \"lactose_g_min\": null,\r\n    \"maltose_g_min\": null,\r\n    \"sucrose_g_min\": null,\r\n    \"fat_g_min\": null,\r\n    \"saturated_fatty_acids_g_min\": null,\r\n    \"monounsaturated_fatty_acids_g_min\": null,\r\n    \"polyunsaturated_fatty_acids_g_min\": null,\r\n    \"fatty_acids_total_trans_g_min\": 0,\r\n    \"alcohol_g_min\": null,\r\n    \"ash_g_min\": null,\r\n    \"caffeine_mg_min\": null,\r\n    \"theobromine_mg_min\": null,\r\n    \"water_g_min\": 3700,\r\n    \"calories_max\": 3020,\r\n    \"total_fat_g_max\": 117,\r\n    \"saturated_fat_g_max\": 0,\r\n    \"cholesterol_mg_max\": 0,\r\n    \"sodium_mg_max\": null,\r\n    \"choline_mg_max\": 3500,\r\n    \"folate_mcg_max\": 1000,\r\n    \"folic_acid_mcg_max\": null,\r\n    \"niacin_mg_max\": 35,\r\n    \"pantothenic_acid_mg_max\": null,\r\n    \"riboflavin_mg_max\": null,\r\n    \"thiamin_mg_max\": null,\r\n    \"vitamin_a_IU_max\": 10000,\r\n    \"vitamin_a_rae_mcg_max\": 3000,\r\n    \"carotene_alpha_mcg_max\": null,\r\n    \"carotene_beta_mcg_max\": null,\r\n    \"cryptoxanthin_beta_mcg_max\": null,\r\n    \"lutein_zeaxanthin_mcg_max\": null,\r\n    \"vitamin_b12_mcg_max\": null,\r\n    \"vitamin_b6_mg_max\": 100,\r\n    \"vitamin_c_mg_max\": 2000,\r\n    \"vitamin_d_IU_max\": 4000,\r\n    \"vitamin_e_mg_max\": 1000,\r\n    \"tocopherol_alpha_mg_max\": null,\r\n    \"vitamin_k_mcg_max\": null,\r\n    \"calcium_mg_max\": 2500,\r\n    \"copper_mg_max\": 10,\r\n    \"irom_mg_max\": 45,\r\n    \"magnesium_mg_max\": 400,\r\n    \"manganese_mg_max\": 11,\r\n    \"phosphorous_mg_max\": 4000,\r\n    \"potassium_mg_max\": null,\r\n    \"selenium_mcg_max\": 400,\r\n    \"zink_mg_max\": 40,\r\n    \"protein_g_max\": 54,\r\n    \"alanine_g_max\": null,\r\n    \"arginine_g_max\": null,\r\n    \"aspartic_acid_g_max\": null,\r\n    \"cystine_g_max\": null,\r\n    \"glutamic_acid_g_max\": null,\r\n    \"glycine_g_max\": null,\r\n    \"histidine_g_max\": null,\r\n    \"hydroxyproline_g_max\": null,\r\n    \"isoleucine_g_max\": null,\r\n    \"leucine_g_max\": null,\r\n    \"lysine_g_max\": null,\r\n    \"methionine_g_max\": null,\r\n    \"phenylalanine_g_max\": null,\r\n    \"proline_g_max\": null,\r\n    \"serine_g_max\": null,\r\n    \"threonine_g_max\": null,\r\n    \"tryptophan_g_max\": null,\r\n    \"tyrosine_g_max\": null,\r\n    \"valine_g_max\": null,\r\n    \"carbohydrate_g_max\": 491,\r\n    \"fiber_g_max\": 38,\r\n    \"sugars_g_max\": null,\r\n    \"fructose_g_max\": null,\r\n    \"galactose_g_max\": null,\r\n    \"glucose_g_max\": null,\r\n    \"lactose_g_max\": null,\r\n    \"maltose_g_max\": null,\r\n    \"sucrose_g_max\": null,\r\n    \"fat_g_max\": null,\r\n    \"saturated_fatty_acids_g_max\": null,\r\n    \"monounsaturated_fatty_acids_g_max\": null,\r\n    \"polyunsaturated_fatty_acids_g_max\": null,\r\n    \"fatty_acids_total_trans_g_max\": 0,\r\n    \"alcohol_g_max\": null,\r\n    \"ash_g_max\": null,\r\n    \"caffeine_mg_max\": null,\r\n    \"theobromine_mg_max\": null,\r\n    \"water_g_max\": 3700\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/dri/update/61f6b9b374e8f92afc948023",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dri",
+								"update",
+								"61f6b9b374e8f92afc948023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DRI",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/dri/delete/61f6b9b374e8f92afc948023",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dri",
+								"delete",
+								"61f6b9b374e8f92afc948023"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
