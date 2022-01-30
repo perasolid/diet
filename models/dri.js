@@ -1,6 +1,18 @@
 var mongoose = require( 'mongoose' );
 
 var driSchema = new mongoose.Schema({
+	user_id: {
+	  type: mongoose.Schema.Types.ObjectId,
+	  required: true
+	},
+	name: {
+	  type: String,
+	  required: true
+	},
+	active: {
+	  type: Boolean,
+	  required: true
+	},
 	calories_min: {
 	  type: Number
 	  
