@@ -2483,7 +2483,7 @@ class MyDietComponent {
     }
     ngOnInit() {
         this.onDateChange(this.dateOfConsumption.toISOString().split('T')[0]);
-        this.driService.getDris()
+        this.driService.getUserActiveDris()
             .subscribe(dris => {
             Object.assign(this.dri, dris[0]);
         });
@@ -6184,26 +6184,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DriService", function() { return DriService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+/* harmony import */ var _authentication_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./authentication.service */ "./src/app/services/authentication.service.ts");
+
 
 
 
 class DriService {
-    constructor(httpClient) {
+    constructor(httpClient, auth) {
         this.httpClient = httpClient;
+        this.auth = auth;
         this.API_URL = 'https://dietary-habits.herokuapp.com/dri';
     }
-    getDris() {
-        return this.httpClient.get(this.API_URL + '/all');
+    getUserActiveDris() {
+        return this.httpClient.get(this.API_URL + '/user-active-dri/' + this.auth.getUserDetails()._id);
     }
 }
-DriService.ɵfac = function DriService_Factory(t) { return new (t || DriService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
+DriService.ɵfac = function DriService_Factory(t) { return new (t || DriService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_authentication_service__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"])); };
 DriService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DriService, factory: DriService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DriService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root'
             }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }, { type: _authentication_service__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"] }]; }, null); })();
 
 
 /***/ }),

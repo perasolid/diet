@@ -4716,7 +4716,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this4 = this;
 
           this.onDateChange(this.dateOfConsumption.toISOString().split('T')[0]);
-          this.driService.getDris().subscribe(function (dris) {
+          this.driService.getUserActiveDris().subscribe(function (dris) {
             Object.assign(_this4.dri, dris[0]);
           });
           console.log(this.dri);
@@ -12247,19 +12247,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _authentication_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./authentication.service */
+    "./src/app/services/authentication.service.ts");
 
     var DriService = /*#__PURE__*/function () {
-      function DriService(httpClient) {
+      function DriService(httpClient, auth) {
         _classCallCheck(this, DriService);
 
         this.httpClient = httpClient;
+        this.auth = auth;
         this.API_URL = 'https://dietary-habits.herokuapp.com/dri';
       }
 
       _createClass(DriService, [{
-        key: "getDris",
-        value: function getDris() {
-          return this.httpClient.get(this.API_URL + '/all');
+        key: "getUserActiveDris",
+        value: function getUserActiveDris() {
+          return this.httpClient.get(this.API_URL + '/user-active-dri/' + this.auth.getUserDetails()._id);
         }
       }]);
 
@@ -12267,7 +12274,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     DriService.ɵfac = function DriService_Factory(t) {
-      return new (t || DriService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
+      return new (t || DriService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_authentication_service__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"]));
     };
 
     DriService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -12286,6 +12293,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }], function () {
         return [{
           type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+        }, {
+          type: _authentication_service__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"]
         }];
       }, null);
     })();
