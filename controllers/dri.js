@@ -16,9 +16,45 @@ module.exports.getAll = function(req, res) {
     });
 };
 
+module.exports.getUserActiveDri = function(req, res) {
+	var id = mongoose.Types.ObjectId(req.params.id);
+	Dri.aggregate([
+		{   
+			$match: {
+				user_id: id,
+				active: true
+			}
+		}
+	]).exec( (err, list) => {
+        if (err) throw err;
+		res.status(200);
+		res.json(list);
+    }); 
+};
+
 module.exports.addDri = function(req, res) {
 	var dri = new Dri(req.body);
+	var id = mongoose.Types.ObjectId(req.body.user_id);
 	
+	Dri.update({"user_id": id}, {"$set": {"active": false}}, {"multi": true}, 
+		(err, writeResult) => {
+			dri.save(function(err) {
+				if(err) {
+					console.log(err);
+					res.status(400);
+					res.send(err);
+				}
+				else {
+					res.status(200);
+					res.json({
+						message:'Successfully created DRI!'
+					});
+				}
+			});
+		}
+	);
+	
+	/*Dri.update({"user_id": id}, {"$set":{"active": "false"}});
 	dri.save(function(err) {
         if(err) {
             console.log(err);
@@ -31,7 +67,7 @@ module.exports.addDri = function(req, res) {
                 message:'Successfully created DRI!'
             });
         }
-    });
+    });*/
 };
 
 module.exports.updateDri = function(req, res) {
