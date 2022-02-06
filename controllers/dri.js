@@ -16,6 +16,21 @@ module.exports.getAll = function(req, res) {
     });
 };
 
+module.exports.getUserDris = function(req, res) {
+	var id = mongoose.Types.ObjectId(req.params.id);
+	Dri.aggregate([
+		{   
+			$match: {
+				user_id: id
+			}
+		}
+	]).exec( (err, list) => {
+        if (err) throw err;
+		res.status(200);
+		res.json(list);
+    }); 
+};
+
 module.exports.getUserActiveDri = function(req, res) {
 	var id = mongoose.Types.ObjectId(req.params.id);
 	Dri.aggregate([
