@@ -47,6 +47,31 @@ module.exports.getUserActiveDri = function(req, res) {
     }); 
 };
 
+module.exports.setStatusToActive = function(req, res) {
+	var user_id = mongoose.Types.ObjectId(req.body.user_id);
+	var id = mongoose.Types.ObjectId(req.body._id);
+	Dri.update({"user_id": user_id}, {"$set": {"active": false}}, {"multi": true}, 
+		(err, writeResult) => {
+			
+			Dri.update({"_id": id}, {"$set": {"active": true}}, {"multi": true}, 
+				(err, writeResult) => {
+					if(err) {
+					console.log(err);
+					res.status(400);
+					res.send(err);
+				}
+				else {
+					res.status(200);
+					res.json({
+						message:'Successfully set active status for DRI!'
+					});
+				}
+				}
+			);
+		}
+	);
+};
+
 module.exports.addDri = function(req, res) {
 	var dri = new Dri(req.body);
 	var id = mongoose.Types.ObjectId(req.body.user_id);
@@ -68,21 +93,6 @@ module.exports.addDri = function(req, res) {
 			});
 		}
 	);
-	
-	/*Dri.update({"user_id": id}, {"$set":{"active": "false"}});
-	dri.save(function(err) {
-        if(err) {
-            console.log(err);
-            res.status(400);
-            res.send(err);
-        }
-        else {
-            res.status(200);
-            res.json({
-                message:'Successfully created DRI!'
-            });
-        }
-    });*/
 };
 
 module.exports.updateDri = function(req, res) {
