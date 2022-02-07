@@ -32,6 +32,7 @@ router.post('/add', ctrlUser.addUser);
 router.put('/update/:id', ctrlUser.updateUser);
 router.put('/admin/update/:id', ctrlUser.updateUserByAdmin);
 router.post('/hash', ctrlUser.getHash);
+router.post('/verifyRecaptcha', ctrlAuth.verifyRecaptcha)
 router.delete('/delete/:id', ctrlUser.deleteUser);
 
 //reset password

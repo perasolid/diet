@@ -4,6 +4,7 @@ var User = mongoose.model('User');
 const Dri =  require('./../models/dri');
 const fs = require('fs');
 const path = require('path');
+var request = require('request');
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);
@@ -82,4 +83,20 @@ module.exports.login = function(req, res) {
       res.status(401).json(info);
     }
   })(req, res);
+};
+
+module.exports.verifyRecaptcha = function(req, res) {
+	var clientServerOptions = {
+		uri: 'https://www.google.com/recaptcha/api/siteverify',
+		body: JSON.stringify(req.body),
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		}
+	}
+	request(clientServerOptions, function (error, response) {
+		console.log(error,response.body);
+		sendJSONresponse(response, 400, response.body);
+		return;
+	});
 };
