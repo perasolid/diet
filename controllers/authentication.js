@@ -86,7 +86,7 @@ module.exports.login = function(req, res) {
 };
 
 module.exports.verifyRecaptcha = function(req, res) {
-	/*var clientServerOptions = {
+	var clientServerOptions = {
 		uri: 'https://www.google.com/recaptcha/api/siteverify',
 		body: JSON.stringify(req.body),
 		method: 'POST',
@@ -96,8 +96,7 @@ module.exports.verifyRecaptcha = function(req, res) {
 	}
 	request(clientServerOptions, function (error, response) {
 		console.log(error,response.body);
-		sendJSONresponse(response, 400, response.body);
+		res.status(200).json(response.body);
 		return;
-	});*/
-	sendJSONresponse(req, 200, req.body);
+	});
 };
