@@ -1,6 +1,9 @@
 var passport = require('passport');
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
+const Dri =  require('./../models/dri');
+const fs = require('fs');
+const path = require('path');
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);
@@ -30,7 +33,13 @@ module.exports.register = function(req, res) {
 		user.name = req.body.name;
 		user.email = req.body.email;
 		user.setPassword(req.body.password);
-		user.save(function(err) {
+		user.save(function(err, insertedUser) {
+			let rawdata = fs.readFileSync(path.join(__dirname, '../defaults/dri.json'));
+			let dri = JSON.parse(rawdata);
+			dri.user_id = insertedUser._id;
+			var newDri = new Dri(dri);
+			newDri.save();
+			
 			var token;
 			token = user.generateJwt();
 			res.status(200);
