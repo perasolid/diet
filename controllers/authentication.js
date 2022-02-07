@@ -87,7 +87,8 @@ module.exports.login = function(req, res) {
 
 module.exports.verifyRecaptcha = function(req, res) {
 	var clientServerOptions = {
-		uri: 'https://www.google.com/recaptcha/api/siteverify',
+		uri: 'https://www.google.com/recaptcha/api/siteverify?response='+ req.body.response +
+		'&secret='+req.body.secret,
 		body: JSON.stringify(req.body),
 		method: 'POST',
 		headers: {
