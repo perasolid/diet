@@ -81,7 +81,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_6_Template(rf, ctx) {
       if (rf & 1) {
+        var _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 28);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_6_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6);
+
+          var ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r5.myFunction();
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 29);
 
@@ -93,7 +103,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_7_Template(rf, ctx) {
       if (rf & 1) {
+        var _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 30);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_7_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8);
+
+          var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r7.myFunction();
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 31);
 
@@ -105,7 +125,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_8_Template(rf, ctx) {
       if (rf & 1) {
+        var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 32);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_8_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
+
+          var ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r9.myFunction();
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 31);
 
@@ -117,7 +147,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_9_Template(rf, ctx) {
       if (rf & 1) {
+        var _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 33);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_9_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12);
+
+          var ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r11.myFunction();
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 34);
 
@@ -129,7 +169,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_div_10_Template(rf, ctx) {
       if (rf & 1) {
-        var _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 35);
 
@@ -147,6 +187,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 40);
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_div_10_Template_a_click_6_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14);
+
+          var ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r13.myFunction();
+        });
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 31);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " My DRI");
@@ -154,6 +202,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 41);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_div_10_Template_a_click_9_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14);
+
+          var ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r15.myFunction();
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "i", 37);
 
@@ -164,11 +220,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 42);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_div_10_Template_a_click_12_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14);
 
-          var ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r5.auth.logout();
+          return ctx_r16.auth.logout();
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "i", 43);
@@ -252,7 +308,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-root"]],
       decls: 44,
       vars: 5,
-      consts: [["name", "viewport", "content", "width=device-width, initial-scale=1"], ["id", "myTopnav", 1, "topnav"], ["routerLink", "/home"], [1, "fa", "fa-home"], ["style", "cursor: pointer;", "routerLink", "/users", 4, "ngIf"], ["style", "cursor: pointer;", "routerLink", "/nutrition", 4, "ngIf"], ["style", "cursor: pointer;", "routerLink", "/my-diet", 4, "ngIf"], ["class", "w3-right", "id", "navSignIn", "routerLink", "/sign-in", 4, "ngIf"], ["class", "dropdown w3-right", "id", "userDropdown", 4, "ngIf"], [1, "icon", 3, "click"], [1, "fa", "fa-bars"], [1, "w3-container", "w3-padding-32", "w3-dark-grey", "w3-center"], [1, "w3-padding-16"], [1, "w3-xlarge", "w3-border-blue", "w3-bottombar"], [1, "fa", "fa-map-marker", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-clock-o", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-phone", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-envelope-o", "w3-text-blue", "w3-xlarge"], [1, "w3-button", "w3-black", "w3-margin", 3, "click"], [1, "fa", "fa-arrow-up", "w3-margin-right"], [1, "w3-xlarge", "w3-section"], [1, "fa", "fa-facebook-official", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-instagram", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-snapchat", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-pinterest-p", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-twitter", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-linkedin", "w3-hover-opacity", 2, "padding", "5pt"], [1, "w3-hover-text-green"], ["routerLink", "/users", 2, "cursor", "pointer"], [1, "fa", "fa-users"], ["routerLink", "/nutrition", 2, "cursor", "pointer"], [1, "fa", "fa-cutlery"], ["routerLink", "/my-diet", 2, "cursor", "pointer"], ["id", "navSignIn", "routerLink", "/sign-in", 1, "w3-right"], [1, "fa", "fa-sign-in"], ["id", "userDropdown", 1, "dropdown", "w3-right"], [1, "dropbtn"], [1, "fa", "fa-user"], [1, "fa", "fa-caret-down"], [1, "dropdown-content"], ["routerLink", "/my-dri", 2, "cursor", "pointer"], ["routerLink", "/profile", 2, "cursor", "pointer"], [2, "cursor", "pointer", 3, "click"], [1, "fa", "fa-sign-out"]],
+      consts: [["name", "viewport", "content", "width=device-width, initial-scale=1"], ["id", "myTopnav", 1, "topnav"], ["routerLink", "/home"], ["src", "../favicon.ico", "width", "25", "height", "25"], ["style", "cursor: pointer;", "routerLink", "/users", 3, "click", 4, "ngIf"], ["style", "cursor: pointer;", "routerLink", "/nutrition", 3, "click", 4, "ngIf"], ["style", "cursor: pointer;", "routerLink", "/my-diet", 3, "click", 4, "ngIf"], ["class", "w3-right", "id", "navSignIn", "routerLink", "/sign-in", 3, "click", 4, "ngIf"], ["class", "dropdown w3-right", "id", "userDropdown", 4, "ngIf"], [1, "icon", 3, "click"], [1, "fa", "fa-bars"], [1, "w3-container", "w3-padding-32", "w3-dark-grey", "w3-center"], [1, "w3-padding-16"], [1, "w3-xlarge", "w3-border-blue", "w3-bottombar"], [1, "fa", "fa-map-marker", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-clock-o", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-phone", "w3-text-blue", "w3-xlarge"], [1, "fa", "fa-envelope-o", "w3-text-blue", "w3-xlarge"], [1, "w3-button", "w3-black", "w3-margin", 3, "click"], [1, "fa", "fa-arrow-up", "w3-margin-right"], [1, "w3-xlarge", "w3-section"], [1, "fa", "fa-facebook-official", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-instagram", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-snapchat", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-pinterest-p", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-twitter", "w3-hover-opacity", 2, "padding", "5pt"], [1, "fa", "fa-linkedin", "w3-hover-opacity", 2, "padding", "5pt"], [1, "w3-hover-text-green"], ["routerLink", "/users", 2, "cursor", "pointer", 3, "click"], [1, "fa", "fa-users"], ["routerLink", "/nutrition", 2, "cursor", "pointer", 3, "click"], [1, "fa", "fa-cutlery"], ["routerLink", "/my-diet", 2, "cursor", "pointer", 3, "click"], ["id", "navSignIn", "routerLink", "/sign-in", 1, "w3-right", 3, "click"], [1, "fa", "fa-sign-in"], ["id", "userDropdown", 1, "dropdown", "w3-right"], [1, "dropbtn"], [1, "fa", "fa-user"], [1, "fa", "fa-caret-down"], [1, "dropdown-content"], ["routerLink", "/my-dri", 2, "cursor", "pointer", 3, "click"], ["routerLink", "/profile", 2, "cursor", "pointer", 3, "click"], [2, "cursor", "pointer", 3, "click"], [1, "fa", "fa-sign-out"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "head");
@@ -265,9 +321,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Home");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Dietary Habits");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -491,109 +547,121 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ng-recaptcha */
+    "./node_modules/ng-recaptcha/__ivy_ngcc__/fesm2015/ng-recaptcha.js");
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./components/home/home.component */
     "./src/app/components/home/home.component.ts");
     /* harmony import */
 
 
-    var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./components/profile/profile.component */
     "./src/app/components/profile/profile.component.ts");
     /* harmony import */
 
 
-    var _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./components/sign-in/sign-in.component */
     "./src/app/components/sign-in/sign-in.component.ts");
     /* harmony import */
 
 
-    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ./services/auth-guard.service */
     "./src/app/services/auth-guard.service.ts");
     /* harmony import */
 
 
-    var _components_register_register_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./components/register/register.component */
     "./src/app/components/register/register.component.ts");
     /* harmony import */
 
 
-    var _components_users_users_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./components/users/users.component */
     "./src/app/components/users/users.component.ts");
     /* harmony import */
 
 
-    var _services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./services/admin-auth-guard.service */
     "./src/app/services/admin-auth-guard.service.ts");
     /* harmony import */
 
 
-    var _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./components/nutrition/nutrition.component */
     "./src/app/components/nutrition/nutrition.component.ts");
     /* harmony import */
 
 
-    var _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ./components/search-and-add-nutrition/search-and-add-nutrition.component */
     "./src/app/components/search-and-add-nutrition/search-and-add-nutrition.component.ts");
     /* harmony import */
 
 
-    var _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./components/my-diet/my-diet.component */
     "./src/app/components/my-diet/my-diet.component.ts");
     /* harmony import */
 
 
-    var _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./components/my-dri/my-dri.component */
     "./src/app/components/my-dri/my-dri.component.ts");
 
     var routes = [{
       path: 'home',
-      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
+      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"]
     }, {
       path: 'sign-in',
-      component: _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_10__["SignInComponent"]
+      component: _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"]
     }, {
       path: 'register',
-      component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"]
+      component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"]
     }, {
       path: 'users',
-      component: _components_users_users_component__WEBPACK_IMPORTED_MODULE_13__["UsersComponent"],
-      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AdminAuthGuardService"]]
+      component: _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"],
+      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__["AdminAuthGuardService"]]
     }, {
       path: 'profile',
-      component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__["AuthGuardService"]]
+      component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     }, {
       path: 'nutrition',
-      component: _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_15__["NutritionComponent"],
-      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AdminAuthGuardService"]]
+      component: _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"],
+      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__["AdminAuthGuardService"]]
     }, {
       path: 'search-add',
-      component: _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_16__["SearchAndAddNutritionComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__["AuthGuardService"]]
+      component: _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     }, {
       path: 'my-diet',
-      component: _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_17__["MyDietComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__["AuthGuardService"]]
+      component: _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     }, {
       path: 'my-dri',
-      component: _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_18__["MyDriComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__["AuthGuardService"]]
+      component: _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     }, {
       path: '**',
       redirectTo: '/home',
@@ -606,14 +674,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
       type: AppModule,
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
     });
     AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
       factory: function AppModule_Factory(t) {
         return new (t || AppModule)();
       },
-      providers: [],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
+      providers: [{
+        provide: ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RECAPTCHA_SETTINGS"],
+        useValue: {
+          siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].recaptcha.siteKey
+        }
+      }],
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
         positionClass: 'toast-bottom-center',
         closeButton: true,
         preventDuplicates: true
@@ -622,8 +695,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_10__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_13__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_15__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_16__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_17__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_18__["MyDriComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"]]
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"]]
       });
     })();
     /*@__PURE__*/
@@ -633,14 +706,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_10__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_13__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_15__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_16__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_17__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_18__["MyDriComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"]],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
             positionClass: 'toast-bottom-center',
             closeButton: true,
             preventDuplicates: true
           })],
-          providers: [],
-          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+          providers: [{
+            provide: ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RECAPTCHA_SETTINGS"],
+            useValue: {
+              siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].recaptcha.siteKey
+            }
+          }],
+          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
         }]
       }], null, null);
     })();
@@ -5149,24 +5227,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "openAddForm",
         value: function openAddForm() {
+          var _this6 = this;
+
+          this.dri = JSON.parse(JSON.stringify(this.dris[0]));
+          delete this.dri['active'];
+          delete this.dri['name'];
+          delete this.dri['user_id'];
+          delete this.dri['__v'];
+          delete this.dri['_id'];
+          Object.keys(this.dri).forEach(function (i) {
+            return _this6.dri[i] = null;
+          });
           document.getElementById('id01').style.display = 'block';
-          this.dri = {};
         }
       }, {
         key: "add",
         value: function add() {
-          var _this6 = this;
+          var _this7 = this;
 
-          this.isLoaded = false;
-          this.driService.addDri(this.dri).subscribe(function () {
-            _this6.toastr.success('You successfully added a DRI!', 'Success');
-
+          if (this.isInputValid()) {
+            this.isLoaded = false;
             document.getElementById('id01').style.display = 'none';
+            this.driService.addDri(this.dri).subscribe(function () {
+              _this7.toastr.success('You successfully added a DRI!', 'Success');
 
-            _this6.ngOnInit();
-          }, function (err) {
-            _this6.toastr.error(err.error.message, 'Error');
-          });
+              _this7.ngOnInit();
+            }, function (err) {
+              _this7.toastr.error(err.error.message, 'Error');
+            });
+          }
         }
       }, {
         key: "openUpdateForm",
@@ -5177,10 +5266,69 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update() {
-          var _this7 = this;
+          var _this8 = this;
+
+          if (this.isInputValid()) {
+            this.isLoaded = false;
+            document.getElementById('id02').style.display = 'none';
+            this.driService.updateDri(this.dri).subscribe(function (data) {
+              _this8.toastr.success('You successfully updated your DRI!', 'Success');
+
+              _this8.ngOnInit();
+            }, function (err) {
+              _this8.toastr.error(err.error.message, 'Error');
+            });
+          }
+        }
+      }, {
+        key: "openDeleteForm",
+        value: function openDeleteForm(dri) {
+          this.dri = dri;
+          document.getElementById('id03').style.display = 'block';
+        }
+      }, {
+        key: "delete",
+        value: function _delete() {
+          var _this9 = this;
+
+          this.driService.deleteDri(this.dri._id).subscribe(function (data) {
+            document.getElementById('id03').style.display = 'none';
+
+            _this9.toastr.success('You successfully deleted this DRI!', 'Success');
+
+            if (data.n == 1) {
+              for (var i = 0; i < _this9.dris.length; i++) {
+                if (_this9.dri._id == _this9.dris[i]._id) {
+                  _this9.dris.splice(i, 1);
+                }
+              }
+            }
+          }, function (err) {
+            _this9.toastr.error(err.error.message, 'Error');
+          });
+        }
+      }, {
+        key: "setAsActive",
+        value: function setAsActive(dri) {
+          var _this10 = this;
+
+          dri.active = true;
+          this.isLoaded = false;
+          this.driService.setStatusToActive(dri).subscribe(function (data) {
+            _this10.toastr.success('"' + dri.name + '" set as currently active DRI!', 'Success');
+
+            _this10.ngOnInit();
+          }, function (err) {
+            _this10.toastr.error(err.error.message, 'Error');
+          });
+        }
+      }, {
+        key: "isInputValid",
+        value: function isInputValid() {
+          var _this11 = this;
 
           var ordered = Object.keys(this.dri).sort().reduce(function (obj, key) {
-            obj[key] = _this7.dri[key];
+            obj[key] = _this11.dri[key];
             return obj;
           }, {});
           delete ordered['active'];
@@ -5195,62 +5343,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else {
               if (Object.values(ordered)[i] < Object.values(ordered)[i + 1]) {
                 this.toastr.error('Max value for ' + Object.keys(ordered)[i] + ' must be less than min.', 'Error');
-                return;
+                return false;
               }
             }
           }
 
-          document.getElementById('id02').style.display = 'none';
-          this.isLoaded = false;
-          this.driService.updateDri(this.dri).subscribe(function (data) {
-            _this7.toastr.success('You successfully updated your DRI!', 'Success');
-
-            _this7.ngOnInit();
-          }, function (err) {
-            _this7.toastr.error(err.error.message, 'Error');
-          });
-        }
-      }, {
-        key: "openDeleteForm",
-        value: function openDeleteForm(dri) {
-          this.dri = dri;
-          document.getElementById('id03').style.display = 'block';
-        }
-      }, {
-        key: "delete",
-        value: function _delete() {
-          var _this8 = this;
-
-          this.driService.deleteDri(this.dri._id).subscribe(function (data) {
-            document.getElementById('id03').style.display = 'none';
-
-            _this8.toastr.success('You successfully deleted this DRI!', 'Success');
-
-            if (data.n == 1) {
-              for (var i = 0; i < _this8.dris.length; i++) {
-                if (_this8.dri._id == _this8.dris[i]._id) {
-                  _this8.dris.splice(i, 1);
-                }
-              }
-            }
-          }, function (err) {
-            _this8.toastr.error(err.error.message, 'Error');
-          });
-        }
-      }, {
-        key: "setAsActive",
-        value: function setAsActive(dri) {
-          var _this9 = this;
-
-          dri.active = true;
-          this.isLoaded = false;
-          this.driService.setStatusToActive(dri).subscribe(function (data) {
-            _this9.toastr.success('"' + dri.name + '" set as currently active DRI!', 'Success');
-
-            _this9.ngOnInit();
-          }, function (err) {
-            _this9.toastr.error(err.error.message, 'Error');
-          });
+          return true;
         }
       }]);
 
@@ -5266,7 +5364,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-my-dri"]],
       decls: 2248,
       vars: 299,
-      consts: [["class", "loader", 4, "ngIf"], ["class", "w3-padding", "style", "overflow: auto;", 4, "ngIf"], [1, "w3-container", "w3-center"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-top", "w3-card-4"], [1, "w3-container", "w3-blue"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "name", "name", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "separator"], [1, "main-div"], [1, "left-div"], ["name", "calories_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calories_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "total_fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "total_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cholesterol_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cholesterol_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sodium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sodium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "choline_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "choline_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folate_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folate_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folic_acid_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folic_acid_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "niacin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "niacin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "pantothenic_acid_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "pantothenic_acid_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "riboflavin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "riboflavin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "thiamin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "thiamin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_IU_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_rae_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_rae_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_alpha_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_alpha_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_beta_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_beta_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cryptoxanthin_beta_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cryptoxanthin_beta_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lutein_zeaxanthin_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lutein_zeaxanthin_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b12_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b12_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b6_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b6_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_c_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_c_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_d_IU_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_d_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_e_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_e_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tocopherol_alpha_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tocopherol_alpha_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_k_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_k_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calcium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calcium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "copper_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "copper_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "irom_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "irom_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "magnesium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "magnesium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "manganese_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "manganese_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phosphorous_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phosphorous_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "potassium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "potassium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "selenium_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "selenium_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "zink_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "zink_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "protein_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "protein_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alanine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alanine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "arginine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "arginine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "aspartic_acid_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "aspartic_acid_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cystine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cystine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glutamic_acid_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glutamic_acid_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glycine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glycine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "histidine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "histidine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "hydroxyproline_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "hydroxyproline_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "isoleucine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "isoleucine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "leucine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "leucine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lysine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lysine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "methionine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "methionine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phenylalanine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phenylalanine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "proline_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "proline_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "serine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "serine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "threonine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "threonine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tryptophan_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tryptophan_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tyrosine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tyrosine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "valine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "valine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carbohydrate_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carbohydrate_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fiber_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fiber_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sugars_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sugars_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fructose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fructose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "galactose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "galactose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glucose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glucose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lactose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lactose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "maltose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "maltose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sucrose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sucrose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "monounsaturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "monounsaturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "polyunsaturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "polyunsaturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fatty_acids_total_trans_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fatty_acids_total_trans_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alcohol_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alcohol_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "ash_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "ash_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "caffeine_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "caffeine_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "theobromine_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "theobromine_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "water_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "water_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "text", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-green", 3, "disabled", "click"], [1, "fa", "fa-check"], ["id", "id02", 1, "w3-modal"], ["onclick", "document.getElementById('id02').style.display='none'", 1, "w3-button", "w3-display-topright"], ["formControlEdit", "ngForm"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], ["id", "id03", 1, "modal"], ["onclick", "document.getElementById('id03').style.display='none'", "title", "Close Modal", 1, "close"], [1, "modal-content"], [1, "container"], [1, "clearfix"], ["type", "button", "onclick", "document.getElementById('id03').style.display='none'", 1, "cancelbtn"], ["type", "button", 1, "deletebtn", 3, "click"], [1, "loader"], [1, "w3-padding", 2, "overflow", "auto"], [1, "divForTable", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-btn", "w3-green", 3, "click"], ["aria-hidden", "true", 1, "fa", "fa-plus"], [4, "ngFor", "ngForOf"], ["class", "w3-text-green", 4, "ngIf", "ngIfElse"], ["not_active", ""], [1, "w3-blue", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], ["class", "w3-center", 4, "ngIf"], [1, "w3-text-green"], [1, "w3-red", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-trash"]],
+      consts: [["class", "loader", 4, "ngIf"], ["class", "w3-padding", "style", "overflow: auto;", 4, "ngIf"], [1, "w3-container", "w3-center"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-top", "w3-card-4"], [1, "w3-container", "w3-blue"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "name", "name", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "separator"], [1, "main-div"], [1, "left-div"], ["name", "calories_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calories_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "total_fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "total_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cholesterol_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cholesterol_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sodium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sodium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "choline_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "choline_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folate_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folate_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folic_acid_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "folic_acid_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "niacin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "niacin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "pantothenic_acid_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "pantothenic_acid_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "riboflavin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "riboflavin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "thiamin_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "thiamin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_IU_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_rae_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_a_rae_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_alpha_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_alpha_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_beta_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carotene_beta_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cryptoxanthin_beta_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cryptoxanthin_beta_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lutein_zeaxanthin_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lutein_zeaxanthin_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b12_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b12_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b6_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_b6_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_c_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_c_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_d_IU_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_d_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_e_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_e_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tocopherol_alpha_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tocopherol_alpha_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_k_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "vitamin_k_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calcium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "calcium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "copper_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "copper_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "irom_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "irom_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "magnesium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "magnesium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "manganese_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "manganese_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phosphorous_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phosphorous_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "potassium_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "potassium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "selenium_mcg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "selenium_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "zink_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "zink_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "protein_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "protein_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alanine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alanine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "arginine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "arginine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "aspartic_acid_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "aspartic_acid_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cystine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "cystine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glutamic_acid_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glutamic_acid_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glycine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glycine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "histidine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "histidine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "hydroxyproline_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "hydroxyproline_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "isoleucine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "isoleucine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "leucine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "leucine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lysine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lysine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "methionine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "methionine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phenylalanine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "phenylalanine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "proline_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "proline_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "serine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "serine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "threonine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "threonine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tryptophan_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tryptophan_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tyrosine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "tyrosine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "valine_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "valine_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carbohydrate_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "carbohydrate_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fiber_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fiber_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sugars_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sugars_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fructose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fructose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "galactose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "galactose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glucose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "glucose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lactose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "lactose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "maltose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "maltose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sucrose_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "sucrose_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fat_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "saturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "monounsaturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "monounsaturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "polyunsaturated_fatty_acids_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "polyunsaturated_fatty_acids_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fatty_acids_total_trans_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "fatty_acids_total_trans_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alcohol_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "alcohol_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "ash_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "ash_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "caffeine_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "caffeine_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "theobromine_mg_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "theobromine_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "water_g_min", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["name", "water_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-green", 3, "disabled", "click"], [1, "fa", "fa-check"], ["id", "id02", 1, "w3-modal"], ["onclick", "document.getElementById('id02').style.display='none'", 1, "w3-button", "w3-display-topright"], ["formControlEdit", "ngForm"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], ["id", "id03", 1, "modal"], ["onclick", "document.getElementById('id03').style.display='none'", "title", "Close Modal", 1, "close"], [1, "modal-content"], [1, "container"], [1, "clearfix"], ["type", "button", "onclick", "document.getElementById('id03').style.display='none'", 1, "cancelbtn"], ["type", "button", 1, "deletebtn", 3, "click"], [1, "loader"], [1, "w3-padding", 2, "overflow", "auto"], [1, "divForTable", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-btn", "w3-green", 3, "click"], ["aria-hidden", "true", 1, "fa", "fa-plus"], [4, "ngFor", "ngForOf"], ["class", "w3-text-green", 4, "ngIf", "ngIfElse"], ["not_active", ""], [1, "w3-blue", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], ["class", "w3-center", 4, "ngIf"], [1, "w3-text-green"], [1, "w3-red", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-trash"]],
       template: function MyDriComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, MyDriComponent_div_0_Template, 1, 0, "div", 0);
@@ -15438,7 +15536,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Name: ", ctx.dri == null ? null : ctx.dri.name, "");
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NumberValueAccessor"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: [".loader[_ngcontent-%COMP%] {\r\n  border: 16px solid #f3f3f3;\r\n  border-radius: 50%;\r\n  border-top: 16px solid rgb(46, 143, 235);\r\n  border-bottom: 16px solid blue;\r\n  width: 120px;\r\n  height: 120px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 20%;\r\n  margin-bottom: 20%;\r\n  -webkit-animation: spin 1s linear infinite;\r\n  animation: spin 1s linear infinite;\r\n}\r\n@-webkit-keyframes spin {\r\n  0% { -webkit-transform: rotate(0deg); }\r\n  100% { -webkit-transform: rotate(360deg); }\r\n}\r\n@keyframes spin {\r\n  0% { transform: rotate(0deg); }\r\n  100% { transform: rotate(360deg); }\r\n}\r\n\r\n\r\n.main-div[_ngcontent-%COMP%] {\r\n  display:flex;\r\n  justify-content: center;\r\n}\r\n.left-div[_ngcontent-%COMP%] {\r\n  float: left;\r\n  margin-right: 7px;\r\n}\r\n.small-input[_ngcontent-%COMP%] {\r\n  text-align: center;\r\n  width: 80px;\r\n}\r\n.separator[_ngcontent-%COMP%] {\r\n  border-top: 3px solid #bbb;\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n\r\ntable[_ngcontent-%COMP%] {\r\n  border-collapse: collapse;\r\n  border-spacing: 0;\r\n  width: 100%;\r\n  border: 1px solid #ddd;\r\n  margin: 0 auto;\r\n  margin-top: 3vh;\r\n}\r\nth[_ngcontent-%COMP%], td[_ngcontent-%COMP%] {\r\n  padding: 8px;\r\n}\r\ntr[_ngcontent-%COMP%]:nth-child(even){background-color: #f2f2f2}\r\n.divForTable[_ngcontent-%COMP%] {\r\n  overflow: auto;\r\n\tbox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\n\r\n.cancelbtn[_ngcontent-%COMP%], .deletebtn[_ngcontent-%COMP%] {\r\n  float: left;\r\n  width: 50%;\r\n}\r\n\r\n.cancelbtn[_ngcontent-%COMP%] {\r\n  padding: 14px 20px;\r\n  margin: 8px 0;\r\n  border: none;\r\n  opacity: 0.9;\r\n  background-color: #ccc;\r\n  color: black;\r\n  cursor: pointer;\r\n}\r\n.cancelbtn[_ngcontent-%COMP%]:hover {\r\n  opacity: 1;\r\n}\r\n\r\n.deletebtn[_ngcontent-%COMP%] {\r\n  color: white;\r\n  padding: 14px 20px;\r\n  margin: 8px 0;\r\n  border: none;\r\n  opacity: 0.9;\r\n  background-color: #f44336;\r\n  cursor: pointer;\r\n}\r\n.deletebtn[_ngcontent-%COMP%]:hover {\r\n  opacity: 1;\r\n}\r\n\r\n.container[_ngcontent-%COMP%] {\r\n  padding: 16px;\r\n  text-align: center;\r\n}\r\n\r\n.modal[_ngcontent-%COMP%] {\r\n  display: none; \r\n  position: fixed; \r\n  z-index: 1; \r\n  left: 0;\r\n  top: 0;\r\n  width: 100%; \r\n  height: 100%; \r\n  overflow: auto; \r\n  background-color: #ddd;\r\n  padding-top: 50px;\r\n}\r\n\r\n.modal-content[_ngcontent-%COMP%] {\r\n  background-color: #fefefe;\r\n  margin: 5% auto 15% auto; \r\n  border: 1px solid #888;\r\n  width: 80%; \r\n}\r\n\r\nhr[_ngcontent-%COMP%] {\r\n  border: 1px solid #f1f1f1;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.close[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  right: 35px;\r\n  top: 15px;\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n  color: #f1f1f1;\r\n}\r\n.close[_ngcontent-%COMP%]:hover, .close[_ngcontent-%COMP%]:focus {\r\n  color: #f44336;\r\n  cursor: pointer;\r\n}\r\n\r\n.clearfix[_ngcontent-%COMP%]::after {\r\n  content: \"\";\r\n  clear: both;\r\n  display: table;\r\n}\r\n\r\n@media screen and (max-width: 300px) {\r\n  .cancelbtn[_ngcontent-%COMP%], .deletebtn[_ngcontent-%COMP%] {\r\n     width: 100%;\r\n  }\r\n}\r\n@media screen and (max-width: 700px) {\r\n  .column[_ngcontent-%COMP%] {\r\n    width: 97%;\r\n    display: block;\r\n    margin-bottom: 10px;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9teS1kcmkvbXktZHJpLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsVUFBVTtBQUNWO0VBQ0UsMEJBQTBCO0VBQzFCLGtCQUFrQjtFQUNsQix3Q0FBd0M7RUFDeEMsOEJBQThCO0VBQzlCLFlBQVk7RUFDWixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLDBDQUEwQztFQUMxQyxrQ0FBa0M7QUFDcEM7QUFFQTtFQUNFLEtBQUssK0JBQStCLEVBQUU7RUFDdEMsT0FBTyxpQ0FBaUMsRUFBRTtBQUM1QztBQUVBO0VBQ0UsS0FBSyx1QkFBdUIsRUFBRTtFQUM5QixPQUFPLHlCQUF5QixFQUFFO0FBQ3BDO0FBQ0EsY0FBYztBQUVkLHVCQUF1QjtBQUN2QjtFQUNFLFlBQVk7RUFDWix1QkFBdUI7QUFDekI7QUFFQTtFQUNFLFdBQVc7RUFDWCxpQkFBaUI7QUFDbkI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0FBQ2I7QUFFQTtFQUNFLDBCQUEwQjtFQUMxQixnQkFBZ0I7RUFDaEIsbUJBQW1CO0FBQ3JCO0FBQ0EsMkJBQTJCO0FBRTNCLFFBQVE7QUFDUjtFQUNFLHlCQUF5QjtFQUN6QixpQkFBaUI7RUFDakIsV0FBVztFQUNYLHNCQUFzQjtFQUN0QixjQUFjO0VBQ2QsZUFBZTtBQUNqQjtBQUVBO0VBQ0UsWUFBWTtBQUNkO0FBRUEsbUJBQW1CLHlCQUF5QjtBQUU1QztFQUNFLGNBQWM7Q0FDZiw0RUFBNEU7QUFDN0U7QUFDQSxZQUFZO0FBSVosMkRBQTJEO0FBQzNEO0VBQ0UsV0FBVztFQUNYLFVBQVU7QUFDWjtBQUVBLHFDQUFxQztBQUNyQztFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsWUFBWTtFQUNaLFlBQVk7RUFDWixzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGVBQWU7QUFDakI7QUFFQTtFQUNFLFVBQVU7QUFDWjtBQUVBLHFDQUFxQztBQUNyQztFQUNFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLFlBQVk7RUFDWixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGVBQWU7QUFDakI7QUFFQTtFQUNFLFVBQVU7QUFDWjtBQUVBLHVEQUF1RDtBQUN2RDtFQUNFLGFBQWE7RUFDYixrQkFBa0I7QUFDcEI7QUFFQSwyQkFBMkI7QUFDM0I7RUFDRSxhQUFhLEVBQUUsc0JBQXNCO0VBQ3JDLGVBQWUsRUFBRSxrQkFBa0I7RUFDbkMsVUFBVSxFQUFFLGVBQWU7RUFDM0IsT0FBTztFQUNQLE1BQU07RUFDTixXQUFXLEVBQUUsZUFBZTtFQUM1QixZQUFZLEVBQUUsZ0JBQWdCO0VBQzlCLGNBQWMsRUFBRSw0QkFBNEI7RUFDNUMsc0JBQXNCO0VBQ3RCLGlCQUFpQjtBQUNuQjtBQUVBLHNCQUFzQjtBQUN0QjtFQUNFLHlCQUF5QjtFQUN6Qix3QkFBd0IsRUFBRSxzREFBc0Q7RUFDaEYsc0JBQXNCO0VBQ3RCLFVBQVUsRUFBRSxvREFBb0Q7QUFDbEU7QUFFQSwrQkFBK0I7QUFDL0I7RUFDRSx5QkFBeUI7RUFDekIsbUJBQW1CO0FBQ3JCO0FBRUEsK0JBQStCO0FBQy9CO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxTQUFTO0VBQ1QsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixjQUFjO0FBQ2hCO0FBRUE7O0VBRUUsY0FBYztFQUNkLGVBQWU7QUFDakI7QUFFQSxpQkFBaUI7QUFDakI7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLGNBQWM7QUFDaEI7QUFFQSw2RUFBNkU7QUFDN0U7RUFDRTtLQUNHLFdBQVc7RUFDZDtBQUNGO0FBRUE7RUFDRTtJQUNFLFVBQVU7SUFDVixjQUFjO0lBQ2QsbUJBQW1CO0VBQ3JCO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL215LWRyaS9teS1kcmkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qc3Bpbm5lciovXHJcbi5sb2FkZXIge1xyXG4gIGJvcmRlcjogMTZweCBzb2xpZCAjZjNmM2YzO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBib3JkZXItdG9wOiAxNnB4IHNvbGlkIHJnYig0NiwgMTQzLCAyMzUpO1xyXG4gIGJvcmRlci1ib3R0b206IDE2cHggc29saWQgYmx1ZTtcclxuICB3aWR0aDogMTIwcHg7XHJcbiAgaGVpZ2h0OiAxMjBweDtcclxuICBtYXJnaW4tbGVmdDogYXV0bztcclxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgbWFyZ2luLXRvcDogMjAlO1xyXG4gIG1hcmdpbi1ib3R0b206IDIwJTtcclxuICAtd2Via2l0LWFuaW1hdGlvbjogc3BpbiAxcyBsaW5lYXIgaW5maW5pdGU7XHJcbiAgYW5pbWF0aW9uOiBzcGluIDFzIGxpbmVhciBpbmZpbml0ZTtcclxufVxyXG5cclxuQC13ZWJraXQta2V5ZnJhbWVzIHNwaW4ge1xyXG4gIDAlIHsgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTsgfVxyXG4gIDEwMCUgeyAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IH1cclxufVxyXG5cclxuQGtleWZyYW1lcyBzcGluIHtcclxuICAwJSB7IHRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB9XHJcbiAgMTAwJSB7IHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IH1cclxufVxyXG4vKnNwaW5uZXItZW5kKi9cclxuXHJcbi8qdXBkYXRpbmctY3VycmVudC1kcmkqL1xyXG4ubWFpbi1kaXYge1xyXG4gIGRpc3BsYXk6ZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLmxlZnQtZGl2IHtcclxuICBmbG9hdDogbGVmdDtcclxuICBtYXJnaW4tcmlnaHQ6IDdweDtcclxufVxyXG5cclxuLnNtYWxsLWlucHV0IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDgwcHg7XHJcbn1cclxuXHJcbi5zZXBhcmF0b3Ige1xyXG4gIGJvcmRlci10b3A6IDNweCBzb2xpZCAjYmJiO1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG4vKnVwZGF0aW5nLWN1cnJlbnQtZHJpLWVuZCovXHJcblxyXG4vKnRhYmxlKi9cclxudGFibGUge1xyXG4gIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XHJcbiAgYm9yZGVyLXNwYWNpbmc6IDA7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcclxuICBtYXJnaW46IDAgYXV0bztcclxuICBtYXJnaW4tdG9wOiAzdmg7XHJcbn1cclxuXHJcbnRoLCB0ZCB7XHJcbiAgcGFkZGluZzogOHB4O1xyXG59XHJcblxyXG50cjpudGgtY2hpbGQoZXZlbil7YmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMn1cclxuXHJcbi5kaXZGb3JUYWJsZSB7XHJcbiAgb3ZlcmZsb3c6IGF1dG87XHJcblx0Ym94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcclxufVxyXG4vKnRhYmxlLWVuZCovXHJcblxyXG5cclxuXHJcbi8qIEZsb2F0IGNhbmNlbCBhbmQgZGVsZXRlIGJ1dHRvbnMgYW5kIGFkZCBhbiBlcXVhbCB3aWR0aCAqL1xyXG4uY2FuY2VsYnRuLCAuZGVsZXRlYnRuIHtcclxuICBmbG9hdDogbGVmdDtcclxuICB3aWR0aDogNTAlO1xyXG59XHJcblxyXG4vKiBBZGQgYSBjb2xvciB0byB0aGUgY2FuY2VsIGJ1dHRvbiAqL1xyXG4uY2FuY2VsYnRuIHtcclxuICBwYWRkaW5nOiAxNHB4IDIwcHg7XHJcbiAgbWFyZ2luOiA4cHggMDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgb3BhY2l0eTogMC45O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG5cclxuLmNhbmNlbGJ0bjpob3ZlciB7XHJcbiAgb3BhY2l0eTogMTtcclxufVxyXG5cclxuLyogQWRkIGEgY29sb3IgdG8gdGhlIGRlbGV0ZSBidXR0b24gKi9cclxuLmRlbGV0ZWJ0biB7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHBhZGRpbmc6IDE0cHggMjBweDtcclxuICBtYXJnaW46IDhweCAwO1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBvcGFjaXR5OiAwLjk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y0NDMzNjtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuXHJcbi5kZWxldGVidG46aG92ZXIge1xyXG4gIG9wYWNpdHk6IDE7XHJcbn1cclxuXHJcbi8qIEFkZCBwYWRkaW5nIGFuZCBjZW50ZXItYWxpZ24gdGV4dCB0byB0aGUgY29udGFpbmVyICovXHJcbi5jb250YWluZXIge1xyXG4gIHBhZGRpbmc6IDE2cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4vKiBUaGUgTW9kYWwgKGJhY2tncm91bmQpICovXHJcbi5tb2RhbCB7XHJcbiAgZGlzcGxheTogbm9uZTsgLyogSGlkZGVuIGJ5IGRlZmF1bHQgKi9cclxuICBwb3NpdGlvbjogZml4ZWQ7IC8qIFN0YXkgaW4gcGxhY2UgKi9cclxuICB6LWluZGV4OiAxOyAvKiBTaXQgb24gdG9wICovXHJcbiAgbGVmdDogMDtcclxuICB0b3A6IDA7XHJcbiAgd2lkdGg6IDEwMCU7IC8qIEZ1bGwgd2lkdGggKi9cclxuICBoZWlnaHQ6IDEwMCU7IC8qIEZ1bGwgaGVpZ2h0ICovXHJcbiAgb3ZlcmZsb3c6IGF1dG87IC8qIEVuYWJsZSBzY3JvbGwgaWYgbmVlZGVkICovXHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcclxuICBwYWRkaW5nLXRvcDogNTBweDtcclxufVxyXG5cclxuLyogTW9kYWwgQ29udGVudC9Cb3ggKi9cclxuLm1vZGFsLWNvbnRlbnQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZWZlZmU7XHJcbiAgbWFyZ2luOiA1JSBhdXRvIDE1JSBhdXRvOyAvKiA1JSBmcm9tIHRoZSB0b3AsIDE1JSBmcm9tIHRoZSBib3R0b20gYW5kIGNlbnRlcmVkICovXHJcbiAgYm9yZGVyOiAxcHggc29saWQgIzg4ODtcclxuICB3aWR0aDogODAlOyAvKiBDb3VsZCBiZSBtb3JlIG9yIGxlc3MsIGRlcGVuZGluZyBvbiBzY3JlZW4gc2l6ZSAqL1xyXG59XHJcblxyXG4vKiBTdHlsZSB0aGUgaG9yaXpvbnRhbCBydWxlciAqL1xyXG5ociB7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2YxZjFmMTtcclxuICBtYXJnaW4tYm90dG9tOiAyNXB4O1xyXG59XHJcblxyXG4vKiBUaGUgTW9kYWwgQ2xvc2UgQnV0dG9uICh4KSAqL1xyXG4uY2xvc2Uge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICByaWdodDogMzVweDtcclxuICB0b3A6IDE1cHg7XHJcbiAgZm9udC1zaXplOiA0MHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIGNvbG9yOiAjZjFmMWYxO1xyXG59XHJcblxyXG4uY2xvc2U6aG92ZXIsXHJcbi5jbG9zZTpmb2N1cyB7XHJcbiAgY29sb3I6ICNmNDQzMzY7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4vKiBDbGVhciBmbG9hdHMgKi9cclxuLmNsZWFyZml4OjphZnRlciB7XHJcbiAgY29udGVudDogXCJcIjtcclxuICBjbGVhcjogYm90aDtcclxuICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxuLyogQ2hhbmdlIHN0eWxlcyBmb3IgY2FuY2VsIGJ1dHRvbiBhbmQgZGVsZXRlIGJ1dHRvbiBvbiBleHRyYSBzbWFsbCBzY3JlZW5zICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDMwMHB4KSB7XHJcbiAgLmNhbmNlbGJ0biwgLmRlbGV0ZWJ0biB7XHJcbiAgICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3MDBweCkge1xyXG4gIC5jb2x1bW4ge1xyXG4gICAgd2lkdGg6IDk3JTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICB9XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
@@ -15869,74 +15967,74 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NutritionComponent, [{
         key: "getNutritions",
         value: function getNutritions() {
-          var _this10 = this;
+          var _this12 = this;
 
           if (this.search === '') {
             this.nutritionService.getNutritionsWithPagination(this.currentPage, this.currnetLimit).subscribe(function (nutritions) {
-              _this10.nutritions = nutritions;
+              _this12.nutritions = nutritions;
             });
             this.nutritionService.getNutritionsCount().subscribe(function (res) {
-              _this10.numberOfPages = Math.ceil(res.numberOfNutritions / _this10.currnetLimit);
+              _this12.numberOfPages = Math.ceil(res.numberOfNutritions / _this12.currnetLimit);
             });
           } else {
             this.nutritionService.getNutritions(this.search).subscribe(function (nutritions) {
-              _this10.nutritions = nutritions;
+              _this12.nutritions = nutritions;
 
-              _this10.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+              _this12.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
             });
           }
         }
       }, {
         key: "addNutrition",
         value: function addNutrition() {
-          var _this11 = this;
+          var _this13 = this;
 
           this.nutritionService.addNutrition(this.nutrition).subscribe(function () {
-            _this11.toastr.success('You successfully added a nutrition!', 'Success');
+            _this13.toastr.success('You successfully added a nutrition!', 'Success');
 
             document.getElementById('id01').style.display = 'none';
 
-            _this11.clearDialog();
+            _this13.clearDialog();
 
-            _this11.getNutritions();
+            _this13.getNutritions();
           }, function (err) {
-            _this11.toastr.error(err.error.message, 'Error');
+            _this13.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
         key: "updateNutrition",
         value: function updateNutrition() {
-          var _this12 = this;
+          var _this14 = this;
 
           this.nutritionService.updateNutrition(this.selectedNutrition).subscribe(function (data) {
             document.getElementById('id02').style.display = 'none';
 
-            _this12.toastr.success('You successfully updated this nutrition!', 'Success');
+            _this14.toastr.success('You successfully updated this nutrition!', 'Success');
 
-            _this12.getNutritions();
+            _this14.getNutritions();
           }, function (err) {
-            _this12.toastr.error(err.error.message, 'Error');
+            _this14.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
         key: "deleteNutrition",
         value: function deleteNutrition() {
-          var _this13 = this;
+          var _this15 = this;
 
           this.nutritionService.deleteNutrition(this.selectedNutrition._id).subscribe(function (data) {
             document.getElementById('id03').style.display = 'none';
 
-            _this13.toastr.success('You successfully deleted this nutrition!', 'Success');
+            _this15.toastr.success('You successfully deleted this nutrition!', 'Success');
 
             if (data.n == 1) {
-              for (var i = 0; i < _this13.nutritions.length; i++) {
-                if (_this13.selectedNutrition._id == _this13.nutritions[i]._id) {
-                  _this13.nutritions.splice(i, 1);
+              for (var i = 0; i < _this15.nutritions.length; i++) {
+                if (_this15.selectedNutrition._id == _this15.nutritions[i]._id) {
+                  _this15.nutritions.splice(i, 1);
                 }
               }
             }
           }, function (err) {
-            _this13.toastr.error(err.error.message, 'Error');
+            _this15.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -20201,10 +20299,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this14 = this;
+          var _this16 = this;
 
           this.auth.profile().subscribe(function (user) {
-            _this14.details = user;
+            _this16.details = user;
           }, function (err) {
             console.error(err);
           });
@@ -20212,7 +20310,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "save",
         value: function save() {
-          var _this15 = this;
+          var _this17 = this;
 
           if (this.newPassword !== this.confirmationPassword) {
             this.toastr.error('New password and Confirmation password do not match!', 'Error');
@@ -20225,35 +20323,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this.auth.getHash(req).subscribe({
             next: function next(data) {
-              if (_this15.details.hash === data.hash) {
-                _this15.details.newPassword = _this15.newPassword;
+              if (_this17.details.hash === data.hash) {
+                _this17.details.newPassword = _this17.newPassword;
 
-                _this15.auth.updateUser(_this15.details).subscribe({
+                _this17.auth.updateUser(_this17.details).subscribe({
                   next: function next(data) {
-                    if (_this15.newPassword !== '') {
-                      _this15.details.password = _this15.newPassword;
+                    if (_this17.newPassword !== '') {
+                      _this17.details.password = _this17.newPassword;
                     } else {
-                      _this15.details.password = _this15.currentPassword;
+                      _this17.details.password = _this17.currentPassword;
                     }
 
-                    _this15.auth.login(_this15.details).subscribe(function () {
-                      _this15.toastr.success('Changes saved successfully!', 'Success');
+                    _this17.auth.login(_this17.details).subscribe(function () {
+                      _this17.toastr.success('Changes saved successfully!', 'Success');
                     }, function (err) {
-                      _this15.toastr.error('Could not update your profile!', 'Error');
+                      _this17.toastr.error('Could not update your profile!', 'Error');
                     });
 
-                    _this15.getUserDetails();
+                    _this17.getUserDetails();
 
-                    _this15.currentPassword = '';
-                    _this15.newPassword = '';
-                    _this15.confirmationPassword = '';
+                    _this17.currentPassword = '';
+                    _this17.newPassword = '';
+                    _this17.confirmationPassword = '';
                   },
                   error: function error(_error) {
-                    _this15.toastr.error('Could not update your profile!', 'Error');
+                    _this17.toastr.error('Could not update your profile!', 'Error');
                   }
                 });
               } else {
-                _this15.toastr.error('Current password is not correct!', 'Error');
+                _this17.toastr.error('Current password is not correct!', 'Error');
               }
             },
             error: function error(_error2) {
@@ -20577,6 +20675,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var ng_recaptcha__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ng-recaptcha */
+    "./node_modules/ng-recaptcha/__ivy_ngcc__/fesm2015/ng-recaptcha.js");
 
     var RegisterComponent = /*#__PURE__*/function () {
       function RegisterComponent(auth, router, toastr) {
@@ -20585,6 +20689,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.auth = auth;
         this.router = router;
         this.toastr = toastr;
+        this.isRecaptchaValid = false;
         this.credentials = {
           name: '',
           email: '',
@@ -20597,18 +20702,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "ngOnInit",
         value: function ngOnInit() {}
       }, {
+        key: "resolved",
+        value: function resolved(recaptchaResponse) {
+          var _this18 = this;
+
+          var req = {};
+          req['response'] = recaptchaResponse;
+          this.auth.verifyRecaptcha(req).subscribe(function (res) {
+            if (JSON.parse(res).success) {
+              _this18.isRecaptchaValid = true;
+            } else {
+              _this18.isRecaptchaValid = false;
+            }
+          }, function (err) {
+            _this18.toastr.error(err.error.message, 'Error');
+
+            console.log(err.error.message);
+          });
+        }
+      }, {
         key: "register",
         value: function register() {
-          var _this16 = this;
+          var _this19 = this;
+
+          if (!this.isRecaptchaValid) {
+            this.toastr.error('Must complete reCAPTCHA!', 'Error');
+            return;
+          }
 
           if (this.credentials.password === this.confirmationPassword) {
             this.credentials.name = this.firstName + ' ' + this.lastName;
             this.auth.register(this.credentials).subscribe(function () {
-              _this16.toastr.success('You successfully made an account!', 'Welcome ' + _this16.auth.getUserDetails().name);
+              _this19.toastr.success('You successfully made an account!', 'Welcome ' + _this19.auth.getUserDetails().name);
 
-              _this16.router.navigateByUrl('/my-diet');
+              _this19.router.navigateByUrl('/my-diet');
             }, function (err) {
-              _this16.toastr.error(err.error.message, 'Error');
+              _this19.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Password and Confirmation password do not match!', 'Error');
@@ -20626,9 +20755,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     RegisterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RegisterComponent,
       selectors: [["app-register"]],
-      decls: 43,
+      decls: 45,
       vars: 6,
-      consts: [[1, "w3-center", "w3-padding", 2, "margin", "0 auto", "max-width", "600px"], [1, "w3-card-4"], [1, "w3-container", "w3-blue"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "minlength", "2", "maxlength", "40", "name", "first", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], ["required", "", "minlength", "2", "maxlength", "40", "name", "last", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], ["required", "", "pattern", "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$", "minlength", "1", "maxlength", "40", "name", "email", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-text-grey", 2, "font-style", "italic"], ["required", "", "minlength", "8", "maxlength", "20", "pattern", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$", "name", "password", "type", "password", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [2, "font-size", "9pt"], [1, "w3-center"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"]],
+      consts: [[1, "w3-center", "w3-padding", 2, "margin", "0 auto", "max-width", "600px"], [1, "w3-card-4"], [1, "w3-container", "w3-blue"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "minlength", "2", "maxlength", "40", "name", "first", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], ["required", "", "minlength", "2", "maxlength", "40", "name", "last", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], ["required", "", "pattern", "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$", "minlength", "1", "maxlength", "40", "name", "email", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-text-grey", 2, "font-style", "italic"], ["required", "", "minlength", "8", "maxlength", "20", "pattern", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$", "name", "password", "type", "password", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [2, "font-size", "9pt"], [1, "text-center"], ["required", "", "id", "recaptcha", "name", "recaptcha", 1, "g-recaptcha", 3, "resolved"], [1, "w3-center"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"]],
       template: function RegisterComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -20781,15 +20910,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "p", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "button", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "re-captcha", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function RegisterComponent_Template_button_click_41_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("resolved", function RegisterComponent_Template_re_captcha_resolved_41_listener($event) {
+            return ctx.resolved($event);
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "p", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "button", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function RegisterComponent_Template_button_click_43_listener() {
             return ctx.register();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Register");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Register");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -20825,13 +20966,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.confirmationPassword);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !_r0.valid);
         }
       },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["MinLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["MaxLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["PatternValidator"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LmNzcyJ9 */"]
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["MinLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["MaxLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["PatternValidator"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_5__["RecaptchaComponent"]],
+      styles: [".text-center[_ngcontent-%COMP%] {\r\n  text-align: center;\r\n}\r\n\r\n.g-recaptcha[_ngcontent-%COMP%] {\r\n  display: inline-block;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRleHQtY2VudGVyIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5nLXJlY2FwdGNoYSB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -21032,20 +21173,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SearchAndAddNutritionComponent, [{
         key: "getNutritions",
         value: function getNutritions() {
-          var _this17 = this;
+          var _this20 = this;
 
           this.isLoaded = false;
           this.nutritionService.getNutritionNamesAndIds(this.search).subscribe(function (nutritions) {
-            _this17.nutritions = nutritions;
-            _this17.isLoaded = true;
+            _this20.nutritions = nutritions;
+            _this20.isLoaded = true;
 
-            _this17.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this20.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
         key: "addNutrition",
         value: function addNutrition(id) {
-          var _this18 = this;
+          var _this21 = this;
 
           var x = document.getElementById(id.toString());
           console.log(x);
@@ -21063,13 +21204,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               nutrition_id: id
             };
             this.userNutritionService.addNutrition(nutrition).subscribe(function () {
-              _this18.nutritions = [];
+              _this21.nutritions = [];
 
-              _this18.toastr.success('You successfully added the food!', 'Success');
+              _this21.toastr.success('You successfully added the food!', 'Success');
 
               window.scrollTo(0, 0);
             }, function (err) {
-              _this18.toastr.error(err.error.message, 'Error');
+              _this21.toastr.error(err.error.message, 'Error');
             });
           }
         }
@@ -21264,14 +21405,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SignInComponent, [{
         key: "login",
         value: function login() {
-          var _this19 = this;
+          var _this22 = this;
 
           this.auth.login(this.credentials).subscribe(function () {
-            _this19.router.navigateByUrl('/my-diet');
+            _this22.router.navigateByUrl('/my-diet');
 
-            _this19.toastr.success('You successfully signed-in!', 'Welcome ' + _this19.auth.getUserDetails().name);
+            _this22.toastr.success('You successfully signed-in!', 'Welcome ' + _this22.auth.getUserDetails().name);
           }, function (err) {
-            _this19.toastr.error('Check email and password fields!', 'Error');
+            _this22.toastr.error('Check email and password fields!', 'Error');
           });
         }
       }, {
@@ -21289,9 +21430,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     SignInComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SignInComponent,
       selectors: [["app-sign-in"]],
-      decls: 27,
+      decls: 25,
       vars: 3,
-      consts: [[1, "w3-center", "w3-padding", 2, "margin", "0 auto", "max-width", "600px"], [1, "w3-card-4"], [1, "w3-container", "w3-blue"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "pattern", "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$", "minlength", "1", "maxlength", "40", "name", "email", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-text-grey", 2, "font-style", "italic"], ["required", "", "minlength", "1", "maxlength", "40", "name", "password", "type", "password", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], [1, "w3-padding-32"], ["routerLink", "/register", 2, "cursor", "pointer"], [1, "w3-btn", "w3-blue"], [1, "fa", "fa-user"]],
+      consts: [[1, "w3-center", "w3-padding", 2, "margin", "0 auto", "max-width", "600px"], [1, "w3-card-4"], [1, "w3-container", "w3-blue"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "pattern", "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$", "minlength", "1", "maxlength", "40", "name", "email", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-text-grey", 2, "font-style", "italic"], ["required", "", "minlength", "1", "maxlength", "40", "name", "password", "type", "password", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], [1, "w3-padding-32"], ["routerLink", "/register", 1, "w3-text-blue", 2, "cursor", "pointer"]],
       template: function SignInComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -21380,13 +21521,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "button", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "i", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Register");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, " register now");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -21725,40 +21860,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersComponent, [{
         key: "getUsers",
         value: function getUsers() {
-          var _this20 = this;
+          var _this23 = this;
 
           if (this.search === '') {
             this.userService.getUsersWithPagination(this.currentPage, this.currnetLimit).subscribe(function (users) {
-              _this20.users = users;
+              _this23.users = users;
             });
             this.userService.getUsersCount().subscribe(function (res) {
-              _this20.numberOfPages = Math.ceil(res.numberOfUsers / _this20.currnetLimit);
+              _this23.numberOfPages = Math.ceil(res.numberOfUsers / _this23.currnetLimit);
             });
           } else {
             this.userService.getUsers(this.search).subscribe(function (users) {
-              _this20.users = users;
+              _this23.users = users;
 
-              _this20.toastr.success('Found ' + users.length + ' user/s', 'Success');
+              _this23.toastr.success('Found ' + users.length + ' user/s', 'Success');
             });
           }
         }
       }, {
         key: "addUser",
         value: function addUser() {
-          var _this21 = this;
+          var _this24 = this;
 
           if (this.credentials.password === this.confirmationPassword) {
             this.credentials.name = this.firstName + ' ' + this.lastName;
             this.userService.addUser(this.credentials).subscribe(function () {
-              _this21.toastr.success('You successfully added a user!', 'Success');
+              _this24.toastr.success('You successfully added a user!', 'Success');
 
               document.getElementById('id01').style.display = 'none';
 
-              _this21.clearDialog();
+              _this24.clearDialog();
 
-              _this21.getUsers();
+              _this24.getUsers();
             }, function (err) {
-              _this21.toastr.error(err.error.message, 'Error');
+              _this24.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Password and Confirmation password do not match!', 'Error');
@@ -21767,50 +21902,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateUser",
         value: function updateUser() {
-          var _this22 = this;
+          var _this25 = this;
 
           this.userService.updateUser(this.selectedUser).subscribe(function (data) {
             document.getElementById('id02').style.display = 'none';
 
-            _this22.toastr.success('You successfully updated this user!', 'Success');
+            _this25.toastr.success('You successfully updated this user!', 'Success');
 
-            _this22.getUsers();
+            _this25.getUsers();
           }, function (err) {
-            _this22.toastr.error(err.error.message, 'Error');
+            _this25.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
         key: "deleteUser",
         value: function deleteUser() {
-          var _this23 = this;
+          var _this26 = this;
 
           this.userService.deleteUser(this.selectedUser._id).subscribe(function (data) {
             document.getElementById('id03').style.display = 'none';
 
-            _this23.toastr.success('You successfully deleted this user!', 'Success');
+            _this26.toastr.success('You successfully deleted this user!', 'Success');
 
             if (data.n == 1) {
-              for (var i = 0; i < _this23.users.length; i++) {
-                if (_this23.selectedUser._id == _this23.users[i]._id) {
-                  _this23.users.splice(i, 1);
+              for (var i = 0; i < _this26.users.length; i++) {
+                if (_this26.selectedUser._id == _this26.users[i]._id) {
+                  _this26.users.splice(i, 1);
                 }
               }
             }
           }, function (err) {
-            _this23.toastr.error(err.error.message, 'Error');
+            _this26.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
         key: "resetPassword",
         value: function resetPassword() {
-          var _this24 = this;
+          var _this27 = this;
 
           this.userService.resetPassword(this.selectedUser).subscribe(function () {
-            _this24.toastr.success('You successfully reset the password for user!', 'Success');
+            _this27.toastr.success('You successfully reset the password for user!', 'Success');
 
             document.getElementById('id02').style.display = 'none';
           }, function (err) {
-            _this24.toastr.error(err.error.message, 'Error');
+            _this27.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -22679,7 +22814,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
@@ -22756,7 +22897,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "request",
         value: function request(method, type, user) {
-          var _this25 = this;
+          var _this28 = this;
 
           var base;
 
@@ -22772,7 +22913,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var request = base.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
             if (data.token) {
-              _this25.saveToken(data.token);
+              _this28.saveToken(data.token);
             }
 
             return data;
@@ -22812,6 +22953,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return this.http.put(this.BACKEND_URL_USERS + '/update/' + user._id, user, httpOptions);
         }
       }, {
+        key: "verifyRecaptcha",
+        value: function verifyRecaptcha(responseFromClientSide) {
+          responseFromClientSide.secret = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].recaptcha.secreatKey;
+          return this.http.post(this.BACKEND_URL_USERS + '/verifyRecaptcha', responseFromClientSide);
+        }
+      }, {
         key: "b64DecodeUnicode",
         value: function b64DecodeUnicode(str) {
           return decodeURIComponent(atob(str).split('').map(function (c) {
@@ -22824,7 +22971,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     AuthenticationService.ɵfac = function AuthenticationService_Factory(t) {
-      return new (t || AuthenticationService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]));
+      return new (t || AuthenticationService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]));
     };
 
     AuthenticationService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -22844,7 +22991,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         return [{
           type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
         }, {
-          type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
         }];
       }, null);
     })();
@@ -23295,6 +23442,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
     var environment = {
+      recaptcha: {
+        siteKey: '6LcsdGMeAAAAAHgNJS-IbEW00SEKYJ25RT19xpBT',
+        secreatKey: '6LcsdGMeAAAAAEOu0QI2pW3Y1i4GgARB1A1KpSJW'
+      },
       production: false
     };
     /*
