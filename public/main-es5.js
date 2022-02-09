@@ -22836,7 +22836,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'https://dietary-habits.herokuapp.com/users';
+        this.BACKEND_URL_USERS = 'https://mydietaryhabits.herokuapp.com/users';
       }
 
       _createClass(AuthenticationService, [{
@@ -23043,7 +23043,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.httpClient = httpClient;
         this.auth = auth;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/dri';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/dri';
       }
 
       _createClass(DriService, [{
@@ -23149,7 +23149,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, NutritionService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/nutritions';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/nutritions';
       }
 
       _createClass(NutritionService, [{
@@ -23256,7 +23256,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, UserNutritionService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/user-nutrition';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/user-nutrition';
       }
 
       _createClass(UserNutritionService, [{
@@ -23348,7 +23348,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, UserService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/users';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/users';
       }
 
       _createClass(UserService, [{
@@ -23443,8 +23443,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var environment = {
       recaptcha: {
-        siteKey: '6LcsdGMeAAAAAHgNJS-IbEW00SEKYJ25RT19xpBT',
-        secreatKey: '6LcsdGMeAAAAAEOu0QI2pW3Y1i4GgARB1A1KpSJW'
+        siteKey: '6LeIqGoeAAAAACBpBae6ISZGxIrkU8T9_rYua4OC',
+        secreatKey: '6LeIqGoeAAAAAKs380DzyqIs3v-J5tr9OKo2IAog'
       },
       production: false
     };

@@ -11173,7 +11173,7 @@ class AuthenticationService {
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'https://dietary-habits.herokuapp.com/users';
+        this.BACKEND_URL_USERS = 'https://mydietaryhabits.herokuapp.com/users';
     }
     saveToken(token) {
         localStorage.setItem('mean-token', token);
@@ -11299,7 +11299,7 @@ class DriService {
     constructor(httpClient, auth) {
         this.httpClient = httpClient;
         this.auth = auth;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/dri';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/dri';
     }
     getUserActiveDris() {
         return this.httpClient.get(this.API_URL + '/user-active-dri/' + this.auth.getUserDetails()._id);
@@ -11352,7 +11352,7 @@ __webpack_require__.r(__webpack_exports__);
 class NutritionService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/nutritions';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/nutritions';
     }
     getNutritions(search) {
         return this.httpClient.get(this.API_URL + '/all?search=' + search);
@@ -11406,7 +11406,7 @@ __webpack_require__.r(__webpack_exports__);
 class UserNutritionService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/user-nutrition';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/user-nutrition';
     }
     getUserNutritions(body) {
         return this.httpClient.get(this.API_URL + '/get-user-nutritions?id=' + body.id + '&date_of_consumption=' + body.date_of_consumption);
@@ -11451,7 +11451,7 @@ __webpack_require__.r(__webpack_exports__);
 class UserService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://dietary-habits.herokuapp.com/users';
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/users';
     }
     getUsers(search) {
         return this.httpClient.get(this.API_URL + '/all?search=' + search);
@@ -11502,8 +11502,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     recaptcha: {
-        siteKey: '6LcsdGMeAAAAAHgNJS-IbEW00SEKYJ25RT19xpBT',
-        secreatKey: '6LcsdGMeAAAAAEOu0QI2pW3Y1i4GgARB1A1KpSJW'
+        siteKey: '6LeIqGoeAAAAACBpBae6ISZGxIrkU8T9_rYua4OC',
+        secreatKey: '6LeIqGoeAAAAAKs380DzyqIs3v-J5tr9OKo2IAog'
     },
     production: false
 };
