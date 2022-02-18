@@ -122,13 +122,29 @@ module.exports.addDri = function(req, res) {
 };
 
 module.exports.updateDri = function(req, res) {
-	Dri.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
+	var dri = new Dri(req.body);
+	dri.validate(function(err) {
+		if (err) {
+			console.log(err);
+			res.status(400);
+			res.send(err);
+		} else {
+			Dri.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
+				.then(function (success) {
+				  res.json();
+				})
+				.catch(function (error) {
+					res.status(404).send(err);
+				});
+		}
+	});
+	/*Dri.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
     .then(function (success) {
       res.json();
     })
     .catch(function (error) {
         res.status(404).send(err);
-    });
+    });*/
 };
 
 module.exports.deleteDri = function(req, res) {
