@@ -101,24 +101,6 @@ module.exports.addDri = function(req, res) {
 			);
 		}
 	});
-	/*
-	Dri.update({"user_id": id}, {"$set": {"active": false}}, {"multi": true}, 
-		(err, writeResult) => {
-			dri.save(function(err) {
-				if(err) {
-					console.log(err);
-					res.status(400);
-					res.send(err);
-				}
-				else {
-					res.status(200);
-					res.json({
-						message:'Successfully created DRI!'
-					});
-				}
-			});
-		}
-	);*/
 };
 
 module.exports.updateDri = function(req, res) {
@@ -138,13 +120,6 @@ module.exports.updateDri = function(req, res) {
 				});
 		}
 	});
-	/*Dri.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
-    .then(function (success) {
-      res.json();
-    })
-    .catch(function (error) {
-        res.status(404).send(err);
-    });*/
 };
 
 module.exports.deleteDri = function(req, res) {
