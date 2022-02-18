@@ -13,735 +13,434 @@ var driSchema = new mongoose.Schema({
 	  type: Boolean,
 	  required: true
 	},
-	calories_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	total_fat_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	saturated_fat_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cholesterol_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	sodium_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	choline_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	folate_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	folic_acid_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	niacin_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	pantothenic_acid_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	riboflavin_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	thiamin_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_a_IU_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_a_rae_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	carotene_alpha_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	carotene_beta_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cryptoxanthin_beta_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	lutein_zeaxanthin_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_b12_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_b6_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_c_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_d_IU_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_e_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tocopherol_alpha_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_k_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	calcium_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	copper_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	irom_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	magnesium_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	manganese_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	phosphorous_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	potassium_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	selenium_mcg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	zink_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	protein_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	alanine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	arginine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	aspartic_acid_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cystine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	glutamic_acid_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	glycine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	histidine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	hydroxyproline_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	isoleucine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	leucine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	lysine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	methionine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	phenylalanine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	proline_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	serine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	threonine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tryptophan_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tyrosine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	valine_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	carbohydrate_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	fiber_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	sugars_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	fructose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	galactose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	glucose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	lactose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	maltose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	sucrose_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	fat_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	saturated_fatty_acids_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	monounsaturated_fatty_acids_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	polyunsaturated_fatty_acids_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	fatty_acids_total_trans_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	alcohol_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	ash_g_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	caffeine_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	theobromine_mg_min: {
-	  type: Number,
-	  default: null
-	  
-	},
-	water_g_min: {
-	  type: Number,
-	  default: null
-	  
+	calcium_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+					return this.calcium_mg <= value;
+			}, 'DRI must be less or equal to UI for calcium_mg'
+		]
+	},
+	calcium_mg: {
+		type: Number,
+		required: true
 	},
 	calories_max: {
-	  type: Number,
-	  default: null
-	  
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.calories <= value;
+			}, 'DRI must be less or equal to UI for calories'
+		]
 	},
-	total_fat_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	saturated_fat_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cholesterol_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	sodium_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	choline_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	folate_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	folic_acid_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	niacin_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	pantothenic_acid_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	riboflavin_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	thiamin_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_a_IU_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_a_rae_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	carotene_alpha_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	carotene_beta_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cryptoxanthin_beta_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	lutein_zeaxanthin_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_b12_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_b6_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_c_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_d_IU_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_e_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tocopherol_alpha_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	vitamin_k_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	calcium_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	copper_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	irom_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	magnesium_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	manganese_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	phosphorous_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	potassium_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	selenium_mcg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	zink_mg_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	protein_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	alanine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	arginine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	aspartic_acid_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	cystine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	glutamic_acid_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	glycine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	histidine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	hydroxyproline_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	isoleucine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	leucine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	lysine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	methionine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	phenylalanine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	proline_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	serine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	threonine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tryptophan_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	tyrosine_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	valine_g_max: {
-	  type: Number,
-	  default: null
-	  
+	calories: {
+		type: Number,
+		required: true
 	},
 	carbohydrate_g_max: {
-	  type: Number,
-	  default: null
-	  
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.carbohydrate_g <= value;
+			}, 'DRI must be less or equal to UI for carbohydrate_g'
+		]
 	},
-	fiber_g_max: {
-	  type: Number,
-	  default: null
-	  
+	carbohydrate_g: {
+		type: Number,
+		required: true
 	},
-	sugars_g_max: {
-	  type: Number,
-	  default: null
-	  
+	cholesterol_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.cholesterol_mg <= value;
+			}, 'DRI must be less or equal to UI for cholesterol_mg'
+		]
 	},
-	fructose_g_max: {
-	  type: Number,
-	  default: null
-	  
+	cholesterol_mg: {
+		type: Number,
+		required: true
 	},
-	galactose_g_max: {
-	  type: Number,
-	  default: null
-	  
+	choline_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.choline_mg <= value;
+			}, 'DRI must be less or equal to UI for choline_mg'
+		]
 	},
-	glucose_g_max: {
-	  type: Number,
-	  default: null
-	  
+	choline_mg: {
+		type: Number,
+		required: true
 	},
-	lactose_g_max: {
-	  type: Number,
-	  default: null
-	  
+	copper_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.copper_mg <= value;
+			}, 'DRI must be less or equal to UI for copper_mg'
+		]
 	},
-	maltose_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	sucrose_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	fat_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	saturated_fatty_acids_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	monounsaturated_fatty_acids_g_max: {
-	  type: Number,
-	  default: null
-	  
-	},
-	polyunsaturated_fatty_acids_g_max: {
-	  type: Number,
-	  default: null
-	  
+	copper_mg: {
+		type: Number,
+		required: true
 	},
 	fatty_acids_total_trans_g_max: {
-	  type: Number,
-	  default: null
-	  
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.fatty_acids_total_trans_g <= value;
+			}, 'DRI must be less or equal to UI for fatty_acids_total_trans_g'
+		]
 	},
-	alcohol_g_max: {
-	  type: Number,
-	  default: null
-	  
+	fatty_acids_total_trans_g: {
+		type: Number,
+		required: true
 	},
-	ash_g_max: {
-	  type: Number,
-	  default: null
-	  
+	fiber_g_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.fiber_g <= value;
+			}, 'DRI must be less or equal to UI for fiber_g'
+		]
 	},
-	caffeine_mg_max: {
-	  type: Number,
-	  default: null
-	  
+	fiber_g: {
+		type: Number,
+		required: true
 	},
-	theobromine_mg_max: {
-	  type: Number,
-	  default: null
-	  
+	folate_mcg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.folate_mcg <= value;
+			}, 'DRI must be less or equal to UI for folate_mcg'
+		]
+	},
+	folate_mcg: {
+		type: Number,
+		required: true
+	},
+	irom_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.irom_mg <= value;
+			}, 'DRI must be less or equal to UI for irom_mg'
+		]
+	},
+	irom_mg: {
+		type: Number,
+		required: true
+	},
+	magnesium_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.magnesium_mg <= value;
+			}, 'DRI must be less or equal to UI for magnesium_mg'
+		]
+	},
+	magnesium_mg: {
+		type: Number,
+		required: true
+	},
+	manganese_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.manganese_mg <= value;
+			}, 'DRI must be less or equal to UI for manganese_mg'
+		]
+	},
+	manganese_mg: {
+		type: Number,
+		required: true
+	},
+	niacin_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.niacin_mg <= value;
+			}, 'DRI must be less or equal to UI for niacin_mg'
+		]
+	},
+	niacin_mg: {
+		type: Number,
+		required: true
+	},
+	pantothenic_acid_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.pantothenic_acid_mg <= value;
+			}, 'DRI must be less or equal to UI for pantothenic_acid_mg'
+		]
+	},
+	pantothenic_acid_mg: {
+		type: Number,
+		required: true
+	},
+	phosphorous_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.phosphorous_mg <= value;
+			}, 'DRI must be less or equal to UI for phosphorous_mg'
+		]
+	},
+	phosphorous_mg: {
+		type: Number,
+		required: true
+	},
+	potassium_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.potassium_mg <= value;
+			}, 'DRI must be less or equal to UI for potassium_mg'
+		]
+	},
+	potassium_mg: {
+		type: Number,
+		required: true
+	},
+	protein_g_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.protein_g <= value;
+			}, 'DRI must be less or equal to UI for protein_g'
+		]
+	},
+	protein_g: {
+		type: Number,
+		required: true
+	},
+	riboflavin_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.riboflavin_mg <= value;
+			}, 'DRI must be less or equal to UI for riboflavin_mg'
+		]
+	},
+	riboflavin_mg: {
+		type: Number,
+		required: true
+	},
+	saturated_fat_g_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.saturated_fat_g <= value;
+			}, 'DRI must be less or equal to UI for saturated_fat_g'
+		]
+	},
+	saturated_fat_g: {
+		type: Number,
+		required: true
+	},
+	selenium_mcg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.selenium_mcg <= value;
+			}, 'DRI must be less or equal to UI for selenium_mcg'
+		]
+	},
+	selenium_mcg: {
+		type: Number,
+		required: true
+	},
+	sodium_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.sodium_mg <= value;
+			}, 'DRI must be less or equal to UI for sodium_mg'
+		]
+	},
+	sodium_mg: {
+		type: Number,
+		required: true
+	},
+	sugars_g_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.sugars_g <= value;
+			}, 'DRI must be less or equal to UI for sugars_g'
+		]
+	},
+	sugars_g: {
+		type: Number,
+		required: true
+	},
+	thiamin_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.thiamin_mg <= value;
+			}, 'DRI must be less or equal to UI for thiamin_mg'
+		]
+	},
+	thiamin_mg: {
+		type: Number,
+		required: true
+	},
+	total_fat_g_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.total_fat_g <= value;
+			}, 'DRI must be less or equal to UI for total_fat_g'
+		]
+	},
+	total_fat_g: {
+		type: Number,
+		required: true
+	},
+	vitamin_a_rae_mcg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_a_rae_mcg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_a_rae_mcg'
+		]
+	},
+	vitamin_a_rae_mcg: {
+		type: Number,
+		required: true
+	},
+	vitamin_b12_mcg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_b12_mcg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_b12_mcg'
+		]
+	},
+	vitamin_b12_mcg: {
+		type: Number,
+		required: true
+	},
+	vitamin_b6_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_b6_mg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_b6_mg'
+		]
+	},
+	vitamin_b6_mg: {
+		type: Number,
+		required: true
+	},
+	vitamin_c_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_c_mg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_c_mg'
+		]
+	},
+	vitamin_c_mg: {
+		type: Number,
+		required: true
+	},
+	vitamin_d_IU_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_d_IU <= value;
+			}, 'DRI must be less or equal to UI for vitamin_d_IU'
+		]
+	},
+	vitamin_d_IU: {
+		type: Number,
+		required: true
+	},
+	vitamin_e_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_e_mg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_e_mg'
+		]
+	},
+	vitamin_e_mg: {
+		type: Number,
+		required: true
+	},
+	vitamin_k_mcg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.vitamin_k_mcg <= value;
+			}, 'DRI must be less or equal to UI for vitamin_k_mcg'
+		]
+	},
+	vitamin_k_mcg: {
+		type: Number,
+		required: true
 	},
 	water_g_max: {
-	  type: Number,
-	  default: null
-	  
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.water_g <= value;
+			}, 'DRI must be less or equal to UI for water_g'
+		]
+	},
+	water_g: {
+		type: Number,
+		required: true
+	},
+	zink_mg_max: {
+		type: Number,
+		required: true,
+		validate: [
+			function (value) {
+				return this.zink_mg <= value;
+			}, 'DRI must be less or equal to UI for zink_mg'
+		]
+	},
+	zink_mg: {
+		type: Number,
+		required: true
 	}
 });
 
