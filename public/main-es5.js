@@ -81,19 +81,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_6_Template(rf, ctx) {
       if (rf & 1) {
-        var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 31);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_6_Template_a_click_0_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8);
 
-          var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r4.collapse();
+          return ctx_r7.collapse();
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 32);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Sign in");
 
@@ -103,47 +103,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_7_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 29);
+        var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Contact");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 33);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_7_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
+
+          var ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r9.collapse();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 34);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Users");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
 
-    function AppComponent_div_8_Template(rf, ctx) {
+    function AppComponent_a_8_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 30);
+        var _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 35);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Dropdown ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_8_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 32);
+          var ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          return ctx_r11.collapse();
+        });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 36);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 34);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Link 1");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 34);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Link 2");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 34);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Link 3");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Nutritions");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -151,9 +147,93 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function AppComponent_a_9_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 35);
+        var _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "About");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 37);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_9_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14);
+
+          var ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r13.collapse();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 36);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " My diet");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    function AppComponent_a_10_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 38);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_10_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16);
+
+          var ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r15.collapse();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 36);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " My DRI");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    function AppComponent_a_11_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 39);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_11_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r18);
+
+          var ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r17.collapse();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 40);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " My profile");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    function AppComponent_a_12_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 41);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_12_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+
+          var ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r19.collapse();
+        })("click", function AppComponent_a_12_Template_a_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+
+          var ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r21.auth.logout();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 42);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Logout");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -204,9 +284,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 43,
-      vars: 4,
-      consts: [["name", "viewport", "content", "width=device-width, initial-scale=1"], ["id", "myTopnav", 1, "topnav"], ["routerLink", "/home", 1, "active"], ["src", "../favicon.ico", "width", "20", "height", "20"], ["id", "sign-in", "routerLink", "/sign-in", 3, "click", 4, "ngIf"], ["href", "#contact", 4, "ngIf"], ["class", "dropdown", 4, "ngIf"], ["href", "#about", 4, "ngIf"], ["href", "javascript:void(0);", 1, "icon", 2, "font-size", "15px", 3, "click"], [1, "w3-container", "w3-padding-32", "w3-dark-grey", "w3-center"], [1, "w3-padding-16"], [1, "w3-xlarge", "w3-border-blue", "w3-bottombar"], [1, "responsive-text"], [1, "responsive-text", "fa", "fa-map-marker", "w3-text-blue"], [1, "responsive-text", "fa", "fa-clock-o", "w3-text-blue"], [1, "responsive-text", "fa", "fa-phone", "w3-text-blue"], [1, "responsive-text", "fa", "fa-envelope-o", "w3-text-blue"], [1, "responsive-text", "w3-button", "w3-black", 3, "click"], [1, "fa", "fa-arrow-up", "w3-margin-right"], [1, "w3-xlarge", "w3-section"], [1, "responsive-text", "fa", "fa-facebook-official", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-instagram", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-snapchat", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-pinterest-p", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-twitter", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-linkedin", "w3-hover-opacity", 2, "padding", "5pt"], [1, "w3-hover-text-green"], ["id", "sign-in", "routerLink", "/sign-in", 3, "click"], [1, "fa", "fa-sign-in"], ["href", "#contact"], [1, "dropdown"], [1, "dropbtn"], [1, "fa", "fa-caret-down"], [1, "dropdown-content"], ["href", "#"], ["href", "#about"]],
+      decls: 46,
+      vars: 7,
+      consts: [["name", "viewport", "content", "width=device-width, initial-scale=1"], ["id", "myTopnav", 1, "topnav"], ["routerLink", "/home", 1, "active"], ["src", "../favicon.ico", "width", "20", "height", "20"], ["routerLink", "/sign-in", "id", "sign-in", 3, "click", 4, "ngIf"], ["routerLink", "/users", 3, "click", 4, "ngIf"], ["routerLink", "/nutrition", 3, "click", 4, "ngIf"], ["routerLink", "/my-diet", 3, "click", 4, "ngIf"], ["routerLink", "/my-dri", 3, "click", 4, "ngIf"], ["routerLink", "/profile", 3, "click", 4, "ngIf"], ["id", "logout", 3, "click", 4, "ngIf"], [1, "icon", 2, "font-size", "15px", 3, "click"], [1, "fa", "fa-bars"], [1, "w3-container", "w3-padding-32", "w3-dark-grey", "w3-center"], [1, "w3-padding-16"], [1, "w3-xlarge", "w3-border-blue", "w3-bottombar"], [1, "responsive-text"], [1, "responsive-text", "fa", "fa-map-marker", "w3-text-blue"], [1, "responsive-text", "fa", "fa-clock-o", "w3-text-blue"], [1, "responsive-text", "fa", "fa-phone", "w3-text-blue"], [1, "responsive-text", "fa", "fa-envelope-o", "w3-text-blue"], [1, "responsive-text", "w3-button", "w3-black", 3, "click"], [1, "fa", "fa-arrow-up", "w3-margin-right"], [1, "w3-xlarge", "w3-section"], [1, "responsive-text", "fa", "fa-facebook-official", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-instagram", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-snapchat", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-pinterest-p", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-twitter", "w3-hover-opacity", 2, "padding", "5pt"], [1, "responsive-text", "fa", "fa-linkedin", "w3-hover-opacity", 2, "padding", "5pt"], [1, "w3-hover-text-green"], ["routerLink", "/sign-in", "id", "sign-in", 3, "click"], [1, "fa", "fa-sign-in"], ["routerLink", "/users", 3, "click"], [1, "fa", "fa-users"], ["routerLink", "/nutrition", 3, "click"], [1, "fa", "fa-cutlery"], ["routerLink", "/my-diet", 3, "click"], ["routerLink", "/my-dri", 3, "click"], ["routerLink", "/profile", 3, "click"], [1, "fa", "fa-user"], ["id", "logout", 3, "click"], [1, "fa", "fa-sign-out"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "head");
@@ -227,105 +307,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, AppComponent_a_6_Template, 3, 0, "a", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, AppComponent_a_7_Template, 2, 0, "a", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, AppComponent_a_7_Template, 3, 0, "a", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, AppComponent_div_8_Template, 11, 0, "div", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, AppComponent_a_8_Template, 3, 0, "a", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, AppComponent_a_9_Template, 2, 0, "a", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, AppComponent_a_9_Template, 3, 0, "a", 7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, AppComponent_a_10_Template, 3, 0, "a", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_10_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, AppComponent_a_11_Template, 3, 0, "a", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, AppComponent_a_12_Template, 3, 0, "a", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_13_listener() {
             return ctx.myFunction();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "\u2630");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "i", 12);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "router-outlet");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "router-outlet");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "footer", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "footer", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "span", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Contact");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Contact");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "p", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "i", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " John Kennedy 36, New Belgrade, Serbia");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "i", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " John Kennedy 36, New Belgrade, Serbia");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "i", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "i", 18);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " Mon-Fri : 09-17h");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "i", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " +38165515524");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Mon-Fri : 09-17h");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "i", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "i", 19);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " contact@dhab.com");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " +38165515524");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "a", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_29_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "i", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " contact@dhab.com");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "a", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_32_listener() {
             return ctx.toTop();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "i", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "i", 22);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "To top");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 19);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "i", 20);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "i", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "i", 22);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "i", 23);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "i", 24);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](38, "i", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "To top");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 23);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "Powered by ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "i", 24);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "a", 26);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "i", 25);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "someone");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](38, "i", 26);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "i", 27);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "i", 28);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "i", 29);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Powered by ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "a", 30);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "someone");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -341,6 +427,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.auth.isAdmin());
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.auth.isAdmin());
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.auth.isLoggedIn());
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.auth.isLoggedIn());
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -353,7 +451,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]],
-      styles: ["body[_ngcontent-%COMP%] {\r\n  margin: 0;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%] {\r\n  overflow: hidden;\r\n  background-color: #333;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n  float: left;\r\n  display: block;\r\n  color: #f2f2f2;\r\n  text-align: center;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  font-size: 15px;\r\n}\r\n\r\n.active[_ngcontent-%COMP%] {\r\n  background-color: #04AA6D;\r\n  color: white;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%] {\r\n  float: left;\r\n  overflow: hidden;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n  font-size: 15px;\r\n  border: none;\r\n  outline: none;\r\n  color: white;\r\n  padding: 12px 16px;\r\n  background-color: inherit;\r\n  font-family: inherit;\r\n  margin: 0;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%] {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #f9f9f9;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n  float: none;\r\n  color: black;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n  text-align: left;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover, .dropdown[_ngcontent-%COMP%]:hover   .dropbtn[_ngcontent-%COMP%] {\r\n  background-color: #555;\r\n  color: white;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\r\n  background-color: #ddd;\r\n  color: black;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%]:hover   .dropdown-content[_ngcontent-%COMP%] {\r\n  display: block;\r\n}\r\n\r\n#sign-in[_ngcontent-%COMP%] {\r\n  float: right;\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:not(:first-child), .dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n    display: none;\r\n  }\r\n  .topnav[_ngcontent-%COMP%]   a.icon[_ngcontent-%COMP%] {\r\n    float: right;\r\n    display: block;\r\n  }\r\n  #sign-in[_ngcontent-%COMP%] {\r\n    float: left;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .topnav.responsive[_ngcontent-%COMP%] {position: relative;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n  }\r\n  .topnav.responsive[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n    float: none;\r\n    display: block;\r\n    text-align: left;\r\n  }\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown[_ngcontent-%COMP%] {float: none;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown-content[_ngcontent-%COMP%] {position: relative;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n    display: block;\r\n    width: 100%;\r\n    text-align: left;\r\n  }\r\n  #sign-in[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 100%;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1QseUNBQXlDO0FBQzNDOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2QsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLG9CQUFvQjtFQUNwQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixnQkFBZ0I7RUFDaEIsNENBQTRDO0VBQzVDLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0U7SUFDRSxhQUFhO0VBQ2Y7RUFDQTtJQUNFLFlBQVk7SUFDWixjQUFjO0VBQ2hCO0VBQ0E7SUFDRSxXQUFXO0VBQ2I7QUFDRjs7QUFFQTtFQUNFLG9CQUFvQixrQkFBa0IsQ0FBQztFQUN2QztJQUNFLGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsTUFBTTtFQUNSO0VBQ0E7SUFDRSxXQUFXO0lBQ1gsY0FBYztJQUNkLGdCQUFnQjtFQUNsQjtFQUNBLDhCQUE4QixXQUFXLENBQUM7RUFDMUMsc0NBQXNDLGtCQUFrQixDQUFDO0VBQ3pEO0lBQ0UsY0FBYztJQUNkLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7RUFDQTtJQUNFLFdBQVc7SUFDWCxXQUFXO0VBQ2I7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtZmFtaWx5OiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4udG9wbmF2IHtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMzMzM7XHJcbn1cclxuXHJcbi50b3BuYXYgYSB7XHJcbiAgZmxvYXQ6IGxlZnQ7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgY29sb3I6ICNmMmYyZjI7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHBhZGRpbmc6IDEycHggMTZweDtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgZm9udC1zaXplOiAxNXB4O1xyXG59XHJcblxyXG4uYWN0aXZlIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDRBQTZEO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnRvcG5hdiAuaWNvbiB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuLmRyb3Bkb3duIHtcclxuICBmbG9hdDogbGVmdDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcblxyXG4uZHJvcGRvd24gLmRyb3BidG4ge1xyXG4gIGZvbnQtc2l6ZTogMTVweDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgb3V0bGluZTogbm9uZTtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgcGFkZGluZzogMTJweCAxNnB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGluaGVyaXQ7XHJcbiAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4uZHJvcGRvd24tY29udGVudCB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuICBtaW4td2lkdGg6IDE2MHB4O1xyXG4gIGJveC1zaGFkb3c6IDBweCA4cHggMTZweCAwcHggcmdiYSgwLDAsMCwwLjIpO1xyXG4gIHotaW5kZXg6IDE7XHJcbn1cclxuXHJcbi5kcm9wZG93bi1jb250ZW50IGEge1xyXG4gIGZsb2F0OiBub25lO1xyXG4gIGNvbG9yOiBibGFjaztcclxuICBwYWRkaW5nOiAxMnB4IDE2cHg7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbi50b3BuYXYgYTpob3ZlciwgLmRyb3Bkb3duOmhvdmVyIC5kcm9wYnRuIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTU1O1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLmRyb3Bkb3duLWNvbnRlbnQgYTpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcclxuICBjb2xvcjogYmxhY2s7XHJcbn1cclxuXHJcbi5kcm9wZG93bjpob3ZlciAuZHJvcGRvd24tY29udGVudCB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbn1cclxuXHJcbiNzaWduLWluIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgLnRvcG5hdiBhOm5vdCg6Zmlyc3QtY2hpbGQpLCAuZHJvcGRvd24gLmRyb3BidG4ge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgLnRvcG5hdiBhLmljb24ge1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgfVxyXG4gICNzaWduLWluIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAudG9wbmF2LnJlc3BvbnNpdmUge3Bvc2l0aW9uOiByZWxhdGl2ZTt9XHJcbiAgLnRvcG5hdi5yZXNwb25zaXZlIC5pY29uIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gIH1cclxuICAudG9wbmF2LnJlc3BvbnNpdmUgYSB7XHJcbiAgICBmbG9hdDogbm9uZTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICB9XHJcbiAgLnRvcG5hdi5yZXNwb25zaXZlIC5kcm9wZG93biB7ZmxvYXQ6IG5vbmU7fVxyXG4gIC50b3BuYXYucmVzcG9uc2l2ZSAuZHJvcGRvd24tY29udGVudCB7cG9zaXRpb246IHJlbGF0aXZlO31cclxuICAudG9wbmF2LnJlc3BvbnNpdmUgLmRyb3Bkb3duIC5kcm9wYnRuIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gIH1cclxuICAjc2lnbi1pbiB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxufVxyXG4iXX0= */"]
+      styles: ["body[_ngcontent-%COMP%] {\r\n  margin: 0;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\na[_ngcontent-%COMP%] {\r\n  cursor: pointer;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%] {\r\n  overflow: hidden;\r\n  background-color: #333;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n  float: left;\r\n  display: block;\r\n  color: #f2f2f2;\r\n  text-align: center;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  font-size: 15px;\r\n}\r\n\r\n.active[_ngcontent-%COMP%] {\r\n  background-color: #04AA6D;\r\n  color: white;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%] {\r\n  float: left;\r\n  overflow: hidden;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n  font-size: 15px;\r\n  border: none;\r\n  outline: none;\r\n  color: white;\r\n  padding: 12px 16px;\r\n  background-color: inherit;\r\n  font-family: inherit;\r\n  margin: 0;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%] {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #f9f9f9;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n  float: none;\r\n  color: black;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n  text-align: left;\r\n}\r\n\r\n.topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover, .dropdown[_ngcontent-%COMP%]:hover   .dropbtn[_ngcontent-%COMP%] {\r\n  background-color: #555;\r\n  color: white;\r\n}\r\n\r\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\r\n  background-color: #ddd;\r\n  color: black;\r\n}\r\n\r\n.dropdown[_ngcontent-%COMP%]:hover   .dropdown-content[_ngcontent-%COMP%] {\r\n  display: block;\r\n}\r\n\r\n#sign-in[_ngcontent-%COMP%] {\r\n  float: right;\r\n}\r\n\r\n#logout[_ngcontent-%COMP%] {\r\n  float: right;\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .topnav[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:not(:first-child), .dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n    display: none;\r\n  }\r\n  .topnav[_ngcontent-%COMP%]   a.icon[_ngcontent-%COMP%] {\r\n    float: right;\r\n    display: block;\r\n  }\r\n\r\n  #sign-in[_ngcontent-%COMP%] {\r\n    float: left;\r\n  }\r\n\r\n  #logout[_ngcontent-%COMP%] {\r\n    float: left;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .topnav.responsive[_ngcontent-%COMP%] {position: relative;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n  }\r\n  .topnav.responsive[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n    float: none;\r\n    display: block;\r\n    text-align: left;\r\n  }\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown[_ngcontent-%COMP%] {float: none;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown-content[_ngcontent-%COMP%] {position: relative;}\r\n  .topnav.responsive[_ngcontent-%COMP%]   .dropdown[_ngcontent-%COMP%]   .dropbtn[_ngcontent-%COMP%] {\r\n    display: block;\r\n    width: 100%;\r\n    text-align: left;\r\n  }\r\n\r\n  #sign-in[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 100%;\r\n  }\r\n\r\n  #logout[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 100%;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1QseUNBQXlDO0FBQzNDOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsY0FBYztFQUNkLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsWUFBWTtFQUNaLGFBQWE7RUFDYixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixvQkFBb0I7RUFDcEIsU0FBUztBQUNYOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQix5QkFBeUI7RUFDekIsZ0JBQWdCO0VBQ2hCLDRDQUE0QztFQUM1QyxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFO0lBQ0UsYUFBYTtFQUNmO0VBQ0E7SUFDRSxZQUFZO0lBQ1osY0FBYztFQUNoQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLFdBQVc7RUFDYjtBQUNGOztBQUVBO0VBQ0Usb0JBQW9CLGtCQUFrQixDQUFDO0VBQ3ZDO0lBQ0Usa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixNQUFNO0VBQ1I7RUFDQTtJQUNFLFdBQVc7SUFDWCxjQUFjO0lBQ2QsZ0JBQWdCO0VBQ2xCO0VBQ0EsOEJBQThCLFdBQVcsQ0FBQztFQUMxQyxzQ0FBc0Msa0JBQWtCLENBQUM7RUFDekQ7SUFDRSxjQUFjO0lBQ2QsV0FBVztJQUNYLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxXQUFXO0VBQ2I7O0VBRUE7SUFDRSxXQUFXO0lBQ1gsV0FBVztFQUNiO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gIG1hcmdpbjogMDtcclxuICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuYSB7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4udG9wbmF2IHtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMzMzM7XHJcbn1cclxuXHJcbi50b3BuYXYgYSB7XHJcbiAgZmxvYXQ6IGxlZnQ7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgY29sb3I6ICNmMmYyZjI7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHBhZGRpbmc6IDEycHggMTZweDtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgZm9udC1zaXplOiAxNXB4O1xyXG59XHJcblxyXG4uYWN0aXZlIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDRBQTZEO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnRvcG5hdiAuaWNvbiB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuLmRyb3Bkb3duIHtcclxuICBmbG9hdDogbGVmdDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcblxyXG4uZHJvcGRvd24gLmRyb3BidG4ge1xyXG4gIGZvbnQtc2l6ZTogMTVweDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgb3V0bGluZTogbm9uZTtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgcGFkZGluZzogMTJweCAxNnB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGluaGVyaXQ7XHJcbiAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4uZHJvcGRvd24tY29udGVudCB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y5ZjlmOTtcclxuICBtaW4td2lkdGg6IDE2MHB4O1xyXG4gIGJveC1zaGFkb3c6IDBweCA4cHggMTZweCAwcHggcmdiYSgwLDAsMCwwLjIpO1xyXG4gIHotaW5kZXg6IDE7XHJcbn1cclxuXHJcbi5kcm9wZG93bi1jb250ZW50IGEge1xyXG4gIGZsb2F0OiBub25lO1xyXG4gIGNvbG9yOiBibGFjaztcclxuICBwYWRkaW5nOiAxMnB4IDE2cHg7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbi50b3BuYXYgYTpob3ZlciwgLmRyb3Bkb3duOmhvdmVyIC5kcm9wYnRuIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTU1O1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLmRyb3Bkb3duLWNvbnRlbnQgYTpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcclxuICBjb2xvcjogYmxhY2s7XHJcbn1cclxuXHJcbi5kcm9wZG93bjpob3ZlciAuZHJvcGRvd24tY29udGVudCB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbn1cclxuXHJcbiNzaWduLWluIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuXHJcbiNsb2dvdXQge1xyXG4gIGZsb2F0OiByaWdodDtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAudG9wbmF2IGE6bm90KDpmaXJzdC1jaGlsZCksIC5kcm9wZG93biAuZHJvcGJ0biB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuICAudG9wbmF2IGEuaWNvbiB7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9XHJcblxyXG4gICNzaWduLWluIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuXHJcbiAgI2xvZ291dCB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgLnRvcG5hdi5yZXNwb25zaXZlIHtwb3NpdGlvbjogcmVsYXRpdmU7fVxyXG4gIC50b3BuYXYucmVzcG9uc2l2ZSAuaWNvbiB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMDtcclxuICAgIHRvcDogMDtcclxuICB9XHJcbiAgLnRvcG5hdi5yZXNwb25zaXZlIGEge1xyXG4gICAgZmxvYXQ6IG5vbmU7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG4gIC50b3BuYXYucmVzcG9uc2l2ZSAuZHJvcGRvd24ge2Zsb2F0OiBub25lO31cclxuICAudG9wbmF2LnJlc3BvbnNpdmUgLmRyb3Bkb3duLWNvbnRlbnQge3Bvc2l0aW9uOiByZWxhdGl2ZTt9XHJcbiAgLnRvcG5hdi5yZXNwb25zaXZlIC5kcm9wZG93biAuZHJvcGJ0biB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxuICB9XHJcblxyXG4gICNzaWduLWluIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuICAjbG9nb3V0IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -872,13 +970,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function MyDietComponent_div_10_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 15);
       }
     }
 
     function MyDietComponent_h3_11_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 16);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "No data for this date");
 
@@ -886,15 +984,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function MyDietComponent_div_19_div_3_tr_77_Template(rf, ctx) {
+    function MyDietComponent_div_22_div_3_tr_77_Template(rf, ctx) {
       if (rf & 1) {
         var _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
 
@@ -902,21 +1000,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "td", 27);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 29);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " g");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "td", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "td", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 30);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDietComponent_div_19_div_3_tr_77_Template_button_click_9_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDietComponent_div_22_div_3_tr_77_Template_button_click_9_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7);
 
           var nutrition_r5 = ctx.$implicit;
@@ -926,7 +1024,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return ctx_r6.updateUserNutrition(nutrition_r5);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "i", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "i", 31);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Update");
 
@@ -936,13 +1034,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "div", 32);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 33);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDietComponent_div_19_div_3_tr_77_Template_button_click_14_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDietComponent_div_22_div_3_tr_77_Template_button_click_14_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7);
 
           var nutrition_r5 = ctx.$implicit;
@@ -952,7 +1050,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return ctx_r8.deleteUserNutrition(nutrition_r5._id);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "i", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "i", 34);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Delete");
 
@@ -964,11 +1062,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20);
 
@@ -976,11 +1074,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24);
 
@@ -988,11 +1086,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28);
 
@@ -1000,11 +1098,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32);
 
@@ -1012,11 +1110,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36);
 
@@ -1024,11 +1122,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40);
 
@@ -1036,11 +1134,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44);
 
@@ -1048,11 +1146,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48);
 
@@ -1060,11 +1158,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52);
 
@@ -1072,11 +1170,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56);
 
@@ -1084,11 +1182,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60);
 
@@ -1096,11 +1194,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64);
 
@@ -1108,11 +1206,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68);
 
@@ -1120,11 +1218,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72);
 
@@ -1132,11 +1230,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76);
 
@@ -1144,11 +1242,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80);
 
@@ -1156,11 +1254,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84);
 
@@ -1168,11 +1266,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88);
 
@@ -1180,11 +1278,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92);
 
@@ -1192,11 +1290,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96);
 
@@ -1204,11 +1302,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100);
 
@@ -1216,11 +1314,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104);
 
@@ -1228,11 +1326,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108);
 
@@ -1240,11 +1338,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112);
 
@@ -1252,11 +1350,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116);
 
@@ -1264,11 +1362,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120);
 
@@ -1276,11 +1374,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124);
 
@@ -1288,11 +1386,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128);
 
@@ -1300,11 +1398,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132);
 
@@ -1312,11 +1410,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136);
 
@@ -1324,11 +1422,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140);
 
@@ -1336,11 +1434,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144);
 
@@ -1348,11 +1446,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "td", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "td", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148);
 
@@ -1384,7 +1482,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.calories / ctx_r4.dri.calories_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.calories / ctx_r4.dri.calories * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1392,7 +1490,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.carbohydrate_g / ctx_r4.dri.carbohydrate_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.carbohydrate_g / ctx_r4.dri.carbohydrate_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1400,7 +1498,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.fiber_g / ctx_r4.dri.fiber_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.fiber_g / ctx_r4.dri.fiber_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1408,7 +1506,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.protein_g / ctx_r4.dri.protein_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.protein_g / ctx_r4.dri.protein_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1416,7 +1514,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.total_fat_g / ctx_r4.dri.total_fat_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.total_fat_g / ctx_r4.dri.total_fat_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1424,7 +1522,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.saturated_fat_g / ctx_r4.dri.saturated_fat_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.saturated_fat_g / ctx_r4.dri.saturated_fat_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1432,7 +1530,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.fatty_acids_total_trans_g / ctx_r4.dri.fatty_acids_total_trans_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.fatty_acids_total_trans_g / ctx_r4.dri.fatty_acids_total_trans_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1440,7 +1538,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.cholesterol_mg / ctx_r4.dri.cholesterol_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.cholesterol_mg / ctx_r4.dri.cholesterol_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1448,7 +1546,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.sugars_g / ctx_r4.dri.sugars_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.sugars_g / ctx_r4.dri.sugars_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1456,7 +1554,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.water_g / ctx_r4.dri.water_g_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.water_g / ctx_r4.dri.water_g * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1464,7 +1562,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_a_rae_mcg / ctx_r4.dri.vitamin_a_rae_mcg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_a_rae_mcg / ctx_r4.dri.vitamin_a_rae_mcg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1472,7 +1570,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.thiamin_mg / ctx_r4.dri.thiamin_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.thiamin_mg / ctx_r4.dri.thiamin_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1480,7 +1578,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.riboflavin_mg / ctx_r4.dri.riboflavin_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.riboflavin_mg / ctx_r4.dri.riboflavin_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1488,7 +1586,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.niacin_mg / ctx_r4.dri.niacin_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.niacin_mg / ctx_r4.dri.niacin_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1496,7 +1594,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.pantothenic_acid_mg / ctx_r4.dri.pantothenic_acid_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.pantothenic_acid_mg / ctx_r4.dri.pantothenic_acid_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1504,7 +1602,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_b6_mg / ctx_r4.dri.vitamin_b6_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_b6_mg / ctx_r4.dri.vitamin_b6_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1512,7 +1610,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.folate_mcg / ctx_r4.dri.folate_mcg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.folate_mcg / ctx_r4.dri.folate_mcg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1520,7 +1618,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_b12_mcg / ctx_r4.dri.vitamin_b12_mcg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_b12_mcg / ctx_r4.dri.vitamin_b12_mcg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1528,7 +1626,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.choline_mg / ctx_r4.dri.choline_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.choline_mg / ctx_r4.dri.choline_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1536,7 +1634,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_c_mg / ctx_r4.dri.vitamin_c_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_c_mg / ctx_r4.dri.vitamin_c_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1544,7 +1642,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_d_IU / ctx_r4.dri.vitamin_d_IU_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_d_IU / ctx_r4.dri.vitamin_d_IU * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1552,7 +1650,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_e_mg / ctx_r4.dri.vitamin_e_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_e_mg / ctx_r4.dri.vitamin_e_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1560,7 +1658,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_k_mcg / ctx_r4.dri.vitamin_k_mcg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.vitamin_k_mcg / ctx_r4.dri.vitamin_k_mcg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1568,7 +1666,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.calcium_mg / ctx_r4.dri.calcium_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.calcium_mg / ctx_r4.dri.calcium_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1576,7 +1674,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.copper_mg / ctx_r4.dri.copper_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.copper_mg / ctx_r4.dri.copper_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1584,7 +1682,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.irom_mg / ctx_r4.dri.irom_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.irom_mg / ctx_r4.dri.irom_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1592,7 +1690,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.magnesium_mg / ctx_r4.dri.magnesium_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.magnesium_mg / ctx_r4.dri.magnesium_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1600,7 +1698,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.manganese_mg / ctx_r4.dri.manganese_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.manganese_mg / ctx_r4.dri.manganese_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1608,7 +1706,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.phosphorous_mg / ctx_r4.dri.phosphorous_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.phosphorous_mg / ctx_r4.dri.phosphorous_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1616,7 +1714,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.potassium_mg / ctx_r4.dri.potassium_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.potassium_mg / ctx_r4.dri.potassium_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1624,7 +1722,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.selenium_mcg / ctx_r4.dri.selenium_mcg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.selenium_mcg / ctx_r4.dri.selenium_mcg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1632,7 +1730,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.sodium_mg / ctx_r4.dri.sodium_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.sodium_mg / ctx_r4.dri.sodium_mg * 100).toFixed(2), " %) ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1640,23 +1738,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.zink_mg / ctx_r4.dri.zink_mg_min * 100).toFixed(2), " %) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (nutrition_r5.quantity / 100 * nutrition_r5.nutrition.zink_mg / ctx_r4.dri.zink_mg * 100).toFixed(2), " %) ");
       }
     }
 
-    function MyDietComponent_div_19_div_3_Template(rf, ctx) {
+    function MyDietComponent_div_22_div_3_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 20);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "table", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "table", 21);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "thead");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "tr", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "tr", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "th", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Food");
 
@@ -1664,211 +1762,211 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Quantity (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Action");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Calories");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Carbohydrate (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Fiber (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Protein (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Total fat (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Saturated fat (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Fatty acids total trans (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Cholesterol (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Sugars (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Water (g)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Vitamin A RAE (mcg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "Thiamin - B1 (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Riboflavin - B2 (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Niacin - B3 (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "Pantothenic acid - B5 (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Vitamin B6 (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Folate - B9 (mcg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Vitamin B12 (mcg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "Choline (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "Vitamin C (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "Vitamin D (IU)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, "Vitamin E (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "Vitamin K (mcg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "Calcium (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "Copper (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "Iron (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "Magnesium (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Manganese (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "Phosphorous (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "Potassium (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "Selenium (mcg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "Sodium (mg)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "th", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "Zink (mg)");
 
@@ -1878,15 +1976,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](77, MyDietComponent_div_19_div_3_tr_77_Template, 149, 69, "tr", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](77, MyDietComponent_div_22_div_3_tr_77_Template, 149, 69, "tr", 25);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "tfoot");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "tr", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "tr", 26);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "th", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "Total");
 
@@ -1894,23 +1992,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, " - ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90);
 
@@ -1918,11 +2016,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94);
 
@@ -1930,11 +2028,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98);
 
@@ -1942,11 +2040,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102);
 
@@ -1954,11 +2052,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106);
 
@@ -1966,11 +2064,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110);
 
@@ -1978,11 +2076,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114);
 
@@ -1990,11 +2088,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118);
 
@@ -2002,11 +2100,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122);
 
@@ -2014,11 +2112,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126);
 
@@ -2026,11 +2124,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130);
 
@@ -2038,11 +2136,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134);
 
@@ -2050,11 +2148,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138);
 
@@ -2062,11 +2160,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142);
 
@@ -2074,11 +2172,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146);
 
@@ -2086,11 +2184,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](150);
 
@@ -2098,11 +2196,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](152);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154);
 
@@ -2110,11 +2208,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](158);
 
@@ -2122,11 +2220,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](160);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](161, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](161, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](162);
 
@@ -2134,11 +2232,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](163, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](163, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](166);
 
@@ -2146,11 +2244,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](168);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](170);
 
@@ -2158,11 +2256,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](171, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](171, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174);
 
@@ -2170,11 +2268,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](176);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](178);
 
@@ -2182,11 +2280,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](181, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](181, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](182);
 
@@ -2194,11 +2292,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](183, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](183, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](186);
 
@@ -2206,11 +2304,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](187, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](187, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](188);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](189, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](189, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190);
 
@@ -2218,11 +2316,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](192);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](193, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](193, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](194);
 
@@ -2230,11 +2328,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](195, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](195, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](196);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](197, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](197, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](198);
 
@@ -2242,11 +2340,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202);
 
@@ -2254,11 +2352,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](204);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206);
 
@@ -2266,11 +2364,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](207, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](207, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](208);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](209, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](209, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](210);
 
@@ -2278,11 +2376,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](212);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214);
 
@@ -2290,11 +2388,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "th", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "th", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](217, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](217, "span", 28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](218);
 
@@ -2328,7 +2426,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.calories / ctx_r3.dri.calories_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.calories / ctx_r3.dri.calories * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2336,7 +2434,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.carbohydrate_g / ctx_r3.dri.carbohydrate_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.carbohydrate_g / ctx_r3.dri.carbohydrate_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2344,7 +2442,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.fiber_g / ctx_r3.dri.fiber_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.fiber_g / ctx_r3.dri.fiber_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2352,7 +2450,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.protein_g / ctx_r3.dri.protein_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.protein_g / ctx_r3.dri.protein_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2360,7 +2458,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.total_fat_g / ctx_r3.dri.total_fat_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.total_fat_g / ctx_r3.dri.total_fat_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2368,7 +2466,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.saturated_fat_g / ctx_r3.dri.saturated_fat_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.saturated_fat_g / ctx_r3.dri.saturated_fat_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2376,7 +2474,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.fatty_acids_total_trans_g / ctx_r3.dri.fatty_acids_total_trans_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.fatty_acids_total_trans_g / ctx_r3.dri.fatty_acids_total_trans_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2384,7 +2482,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.cholesterol_mg / ctx_r3.dri.cholesterol_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.cholesterol_mg / ctx_r3.dri.cholesterol_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2392,7 +2490,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.sugars_g / ctx_r3.dri.sugars_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.sugars_g / ctx_r3.dri.sugars_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2400,7 +2498,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.water_g / ctx_r3.dri.water_g_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.water_g / ctx_r3.dri.water_g * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2408,7 +2506,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_a_rae_mcg / ctx_r3.dri.vitamin_a_rae_mcg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_a_rae_mcg / ctx_r3.dri.vitamin_a_rae_mcg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2416,7 +2514,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.thiamin_mg / ctx_r3.dri.thiamin_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.thiamin_mg / ctx_r3.dri.thiamin_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2424,7 +2522,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.riboflavin_mg / ctx_r3.dri.riboflavin_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.riboflavin_mg / ctx_r3.dri.riboflavin_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2432,7 +2530,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.niacin_mg / ctx_r3.dri.niacin_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.niacin_mg / ctx_r3.dri.niacin_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2440,7 +2538,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.pantothenic_acid_mg / ctx_r3.dri.pantothenic_acid_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.pantothenic_acid_mg / ctx_r3.dri.pantothenic_acid_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2448,7 +2546,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_b6_mg / ctx_r3.dri.vitamin_b6_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_b6_mg / ctx_r3.dri.vitamin_b6_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2456,7 +2554,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.folate_mcg / ctx_r3.dri.folate_mcg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.folate_mcg / ctx_r3.dri.folate_mcg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2464,7 +2562,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_b12_mcg / ctx_r3.dri.vitamin_b12_mcg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_b12_mcg / ctx_r3.dri.vitamin_b12_mcg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2472,7 +2570,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.choline_mg / ctx_r3.dri.choline_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.choline_mg / ctx_r3.dri.choline_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2480,7 +2578,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_c_mg / ctx_r3.dri.vitamin_c_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_c_mg / ctx_r3.dri.vitamin_c_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2488,7 +2586,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_d_IU / ctx_r3.dri.vitamin_d_IU_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_d_IU / ctx_r3.dri.vitamin_d_IU * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2496,7 +2594,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_e_mg / ctx_r3.dri.vitamin_e_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_e_mg / ctx_r3.dri.vitamin_e_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2504,7 +2602,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_k_mcg / ctx_r3.dri.vitamin_k_mcg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.vitamin_k_mcg / ctx_r3.dri.vitamin_k_mcg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2512,7 +2610,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.calcium_mg / ctx_r3.dri.calcium_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.calcium_mg / ctx_r3.dri.calcium_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2520,7 +2618,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.copper_mg / ctx_r3.dri.copper_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.copper_mg / ctx_r3.dri.copper_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2528,7 +2626,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.irom_mg / ctx_r3.dri.irom_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.irom_mg / ctx_r3.dri.irom_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2536,7 +2634,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.magnesium_mg / ctx_r3.dri.magnesium_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.magnesium_mg / ctx_r3.dri.magnesium_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2544,7 +2642,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.manganese_mg / ctx_r3.dri.manganese_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.manganese_mg / ctx_r3.dri.manganese_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2552,7 +2650,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.phosphorous_mg / ctx_r3.dri.phosphorous_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.phosphorous_mg / ctx_r3.dri.phosphorous_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2560,7 +2658,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.potassium_mg / ctx_r3.dri.potassium_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.potassium_mg / ctx_r3.dri.potassium_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2568,7 +2666,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.selenium_mcg / ctx_r3.dri.selenium_mcg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.selenium_mcg / ctx_r3.dri.selenium_mcg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2576,7 +2674,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.sodium_mg / ctx_r3.dri.sodium_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.sodium_mg / ctx_r3.dri.sodium_mg * 100).toFixed(2), " %)");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2584,23 +2682,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.zink_mg / ctx_r3.dri.zink_mg_min * 100).toFixed(2), " %)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", (ctx_r3.sumNutritions.zink_mg / ctx_r3.dri.zink_mg * 100).toFixed(2), " %)");
       }
     }
 
-    function MyDietComponent_div_19_Template(rf, ctx) {
+    function MyDietComponent_div_22_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 17);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "+");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, MyDietComponent_div_19_div_3_Template, 219, 68, "div", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, MyDietComponent_div_22_div_3_Template, 219, 68, "div", 18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "div", 19);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -2623,7 +2721,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.driService = driService;
         this.toastr = toastr;
         this.dri = {};
-        this.notNullDri = {};
         this.isLoaded = false;
         this.dateOfConsumption = new Date();
         this.nutritions = [];
@@ -2736,15 +2833,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }]
           });
           chart.render();
-          console.log(this.notNullDri);
-          var arrayForVitamins = [];
-
-          for (var i = 0; i < Object.values(this.notNullDri).length; i += 2) {
-            if (Object.keys(this.notNullDri)[i]) {
-              arrayForVitamins.push();
-            }
-          }
-
           var chart2 = new _assets_canvasjs_min_js__WEBPACK_IMPORTED_MODULE_1__["Chart"]("chartContainer2", {
             animationEnabled: true,
             theme: "light2",
@@ -2772,7 +2860,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               color: "red",
               toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} - {y[1]} (g)",
               dataPoints: [{
-                y: [this.dri.water_g_min, this.dri.water_g_max],
+                y: [this.dri.water_g, this.dri.water_g_max],
                 label: "Today"
               }]
             }]
@@ -2800,31 +2888,121 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               toolTipContent: "<b>{label}</b>",
               dataPoints: [{
                 label: "Vitamin C",
-                y: this.sumNutritions.vitamin_c_mg / this.dri.vitamin_c_mg_min * 100
+                y: this.sumNutritions.vitamin_c_mg / this.dri.vitamin_c_mg * 100
               }, {
                 label: "Vitamin B3",
-                y: this.sumNutritions.niacin_mg / this.dri.niacin_mg_min * 100
+                y: this.sumNutritions.niacin_mg / this.dri.niacin_mg * 100
               }, {
                 label: "Vitamin B2",
-                y: this.sumNutritions.riboflavin_mg / this.dri.riboflavin_mg_min * 100
+                y: this.sumNutritions.riboflavin_mg / this.dri.riboflavin_mg * 100
               }]
             }, {
               type: "error",
               name: "Variability Range",
               toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} - {y[1]}",
               dataPoints: [{
-                y: [100, this.dri.vitamin_c_mg_max / this.dri.vitamin_c_mg_min * 100],
+                y: [100, this.dri.vitamin_c_mg_max / this.dri.vitamin_c_mg * 100],
                 label: "Vitamin C"
               }, {
-                y: [100, this.dri.niacin_mg_max / this.dri.niacin_mg_min * 100],
+                y: [100, this.dri.niacin_mg_max / this.dri.niacin_mg * 100],
                 label: "Vitamin B3"
               }, {
-                y: [100, this.dri.riboflavin_mg_max / this.dri.riboflavin_mg_min * 100],
+                y: [100, this.dri.riboflavin_mg_max / this.dri.riboflavin_mg * 100],
                 label: "Vitamin B2"
               }]
             }]
           });
           chart1.render();
+          var macronutrients = new _assets_canvasjs_min_js__WEBPACK_IMPORTED_MODULE_1__["Chart"]("macronutrients", {
+            animationEnabled: true,
+            zoomEnabled: true,
+            zoomType: "y",
+            title: {
+              text: "Macronutrients"
+            },
+            axisX: {
+              interval: 1
+            },
+            axisY: {
+              viewportMinimum: 0,
+              viewportMaximum: 150,
+              valueFormatString: "#' %'"
+            },
+            toolTip: {
+              shared: true
+            },
+            data: [{
+              type: "bar",
+              toolTipContent: "<span style=\"color:#0099cc\">{label}</span>: {y} (g)",
+              dataPoints: [{
+                label: "Water",
+                y: this.sumNutritions.water_g / this.dri.water_g * 100
+              }, {
+                label: "Sugar",
+                y: this.sumNutritions.sugars_g / this.dri.sugars_g * 100
+              }, {
+                label: "Cholesterol",
+                y: this.sumNutritions.cholesterol_mg / this.dri.cholesterol_mg * 100
+              }, {
+                label: "Total trans fat",
+                y: this.sumNutritions.fatty_acids_total_trans_g / this.dri.fatty_acids_total_trans_g * 100
+              }, {
+                label: "Saturated fat",
+                y: this.sumNutritions.saturated_fat_g / this.dri.saturated_fat_g * 100
+              }, {
+                label: "Total fat",
+                y: this.sumNutritions.total_fat_g / this.dri.total_fat_g * 100
+              }, {
+                label: "Proteins",
+                y: this.sumNutritions.protein_g / this.dri.protein_g * 100
+              }, {
+                label: "Fiber",
+                y: this.sumNutritions.fiber_g / this.dri.fiber_g * 100
+              }, {
+                label: "Carbohydrates",
+                y: this.sumNutritions.carbohydrate_g / this.dri.carbohydrate_g * 100
+              }, {
+                label: "Calories",
+                y: this.sumNutritions.calories / this.dri.calories * 100
+              }]
+            }, {
+              type: "error",
+              name: "Healthy range",
+              toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} - {y[1]}",
+              dataPoints: [{
+                y: [100, this.dri.water_g_max / this.dri.water_g * 100],
+                label: "Water"
+              }, {
+                y: [100, this.dri.sugars_g_max / this.dri.sugars_g * 100],
+                label: "Sugar"
+              }, {
+                y: [100, this.dri.cholesterol_mg_max / this.dri.cholesterol_mg * 100],
+                label: "Cholesterol"
+              }, {
+                y: [100, this.dri.fatty_acids_total_trans_g_max / this.dri.fatty_acids_total_trans_g * 100],
+                label: "Total trans fat"
+              }, {
+                y: [100, this.dri.saturated_fat_g_max / this.dri.saturated_fat_g * 100],
+                label: "Saturated fat"
+              }, {
+                y: [100, this.dri.total_fat_g_max / this.dri.total_fat_g * 100],
+                label: "Total fat"
+              }, {
+                y: [100, this.dri.protein_g_max / this.dri.protein_g * 100],
+                label: "Proteins"
+              }, {
+                y: [100, this.dri.fiber_g_max / this.dri.fiber_g * 100],
+                label: "Fiber"
+              }, {
+                y: [100, this.dri.carbohydrate_g_max / this.dri.carbohydrate_g * 100],
+                label: "Carbohydrates"
+              }, {
+                y: [100, this.dri.calories_max / this.dri.calories * 100],
+                label: "Calories"
+              }]
+            }]
+          });
+          macronutrients.render();
         }
       }, {
         key: "ngOnInit",
@@ -2835,25 +3013,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this4.onDateChange(_this4.dateOfConsumption.toISOString().split('T')[0]);
 
             Object.assign(_this4.dri, dris[0]);
-            _this4.notNullDri = {};
-            var ordered = Object.keys(_this4.dri).sort().reduce(function (obj, key) {
-              obj[key] = _this4.dri[key];
-              return obj;
-            }, {});
-            delete ordered['active'];
-            delete ordered['name'];
-            delete ordered['user_id'];
-            delete ordered['__v'];
-            delete ordered['_id'];
-
-            for (var i = 0; i < Object.values(ordered).length; i += 2) {
-              if (Object.values(ordered)[i] === null || Object.values(ordered)[i + 1] === null) {
-                continue;
-              } else {
-                _this4.notNullDri[Object.keys(ordered)[i]] = Object.values(ordered)[i];
-                _this4.notNullDri[Object.keys(ordered)[i + 1]] = Object.values(ordered)[i + 1];
-              }
-            }
 
             _this4.updateCharts();
           });
@@ -2870,9 +3029,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     MyDietComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: MyDietComponent,
       selectors: [["app-my-diet"]],
-      decls: 20,
+      decls: 23,
       vars: 7,
-      consts: [[2, "display", "table", "margin-top", "10px", "margin-left", "auto", "margin-right", "auto", "margin-bottom", "10px"], ["routerLink", "/search-add", 1, "desktop-button", 2, "cursor", "pointer"], [1, "w3-btn", "w3-green"], [1, "fa", "fa-cutlery"], ["id", "date_label", 1, "w3-center", "w3-padding", 2, "font-size", "20px", "display", "table-cell"], ["type", "date", 3, "ngModel", "ngModelChange"], ["class", "loader", 4, "ngIf"], ["style", "margin-bottom: 120vh;", "class", "w3-center w3-padding", 4, "ngIf"], [1, "wrapper"], [1, "graph-div"], ["id", "chartContainer", 1, "canvas-graph"], ["id", "chartContainer2", 1, "canvas-graph"], ["id", "chartContainer1", 1, "canvas-graph"], [4, "ngIf"], [1, "loader"], [1, "w3-center", "w3-padding", 2, "margin-bottom", "120vh"], ["routerLink", "/search-add", 1, "mobile-btn"], ["id", "divForTable", "class", "tableFixHead", 4, "ngIf"], [2, "margin-bottom", "4vw"], ["id", "divForTable", 1, "tableFixHead"], ["id", "user-nutritions", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-center"], [2, "width", "200px"], [4, "ngFor", "ngForOf"], [2, "background-color", "#c2c1be"], [1, "w3-center", 2, "white-space", "nowrap"], [1, "w3-text-green"], ["type", "number", 2, "width", "50pt", 3, "value"], [1, "w3-blue", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], [1, "w3-red", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-trash"]],
+      consts: [[2, "display", "table", "margin-top", "10px", "margin-left", "auto", "margin-right", "auto", "margin-bottom", "10px"], ["routerLink", "/search-add", 1, "desktop-button", 2, "cursor", "pointer"], [1, "w3-btn", "w3-green"], [1, "fa", "fa-cutlery"], ["id", "date_label", 1, "w3-center", "w3-padding", 2, "font-size", "20px", "display", "table-cell"], ["type", "date", 3, "ngModel", "ngModelChange"], ["class", "loader", 4, "ngIf"], ["style", "margin-bottom: 120vh;", "class", "w3-center w3-padding", 4, "ngIf"], [1, "wrapper"], [1, "graph-div"], ["id", "macronutrients", 1, "canvas-graph"], ["id", "chartContainer", 1, "canvas-graph"], ["id", "chartContainer1", 1, "canvas-graph"], ["id", "chartContainer2", 1, "canvas-graph"], [4, "ngIf"], [1, "loader"], [1, "w3-center", "w3-padding", 2, "margin-bottom", "120vh"], ["routerLink", "/search-add", 1, "mobile-btn"], ["id", "divForTable", "class", "tableFixHead", 4, "ngIf"], [2, "margin-bottom", "4vw"], ["id", "divForTable", 1, "tableFixHead"], ["id", "user-nutritions", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-center"], [2, "width", "200px"], [4, "ngFor", "ngForOf"], [2, "background-color", "#c2c1be"], [1, "w3-center", 2, "white-space", "nowrap"], [1, "w3-text-green"], ["type", "number", 2, "width", "50pt", 3, "value"], [1, "w3-btn", "w3-blue", 2, "width", "100px", "height", "38px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], [1, "w3-btn", "w3-red", 2, "width", "100px", "height", "38px", 3, "click"], [1, "fa", "fa-trash"]],
       template: function MyDietComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -2937,7 +3096,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, MyDietComponent_div_19_Template, 5, 1, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, MyDietComponent_div_22_Template, 5, 1, "div", 14);
         }
 
         if (rf & 2) {
@@ -2953,14 +3122,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nutritions.length == 0 && ctx.isLoaded);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nutritions.length > 0 && ctx.isLoaded);
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterLinkWithHref"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterLink"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"]],
       pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DatePipe"]],
-      styles: [".loader[_ngcontent-%COMP%] {\r\n  border: 16px solid #f3f3f3;\r\n  border-radius: 50%;\r\n  border-top: 16px solid rgb(46, 143, 235);\r\n  border-bottom: 16px solid blue;\r\n  width: 120px;\r\n  height: 120px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 20%;\r\n  margin-bottom: 80%;\r\n  -webkit-animation: spin 1s linear infinite;\r\n  animation: spin 1s linear infinite;\r\n}\r\n@-webkit-keyframes spin {\r\n  0% { -webkit-transform: rotate(0deg); }\r\n  100% { -webkit-transform: rotate(360deg); }\r\n}\r\n@keyframes spin {\r\n  0% { transform: rotate(0deg); }\r\n  100% { transform: rotate(360deg); }\r\n}\r\n\r\n\r\n#divForTable[_ngcontent-%COMP%] {\r\n\tmargin: 0 auto;\r\n}\r\nthead[_ngcontent-%COMP%], tfoot[_ngcontent-%COMP%] {position:-webkit-sticky;position:sticky;background-color:#000; color:#fff;}\r\nthead[_ngcontent-%COMP%] {top:0; }\r\ntfoot[_ngcontent-%COMP%] {bottom:0;}\r\n.tableFixHead[_ngcontent-%COMP%] {\r\n\toverflow: auto;\r\n\tmax-height: 60vh;\r\n\twidth: 95vw;\r\n\tbox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\ntr[_ngcontent-%COMP%]:hover {background-color: #ffeb3b;}\r\ntr[_ngcontent-%COMP%]:nth-child(even):hover {background-color: #ffeb3b;}\r\ntable[_ngcontent-%COMP%]  { border-collapse: collapse; width: 100%; }\r\nth[_ngcontent-%COMP%], td[_ngcontent-%COMP%] { padding: 8px 16px; }\r\nthead[_ngcontent-%COMP%]     { background:#2196F3; }\r\ntr[_ngcontent-%COMP%]:nth-child(even) {background-color: #f2f2f2;}\r\n\r\n.desktop-button[_ngcontent-%COMP%] {\r\n  float: left;\r\n}\r\n.mobile-btn[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n.wrapper[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin-bottom: 1vh;\r\n}\r\n.graph-div[_ngcontent-%COMP%] {\r\n  float:left;\r\n  width: 30vw;\r\n  height: 60vh;\r\n  outline:1px solid blue;\r\n  margin:0 0.5%;\r\n  padding:2vw;\r\n}\r\n.canvas-graph[_ngcontent-%COMP%] {\r\n  width: 90%;\r\n  height: 90%;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  .desktop-button[_ngcontent-%COMP%] {\r\n    display: none;\r\n  }\r\n\r\n  .mobile-btn[_ngcontent-%COMP%] {\r\n    display: block;\r\n    z-index: 10000;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    width: 60px;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n    border-radius: 50%;\r\n    background-color: #4CAF50;\r\n    color: white;\r\n    text-align: center;\r\n    cursor: pointer;\r\n    position: fixed;\r\n    bottom: 15px;\r\n    right: 15px;\r\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n  }\r\n\r\n  .wrapper[_ngcontent-%COMP%] {\r\n    display: block;\r\n    justify-content: center;\r\n  }\r\n\r\n  .graph-div[_ngcontent-%COMP%] {\r\n    float:none;\r\n    width:100%;\r\n    margin:auto;\r\n    padding:1vw;\r\n  }\r\n\r\n  .canvas-graph[_ngcontent-%COMP%] {\r\n    margin:auto;\r\n    width: 95%;\r\n    height: 95%;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9teS1kaWV0L215LWRpZXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxVQUFVO0FBQ1Y7RUFDRSwwQkFBMEI7RUFDMUIsa0JBQWtCO0VBQ2xCLHdDQUF3QztFQUN4Qyw4QkFBOEI7RUFDOUIsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsMENBQTBDO0VBQzFDLGtDQUFrQztBQUNwQztBQUVBO0VBQ0UsS0FBSywrQkFBK0IsRUFBRTtFQUN0QyxPQUFPLGlDQUFpQyxFQUFFO0FBQzVDO0FBRUE7RUFDRSxLQUFLLHVCQUF1QixFQUFFO0VBQzlCLE9BQU8seUJBQXlCLEVBQUU7QUFDcEM7QUFDQSxjQUFjO0FBRWQsUUFBUTtBQUVSO0NBQ0MsY0FBYztBQUNmO0FBQ0EsY0FBYyx1QkFBZSxDQUFmLGVBQWUsQ0FBQyxxQkFBcUIsRUFBRSxVQUFVLENBQUM7QUFDaEUsT0FBTyxLQUFLLEVBQUU7QUFDZCxPQUFPLFFBQVEsQ0FBQztBQUNoQjtDQUNDLGNBQWM7Q0FDZCxnQkFBZ0I7Q0FDaEIsV0FBVztDQUNYLDRFQUE0RTtBQUM3RTtBQUNBLFVBQVUseUJBQXlCLENBQUM7QUFDcEMsMEJBQTBCLHlCQUF5QixDQUFDO0FBQ3BELFNBQVMseUJBQXlCLEVBQUUsV0FBVyxFQUFFO0FBQ2pELFNBQVMsaUJBQWlCLEVBQUU7QUFDNUIsWUFBWSxrQkFBa0IsRUFBRTtBQUNoQyxvQkFBb0IseUJBQXlCLENBQUM7QUFDOUMsWUFBWTtBQUVaO0VBQ0UsV0FBVztBQUNiO0FBRUE7RUFDRSxhQUFhO0FBQ2Y7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSxVQUFVO0VBQ1YsV0FBVztFQUNYLFlBQVk7RUFDWixzQkFBc0I7RUFDdEIsYUFBYTtFQUNiLFdBQVc7QUFDYjtBQUVBO0VBQ0UsVUFBVTtFQUNWLFdBQVc7QUFDYjtBQUVBLGVBQWU7QUFDZjtFQUNFO0lBQ0UsYUFBYTtFQUNmOztFQUVBO0lBQ0UsY0FBYztJQUNkLGNBQWM7SUFDZCxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLFdBQVc7SUFDWCxjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsZUFBZTtJQUNmLFlBQVk7SUFDWixXQUFXO0lBQ1gsNEVBQTRFO0VBQzlFOztFQUVBO0lBQ0UsY0FBYztJQUNkLHVCQUF1QjtFQUN6Qjs7RUFFQTtJQUNFLFVBQVU7SUFDVixVQUFVO0lBQ1YsV0FBVztJQUNYLFdBQVc7RUFDYjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxVQUFVO0lBQ1YsV0FBVztFQUNiO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL215LWRpZXQvbXktZGlldC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypzcGlubmVyKi9cclxuLmxvYWRlciB7XHJcbiAgYm9yZGVyOiAxNnB4IHNvbGlkICNmM2YzZjM7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIGJvcmRlci10b3A6IDE2cHggc29saWQgcmdiKDQ2LCAxNDMsIDIzNSk7XHJcbiAgYm9yZGVyLWJvdHRvbTogMTZweCBzb2xpZCBibHVlO1xyXG4gIHdpZHRoOiAxMjBweDtcclxuICBoZWlnaHQ6IDEyMHB4O1xyXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gIG1hcmdpbi1yaWdodDogYXV0bztcclxuICBtYXJnaW4tdG9wOiAyMCU7XHJcbiAgbWFyZ2luLWJvdHRvbTogODAlO1xyXG4gIC13ZWJraXQtYW5pbWF0aW9uOiBzcGluIDFzIGxpbmVhciBpbmZpbml0ZTtcclxuICBhbmltYXRpb246IHNwaW4gMXMgbGluZWFyIGluZmluaXRlO1xyXG59XHJcblxyXG5ALXdlYmtpdC1rZXlmcmFtZXMgc3BpbiB7XHJcbiAgMCUgeyAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB9XHJcbiAgMTAwJSB7IC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfVxyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHNwaW4ge1xyXG4gIDAlIHsgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IH1cclxuICAxMDAlIHsgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfVxyXG59XHJcbi8qc3Bpbm5lci1lbmQqL1xyXG5cclxuLyp0YWJsZSovXHJcblxyXG4jZGl2Rm9yVGFibGUge1xyXG5cdG1hcmdpbjogMCBhdXRvO1xyXG59XHJcbnRoZWFkLCB0Zm9vdCB7cG9zaXRpb246c3RpY2t5O2JhY2tncm91bmQtY29sb3I6IzAwMDsgY29sb3I6I2ZmZjt9XHJcbnRoZWFkIHt0b3A6MDsgfVxyXG50Zm9vdCB7Ym90dG9tOjA7fVxyXG4udGFibGVGaXhIZWFkIHtcclxuXHRvdmVyZmxvdzogYXV0bztcclxuXHRtYXgtaGVpZ2h0OiA2MHZoO1xyXG5cdHdpZHRoOiA5NXZ3O1xyXG5cdGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XHJcbn1cclxudHI6aG92ZXIge2JhY2tncm91bmQtY29sb3I6ICNmZmViM2I7fVxyXG50cjpudGgtY2hpbGQoZXZlbik6aG92ZXIge2JhY2tncm91bmQtY29sb3I6ICNmZmViM2I7fVxyXG50YWJsZSAgeyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyB3aWR0aDogMTAwJTsgfVxyXG50aCwgdGQgeyBwYWRkaW5nOiA4cHggMTZweDsgfVxyXG50aGVhZCAgICAgeyBiYWNrZ3JvdW5kOiMyMTk2RjM7IH1cclxudHI6bnRoLWNoaWxkKGV2ZW4pIHtiYWNrZ3JvdW5kLWNvbG9yOiAjZjJmMmYyO31cclxuLyp0YWJsZS1lbmQqL1xyXG5cclxuLmRlc2t0b3AtYnV0dG9uIHtcclxuICBmbG9hdDogbGVmdDtcclxufVxyXG5cclxuLm1vYmlsZS1idG4ge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbn1cclxuXHJcbi53cmFwcGVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIG1hcmdpbi1ib3R0b206IDF2aDtcclxufVxyXG5cclxuLmdyYXBoLWRpdiB7XHJcbiAgZmxvYXQ6bGVmdDtcclxuICB3aWR0aDogMzB2dztcclxuICBoZWlnaHQ6IDYwdmg7XHJcbiAgb3V0bGluZToxcHggc29saWQgYmx1ZTtcclxuICBtYXJnaW46MCAwLjUlO1xyXG4gIHBhZGRpbmc6MnZ3O1xyXG59XHJcblxyXG4uY2FudmFzLWdyYXBoIHtcclxuICB3aWR0aDogOTAlO1xyXG4gIGhlaWdodDogOTAlO1xyXG59XHJcblxyXG4vKiBTbWFydHBob25lICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDgwMHB4KSB7XHJcbiAgLmRlc2t0b3AtYnV0dG9uIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG5cclxuICAubW9iaWxlLWJ0biB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHotaW5kZXg6IDEwMDAwO1xyXG4gICAgaGVpZ2h0OiA2MHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDYwcHg7XHJcbiAgICB3aWR0aDogNjBweDtcclxuICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNENBRjUwO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAxNXB4O1xyXG4gICAgcmlnaHQ6IDE1cHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xyXG4gIH1cclxuXHJcbiAgLndyYXBwZXIge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICB9XHJcblxyXG4gIC5ncmFwaC1kaXYge1xyXG4gICAgZmxvYXQ6bm9uZTtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBtYXJnaW46YXV0bztcclxuICAgIHBhZGRpbmc6MXZ3O1xyXG4gIH1cclxuXHJcbiAgLmNhbnZhcy1ncmFwaCB7XHJcbiAgICBtYXJnaW46YXV0bztcclxuICAgIHdpZHRoOiA5NSU7XHJcbiAgICBoZWlnaHQ6IDk1JTtcclxuICB9XHJcbn1cclxuIl19 */"]
+      styles: [".loader[_ngcontent-%COMP%] {\r\n  border: 16px solid #f3f3f3;\r\n  border-radius: 50%;\r\n  border-top: 16px solid rgb(46, 143, 235);\r\n  border-bottom: 16px solid blue;\r\n  width: 120px;\r\n  height: 120px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 20%;\r\n  margin-bottom: 80%;\r\n  -webkit-animation: spin 1s linear infinite;\r\n  animation: spin 1s linear infinite;\r\n}\r\n@-webkit-keyframes spin {\r\n  0% { -webkit-transform: rotate(0deg); }\r\n  100% { -webkit-transform: rotate(360deg); }\r\n}\r\n@keyframes spin {\r\n  0% { transform: rotate(0deg); }\r\n  100% { transform: rotate(360deg); }\r\n}\r\n\r\n\r\n#divForTable[_ngcontent-%COMP%] {\r\n\tmargin: 0 auto;\r\n}\r\nthead[_ngcontent-%COMP%], tfoot[_ngcontent-%COMP%] {position:-webkit-sticky;position:sticky;background-color:#000; color:#fff;}\r\nthead[_ngcontent-%COMP%] {top:0; }\r\ntfoot[_ngcontent-%COMP%] {bottom:0;}\r\n.tableFixHead[_ngcontent-%COMP%] {\r\n\toverflow: auto;\r\n\tmax-height: 60vh;\r\n\twidth: 95vw;\r\n\tbox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\ntr[_ngcontent-%COMP%]:hover {background-color: #ffeb3b;}\r\ntr[_ngcontent-%COMP%]:nth-child(even):hover {background-color: #ffeb3b;}\r\ntable[_ngcontent-%COMP%]  { border-collapse: collapse; width: 100%; }\r\nth[_ngcontent-%COMP%], td[_ngcontent-%COMP%] { padding: 8px 16px; }\r\nthead[_ngcontent-%COMP%]     { background:#2196F3; }\r\ntr[_ngcontent-%COMP%]:nth-child(even) {background-color: #f2f2f2;}\r\n\r\n.desktop-button[_ngcontent-%COMP%] {\r\n  float: left;\r\n}\r\n.mobile-btn[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n.wrapper[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin-bottom: 1vh;\r\n}\r\n.graph-div[_ngcontent-%COMP%] {\r\n  float:left;\r\n  width: 30vw;\r\n  height: 60vh;\r\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n  margin:0 0.5%;\r\n  padding:2vw;\r\n}\r\n.canvas-graph[_ngcontent-%COMP%] {\r\n  width: 90%;\r\n  height: 90%;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  .desktop-button[_ngcontent-%COMP%] {\r\n    display: none;\r\n  }\r\n\r\n  .mobile-btn[_ngcontent-%COMP%] {\r\n    display: block;\r\n    z-index: 10000;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    width: 60px;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n    border-radius: 50%;\r\n    background-color: #4CAF50;\r\n    color: white;\r\n    text-align: center;\r\n    cursor: pointer;\r\n    position: fixed;\r\n    bottom: 15px;\r\n    right: 15px;\r\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n  }\r\n\r\n  .wrapper[_ngcontent-%COMP%] {\r\n    display: block;\r\n    justify-content: center;\r\n  }\r\n\r\n  .graph-div[_ngcontent-%COMP%] {\r\n    float:none;\r\n    width:100%;\r\n    margin:auto;\r\n    padding:1vw;\r\n  }\r\n\r\n  .canvas-graph[_ngcontent-%COMP%] {\r\n    margin:auto;\r\n    width: 95%;\r\n    height: 95%;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9teS1kaWV0L215LWRpZXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxVQUFVO0FBQ1Y7RUFDRSwwQkFBMEI7RUFDMUIsa0JBQWtCO0VBQ2xCLHdDQUF3QztFQUN4Qyw4QkFBOEI7RUFDOUIsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsMENBQTBDO0VBQzFDLGtDQUFrQztBQUNwQztBQUVBO0VBQ0UsS0FBSywrQkFBK0IsRUFBRTtFQUN0QyxPQUFPLGlDQUFpQyxFQUFFO0FBQzVDO0FBRUE7RUFDRSxLQUFLLHVCQUF1QixFQUFFO0VBQzlCLE9BQU8seUJBQXlCLEVBQUU7QUFDcEM7QUFDQSxjQUFjO0FBRWQsUUFBUTtBQUVSO0NBQ0MsY0FBYztBQUNmO0FBQ0EsY0FBYyx1QkFBZSxDQUFmLGVBQWUsQ0FBQyxxQkFBcUIsRUFBRSxVQUFVLENBQUM7QUFDaEUsT0FBTyxLQUFLLEVBQUU7QUFDZCxPQUFPLFFBQVEsQ0FBQztBQUNoQjtDQUNDLGNBQWM7Q0FDZCxnQkFBZ0I7Q0FDaEIsV0FBVztDQUNYLDRFQUE0RTtBQUM3RTtBQUNBLFVBQVUseUJBQXlCLENBQUM7QUFDcEMsMEJBQTBCLHlCQUF5QixDQUFDO0FBQ3BELFNBQVMseUJBQXlCLEVBQUUsV0FBVyxFQUFFO0FBQ2pELFNBQVMsaUJBQWlCLEVBQUU7QUFDNUIsWUFBWSxrQkFBa0IsRUFBRTtBQUNoQyxvQkFBb0IseUJBQXlCLENBQUM7QUFDOUMsWUFBWTtBQUVaO0VBQ0UsV0FBVztBQUNiO0FBRUE7RUFDRSxhQUFhO0FBQ2Y7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSxVQUFVO0VBQ1YsV0FBVztFQUNYLFlBQVk7RUFDWiw0RUFBNEU7RUFDNUUsYUFBYTtFQUNiLFdBQVc7QUFDYjtBQUVBO0VBQ0UsVUFBVTtFQUNWLFdBQVc7QUFDYjtBQUVBLGVBQWU7QUFDZjtFQUNFO0lBQ0UsYUFBYTtFQUNmOztFQUVBO0lBQ0UsY0FBYztJQUNkLGNBQWM7SUFDZCxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLFdBQVc7SUFDWCxjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsZUFBZTtJQUNmLFlBQVk7SUFDWixXQUFXO0lBQ1gsNEVBQTRFO0VBQzlFOztFQUVBO0lBQ0UsY0FBYztJQUNkLHVCQUF1QjtFQUN6Qjs7RUFFQTtJQUNFLFVBQVU7SUFDVixVQUFVO0lBQ1YsV0FBVztJQUNYLFdBQVc7RUFDYjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxVQUFVO0lBQ1YsV0FBVztFQUNiO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL215LWRpZXQvbXktZGlldC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypzcGlubmVyKi9cclxuLmxvYWRlciB7XHJcbiAgYm9yZGVyOiAxNnB4IHNvbGlkICNmM2YzZjM7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIGJvcmRlci10b3A6IDE2cHggc29saWQgcmdiKDQ2LCAxNDMsIDIzNSk7XHJcbiAgYm9yZGVyLWJvdHRvbTogMTZweCBzb2xpZCBibHVlO1xyXG4gIHdpZHRoOiAxMjBweDtcclxuICBoZWlnaHQ6IDEyMHB4O1xyXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gIG1hcmdpbi1yaWdodDogYXV0bztcclxuICBtYXJnaW4tdG9wOiAyMCU7XHJcbiAgbWFyZ2luLWJvdHRvbTogODAlO1xyXG4gIC13ZWJraXQtYW5pbWF0aW9uOiBzcGluIDFzIGxpbmVhciBpbmZpbml0ZTtcclxuICBhbmltYXRpb246IHNwaW4gMXMgbGluZWFyIGluZmluaXRlO1xyXG59XHJcblxyXG5ALXdlYmtpdC1rZXlmcmFtZXMgc3BpbiB7XHJcbiAgMCUgeyAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB9XHJcbiAgMTAwJSB7IC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfVxyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHNwaW4ge1xyXG4gIDAlIHsgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IH1cclxuICAxMDAlIHsgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfVxyXG59XHJcbi8qc3Bpbm5lci1lbmQqL1xyXG5cclxuLyp0YWJsZSovXHJcblxyXG4jZGl2Rm9yVGFibGUge1xyXG5cdG1hcmdpbjogMCBhdXRvO1xyXG59XHJcbnRoZWFkLCB0Zm9vdCB7cG9zaXRpb246c3RpY2t5O2JhY2tncm91bmQtY29sb3I6IzAwMDsgY29sb3I6I2ZmZjt9XHJcbnRoZWFkIHt0b3A6MDsgfVxyXG50Zm9vdCB7Ym90dG9tOjA7fVxyXG4udGFibGVGaXhIZWFkIHtcclxuXHRvdmVyZmxvdzogYXV0bztcclxuXHRtYXgtaGVpZ2h0OiA2MHZoO1xyXG5cdHdpZHRoOiA5NXZ3O1xyXG5cdGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XHJcbn1cclxudHI6aG92ZXIge2JhY2tncm91bmQtY29sb3I6ICNmZmViM2I7fVxyXG50cjpudGgtY2hpbGQoZXZlbik6aG92ZXIge2JhY2tncm91bmQtY29sb3I6ICNmZmViM2I7fVxyXG50YWJsZSAgeyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyB3aWR0aDogMTAwJTsgfVxyXG50aCwgdGQgeyBwYWRkaW5nOiA4cHggMTZweDsgfVxyXG50aGVhZCAgICAgeyBiYWNrZ3JvdW5kOiMyMTk2RjM7IH1cclxudHI6bnRoLWNoaWxkKGV2ZW4pIHtiYWNrZ3JvdW5kLWNvbG9yOiAjZjJmMmYyO31cclxuLyp0YWJsZS1lbmQqL1xyXG5cclxuLmRlc2t0b3AtYnV0dG9uIHtcclxuICBmbG9hdDogbGVmdDtcclxufVxyXG5cclxuLm1vYmlsZS1idG4ge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbn1cclxuXHJcbi53cmFwcGVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIG1hcmdpbi1ib3R0b206IDF2aDtcclxufVxyXG5cclxuLmdyYXBoLWRpdiB7XHJcbiAgZmxvYXQ6bGVmdDtcclxuICB3aWR0aDogMzB2dztcclxuICBoZWlnaHQ6IDYwdmg7XHJcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcclxuICBtYXJnaW46MCAwLjUlO1xyXG4gIHBhZGRpbmc6MnZ3O1xyXG59XHJcblxyXG4uY2FudmFzLWdyYXBoIHtcclxuICB3aWR0aDogOTAlO1xyXG4gIGhlaWdodDogOTAlO1xyXG59XHJcblxyXG4vKiBTbWFydHBob25lICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDgwMHB4KSB7XHJcbiAgLmRlc2t0b3AtYnV0dG9uIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG5cclxuICAubW9iaWxlLWJ0biB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHotaW5kZXg6IDEwMDAwO1xyXG4gICAgaGVpZ2h0OiA2MHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDYwcHg7XHJcbiAgICB3aWR0aDogNjBweDtcclxuICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNENBRjUwO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAxNXB4O1xyXG4gICAgcmlnaHQ6IDE1cHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xyXG4gIH1cclxuXHJcbiAgLndyYXBwZXIge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICB9XHJcblxyXG4gIC5ncmFwaC1kaXYge1xyXG4gICAgZmxvYXQ6bm9uZTtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBtYXJnaW46YXV0bztcclxuICAgIHBhZGRpbmc6MXZ3O1xyXG4gIH1cclxuXHJcbiAgLmNhbnZhcy1ncmFwaCB7XHJcbiAgICBtYXJnaW46YXV0bztcclxuICAgIHdpZHRoOiA5NSU7XHJcbiAgICBoZWlnaHQ6IDk1JTtcclxuICB9XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -3068,7 +3237,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 1) {
         var _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 103);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 108);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDriComponent_div_1_tr_13_ng_template_6_Template_button_click_0_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12);
@@ -3096,7 +3265,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 80);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 108);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 109);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MyDriComponent_div_1_tr_13_div_14_Template_button_click_1_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r15);
@@ -3108,7 +3277,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return ctx_r13.openDeleteForm(dri_r5);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "i", 109);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "i", 110);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Delete");
 
@@ -3297,8 +3466,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function add() {
           var _this6 = this;
 
-          document.getElementById('id01').style.display = 'none';
           this.driService.addDri(this.dri).subscribe(function () {
+            document.getElementById('id01').style.display = 'none';
+
             _this6.toastr.success('You successfully added a DRI!', 'Success');
 
             _this6.ngOnInit();
@@ -3317,8 +3487,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function update() {
           var _this7 = this;
 
-          document.getElementById('id02').style.display = 'none';
           this.driService.updateDri(this.dri).subscribe(function (data) {
+            document.getElementById('id02').style.display = 'none';
+
             _this7.toastr.success('You successfully updated your DRI!', 'Success');
 
             _this7.ngOnInit();
@@ -3384,7 +3555,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-my-dri"]],
       decls: 1050,
       vars: 139,
-      consts: [["class", "loader", 4, "ngIf"], ["class", "w3-padding", "style", "overflow: auto;", 4, "ngIf"], [1, "w3-container", "w3-center"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-top", "w3-card-4"], [1, "w3-container", "w3-blue"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "name", "name", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "separator"], [1, "main-div"], [1, "left-div"], ["required", "", "name", "calories", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calories_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "carbohydrate_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "carbohydrate_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fiber_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fiber_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "protein_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "protein_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "total_fat_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "total_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "saturated_fat_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "saturated_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fatty_acids_total_trans_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fatty_acids_total_trans_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "cholesterol_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "cholesterol_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sugars_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sugars_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "water_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "water_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_a_rae_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_a_rae_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "thiamin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "thiamin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "riboflavin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "riboflavin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "niacin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "niacin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "pantothenic_acid_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "pantothenic_acid_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b6_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b6_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "folate_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "folate_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b12_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b12_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "choline_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "choline_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_c_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_c_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_d_IU", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_d_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_e_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_e_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_k_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_k_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calcium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calcium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "copper_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "copper_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "irom_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "irom_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "magnesium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "magnesium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "manganese_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "manganese_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "phosphorous_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "phosphorous_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "potassium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "potassium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "selenium_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "selenium_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sodium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sodium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "zink_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "zink_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-green", 3, "disabled", "click"], [1, "fa", "fa-check"], ["id", "id02", 1, "w3-modal"], ["onclick", "document.getElementById('id02').style.display='none'", 1, "w3-button", "w3-display-topright"], ["formControlEdit", "ngForm"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], ["id", "id03", 1, "modal"], ["onclick", "document.getElementById('id03').style.display='none'", "title", "Close Modal", 1, "close"], [1, "modal-content"], [1, "container"], [1, "clearfix"], ["type", "button", "onclick", "document.getElementById('id03').style.display='none'", 1, "cancelbtn"], ["type", "button", 1, "deletebtn", 3, "click"], [1, "loader"], [1, "w3-padding", 2, "overflow", "auto"], [1, "divForTable", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-btn", "w3-green", 3, "click"], ["aria-hidden", "true", 1, "fa", "fa-plus"], [4, "ngFor", "ngForOf"], ["class", "w3-text-green", 4, "ngIf", "ngIfElse"], ["not_active", ""], [1, "w3-blue", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], ["class", "w3-center", 4, "ngIf"], [1, "w3-text-green"], [1, "w3-red", 2, "font-family", "inherit", "width", "100px", "height", "40px", 3, "click"], [1, "fa", "fa-trash"]],
+      consts: [["class", "loader", 4, "ngIf"], ["class", "w3-padding", "style", "overflow: auto;", 4, "ngIf"], [1, "w3-container", "w3-center"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-top", "w3-card-4"], [1, "w3-container", "w3-blue"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], [1, "w3-container"], ["formControl", "ngForm"], [1, "w3-text-blue"], ["required", "", "name", "name", "type", "text", 1, "w3-input", "w3-border", "w3-light-grey", 2, "text-align", "center", 3, "ngModel", "ngModelChange"], [1, "separator"], [1, "main-div"], [1, "left-div"], ["required", "", "name", "calories", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calories_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "carbohydrate_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "carbohydrate_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fiber_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fiber_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "protein_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "protein_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "total_fat_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "total_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "saturated_fat_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "saturated_fat_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fatty_acids_total_trans_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "fatty_acids_total_trans_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "cholesterol_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "cholesterol_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sugars_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sugars_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "water_g", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "water_g_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_a_rae_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_a_rae_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "thiamin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "thiamin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "riboflavin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "riboflavin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "niacin_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "niacin_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "pantothenic_acid_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "pantothenic_acid_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b6_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b6_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "folate_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "folate_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b12_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_b12_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "choline_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "choline_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_c_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_c_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_d_IU", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_d_IU_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_e_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_e_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_k_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "vitamin_k_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calcium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "calcium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "copper_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "copper_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "irom_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "irom_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "magnesium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "magnesium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "manganese_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "manganese_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "phosphorous_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "phosphorous_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "potassium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "potassium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "selenium_mcg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "selenium_mcg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sodium_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "sodium_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "zink_mg", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], ["required", "", "name", "zink_mg_max", "onkeypress", "return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)", "type", "number", 1, "small-input", "w3-input", "w3-border", "w3-light-grey", 3, "ngModel", "ngModelChange"], [1, "w3-center"], [1, "w3-btn", "w3-green", 3, "disabled", "click"], [1, "fa", "fa-check"], ["id", "id02", 1, "w3-modal"], ["onclick", "document.getElementById('id02').style.display='none'", 1, "w3-button", "w3-display-topright"], ["formControlEdit", "ngForm"], [1, "w3-btn", "w3-blue", 3, "disabled", "click"], ["id", "id03", 1, "modal"], ["onclick", "document.getElementById('id03').style.display='none'", "title", "Close Modal", 1, "close"], [1, "modal-content"], [1, "container"], [1, "clearfix"], ["type", "button", "onclick", "document.getElementById('id03').style.display='none'", 1, "cancelbtn"], ["type", "button", 1, "deletebtn", 3, "click"], [1, "loader"], [1, "w3-padding", 2, "overflow", "auto"], [1, "divForTable", 2, "width", "80vw"], [1, "w3-blue"], [1, "w3-btn", "w3-green", 3, "click"], ["aria-hidden", "true", 1, "fa", "fa-plus"], [4, "ngFor", "ngForOf"], ["class", "w3-text-green", 4, "ngIf", "ngIfElse"], ["not_active", ""], [1, "w3-btn", "w3-blue", 2, "width", "100px", "height", "38px", 3, "click"], [1, "fa", "fa-edit"], [2, "padding-top", "4px"], ["class", "w3-center", 4, "ngIf"], [1, "w3-text-green"], [1, "w3-btn", "w3-blue", 3, "click"], [1, "w3-btn", "w3-red", 2, "width", "100px", "height", "38px", 3, "click"], [1, "fa", "fa-trash"]],
       template: function MyDriComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, MyDriComponent_div_0_Template, 1, 0, "div", 0);
