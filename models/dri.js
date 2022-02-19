@@ -24,7 +24,12 @@ var driSchema = new mongoose.Schema({
 	},
 	calcium_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	calories_max: {
 		type: Number,
@@ -37,7 +42,12 @@ var driSchema = new mongoose.Schema({
 	},
 	calories: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	carbohydrate_g_max: {
 		type: Number,
@@ -50,7 +60,12 @@ var driSchema = new mongoose.Schema({
 	},
 	carbohydrate_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	cholesterol_mg_max: {
 		type: Number,
@@ -63,7 +78,12 @@ var driSchema = new mongoose.Schema({
 	},
 	cholesterol_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	choline_mg_max: {
 		type: Number,
@@ -76,7 +96,12 @@ var driSchema = new mongoose.Schema({
 	},
 	choline_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	copper_mg_max: {
 		type: Number,
@@ -89,7 +114,12 @@ var driSchema = new mongoose.Schema({
 	},
 	copper_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	fatty_acids_total_trans_g_max: {
 		type: Number,
@@ -102,7 +132,12 @@ var driSchema = new mongoose.Schema({
 	},
 	fatty_acids_total_trans_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	fiber_g_max: {
 		type: Number,
@@ -115,7 +150,12 @@ var driSchema = new mongoose.Schema({
 	},
 	fiber_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	folate_mcg_max: {
 		type: Number,
@@ -128,7 +168,12 @@ var driSchema = new mongoose.Schema({
 	},
 	folate_mcg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	irom_mg_max: {
 		type: Number,
@@ -141,7 +186,12 @@ var driSchema = new mongoose.Schema({
 	},
 	irom_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	magnesium_mg_max: {
 		type: Number,
@@ -154,7 +204,12 @@ var driSchema = new mongoose.Schema({
 	},
 	magnesium_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	manganese_mg_max: {
 		type: Number,
@@ -167,7 +222,12 @@ var driSchema = new mongoose.Schema({
 	},
 	manganese_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	niacin_mg_max: {
 		type: Number,
@@ -180,7 +240,12 @@ var driSchema = new mongoose.Schema({
 	},
 	niacin_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	pantothenic_acid_mg_max: {
 		type: Number,
@@ -193,7 +258,12 @@ var driSchema = new mongoose.Schema({
 	},
 	pantothenic_acid_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	phosphorous_mg_max: {
 		type: Number,
@@ -206,7 +276,12 @@ var driSchema = new mongoose.Schema({
 	},
 	phosphorous_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	potassium_mg_max: {
 		type: Number,
@@ -219,7 +294,12 @@ var driSchema = new mongoose.Schema({
 	},
 	potassium_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	protein_g_max: {
 		type: Number,
@@ -232,7 +312,12 @@ var driSchema = new mongoose.Schema({
 	},
 	protein_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	riboflavin_mg_max: {
 		type: Number,
@@ -245,7 +330,12 @@ var driSchema = new mongoose.Schema({
 	},
 	riboflavin_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	saturated_fat_g_max: {
 		type: Number,
@@ -258,7 +348,12 @@ var driSchema = new mongoose.Schema({
 	},
 	saturated_fat_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	selenium_mcg_max: {
 		type: Number,
@@ -271,7 +366,12 @@ var driSchema = new mongoose.Schema({
 	},
 	selenium_mcg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	sodium_mg_max: {
 		type: Number,
@@ -284,7 +384,12 @@ var driSchema = new mongoose.Schema({
 	},
 	sodium_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	sugars_g_max: {
 		type: Number,
@@ -297,7 +402,12 @@ var driSchema = new mongoose.Schema({
 	},
 	sugars_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	thiamin_mg_max: {
 		type: Number,
@@ -310,7 +420,12 @@ var driSchema = new mongoose.Schema({
 	},
 	thiamin_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	total_fat_g_max: {
 		type: Number,
@@ -323,7 +438,12 @@ var driSchema = new mongoose.Schema({
 	},
 	total_fat_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_a_rae_mcg_max: {
 		type: Number,
@@ -336,7 +456,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_a_rae_mcg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_b12_mcg_max: {
 		type: Number,
@@ -349,7 +474,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_b12_mcg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_b6_mg_max: {
 		type: Number,
@@ -362,7 +492,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_b6_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_c_mg_max: {
 		type: Number,
@@ -375,7 +510,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_c_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_d_IU_max: {
 		type: Number,
@@ -388,7 +528,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_d_IU: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_e_mg_max: {
 		type: Number,
@@ -401,7 +546,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_e_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	vitamin_k_mcg_max: {
 		type: Number,
@@ -414,7 +564,12 @@ var driSchema = new mongoose.Schema({
 	},
 	vitamin_k_mcg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	water_g_max: {
 		type: Number,
@@ -427,7 +582,12 @@ var driSchema = new mongoose.Schema({
 	},
 	water_g: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	},
 	zink_mg_max: {
 		type: Number,
@@ -440,7 +600,12 @@ var driSchema = new mongoose.Schema({
 	},
 	zink_mg: {
 		type: Number,
-		required: true
+		required: true,
+		validate: [
+			function (value) {
+					return value > 0;
+			}, 'DRI must be greater than 0'
+		]
 	}
 });
 
