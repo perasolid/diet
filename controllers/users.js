@@ -141,11 +141,10 @@ module.exports.resetPassword = function(req, res) {
 			}
 		});
 	let transport = nodemailer.createTransport({
-		host: 'smtp.mailtrap.io',
-		port: 2525,
+		service: 'gmail',
 		auth: {
-		   user: '02231501925661',
-		   pass: '61cbb1dce65639'
+			user: process.env.EMAIL,
+			pass: process.env.EMAIL_PASSWORD
 		}
 	});
 	var mailOptions = {
@@ -154,11 +153,11 @@ module.exports.resetPassword = function(req, res) {
 		subject: 'Reset password',
 		html: `<p>Dear Sir or Madam,</p>
 			   <p>Your password was reset to: <b>${password}</b></p>
-			   <p>After you sign-in to Dietary-habits please change the password from "My profile" section.</p>
+			   <p>After you sign-in to Dietary-habits please change the password from the "My profile" section.</p>
 			   <p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
 			   <p>Dietary-habits team</p>
 			   <p>Email: contact@dietary-habits.com</p>
-			   <p>Web: <a href="http://localhost:4200/home">www.dietary-habits.com</a></p>`
+			   <p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
 	};
 
 	transport.sendMail(mailOptions, function(err, info) {
