@@ -141,10 +141,12 @@ module.exports.resetPassword = function(req, res) {
 			}
 		});
 	let transport = nodemailer.createTransport({
-		service: 'gmail',
+		host: 'smtp.zoho.eu',
+		port: 465,
+		secure: true, //ssl
 		auth: {
-			user: process.env.EMAIL,
-			pass: process.env.EMAIL_PASSWORD
+				user:process.env.EMAIL,
+				pass:process.env.EMAIL_PASSWORD
 		}
 	});
 	var mailOptions = {
