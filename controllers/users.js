@@ -150,7 +150,7 @@ module.exports.resetPassword = function(req, res) {
 		}
 	});
 	var mailOptions = {
-		from: 'no-reply@dietary-habits.com',
+		from: 'dietaryhabits@zohomail.eu',
 		to: req.body.email,
 		subject: 'Reset password',
 		html: `<p>Dear Sir or Madam,</p>
