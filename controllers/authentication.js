@@ -67,20 +67,23 @@ module.exports.register = function(req, res) {
           var mailOptions = {
             from: process.env.EMAIL,
             to: req.body.email,
-            subject: 'Account Verification',
-            html: `<h3>Confirm your email address</h3>
-                  <p style="margin: 0;">Click the button below to confirm your email address. 
-                  If you didn't create an account with <a href="https://mydietaryhabits.herokuapp.com">
-                  Dietary Habits</a>, you can safely delete this email.</p>
-
-                  <a href="${url}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Verify Account</a>
-
-                  <p style="margin: 0;">If that doesn't work, copy and paste the following link in your browser:</p>
-                  <p style="margin: 0;"><a href="${url}" target="_blank">${url}</a></p>
-
-                  <p style="margin: 0;">Cheers,<br> Dietary Habits</p>
-                  <p style="margin: 0;">Dietary Habits, John Kennedy 36, New Belgrade, Serbia</p>
-                  <p style="margin: 0;">contact@dhab.com</p>`
+            subject: 'Dietaty Habits - Account verification',
+            html: `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style>body {background-color: lightgrey;font-family: Helvetica;}</style></head>
+            <body><div class="w3-container w3-padding-64">
+            <div class="w3-card" style="width:60%; background-color: white; margin:auto;">
+            <div class="w3-padding"><h2 class="w3-center">Confirm your email address</h2>
+            <p>Click the button below to confirm your email address. 
+            If you didn't create an account with <a href="https://mydietaryhabits.herokuapp.com">
+            Dietary Habits</a>, you can safely delete this email.</p><div class="w3-center">
+            <a href="${url}" target="_blank"><button class="w3-btn w3-blue">Verify Account</button></a></div>
+            <p>If that doesn't work, copy and paste the following link in your browser:</p>
+            <p><a href="${url}" target="_blank">${url}</a></p>
+            <p style="margin: 0;">Cheers,<br> Dietary Habits</p>
+            <p style="margin: 0;">Dietary Habits, John Kennedy 36, New Belgrade, Serbia</p>
+            <p style="margin: 0;"><a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.com</a></p>
+            <p style="margin: 0;">contact@dhab.com</p></div></div></div></body></html>`
           };
         
           transport.sendMail(mailOptions, function(err, info) {
@@ -120,9 +123,7 @@ module.exports.verifyAccount = function(req, res) {
                   }
                   else {
                     res.status(200);
-                    res.json({
-                      message:'Verified account!'
-                    });
+                    res.sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));;
                   }
                 }
               );
