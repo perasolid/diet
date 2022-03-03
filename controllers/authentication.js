@@ -68,7 +68,19 @@ module.exports.register = function(req, res) {
             from: process.env.EMAIL,
             to: req.body.email,
             subject: 'Account Verification',
-            text: "Click on the link below to verify your account " + url
+            html: `<h3>Confirm your email address</h3>
+                  <p style="margin: 0;">Click the button below to confirm your email address. 
+                  If you didn't create an account with <a href="https://mydietaryhabits.herokuapp.com">
+                  Dietary Habits</a>, you can safely delete this email.</p>
+
+                  <a href="${url}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Verify Account</a>
+
+                  <p style="margin: 0;">If that doesn't work, copy and paste the following link in your browser:</p>
+                  <p style="margin: 0;"><a href="${url}" target="_blank">${url}</a></p>
+
+                  <p style="margin: 0;">Cheers,<br> Dietary Habits</p>
+                  <p style="margin: 0;">Dietary Habits, John Kennedy 36, New Belgrade, Serbia</p>
+                  <p style="margin: 0;">contact@dhab.com</p>`
           };
         
           transport.sendMail(mailOptions, function(err, info) {
@@ -83,12 +95,6 @@ module.exports.register = function(req, res) {
             }
           });
         });
-        /*var token;
-        token = user.generateJwt();
-        res.status(200);
-        res.json({
-        "token" : token
-        });*/
       });
     }
   });
@@ -104,7 +110,6 @@ module.exports.verifyAccount = function(req, res) {
               console.log(e)
               return res.sendStatus(403)
           } else {
-              //id = decoded.id;
               var id = mongoose.Types.ObjectId(decoded.id);
               User.update({"_id": id}, {"$set": {"isVerified": true}}, {"multi": true}, 
                 (err, writeResult) => {
