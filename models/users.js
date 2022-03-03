@@ -14,7 +14,8 @@ var userSchema = new mongoose.Schema({
   },
   role: { type:String, enum: ['admin','user'], default:'user' },
   hash: String,
-  salt: String
+  salt: String,
+  isVerified: { type: Boolean, default: false }
 });
 
 userSchema.methods.setPassword = function(password){
@@ -37,7 +38,7 @@ userSchema.methods.generateJwt = function() {
     name: this.name,
     role:this.role,
     exp: parseInt(expiry.getTime() / 1000),
-  }, "MY_SECRET");
+  }, process.env.SECRET);
 };
 
 const User = module.exports = mongoose.model('User', userSchema);

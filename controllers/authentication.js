@@ -73,11 +73,15 @@ module.exports.login = function(req, res) {
 
     //If a user is found
     if(user){
-      token = user.generateJwt();
-      res.status(200);
-      res.json({
-        "token" : token
-      });
+      if(user.isVerified) {
+        token = user.generateJwt();
+        res.status(200);
+        res.json({
+          "token" : token
+        });
+      } else {
+        return res.status(401).json({msg:'Your Email has not been verified. Please click on resend'});
+      }
     } else {
       //If user is not found
       res.status(401).json(info);
