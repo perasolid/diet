@@ -149,7 +149,7 @@ module.exports.resendVerificationToken = function(req, res) {
         console.log(info);
         res.status(200);
         res.json({
-          "message" : "A verification email has been sent to " + user.email + ". It will expire after one day. If you did not get a verification email, click on resend verification email."
+          "message" : "A verification email has been sent to " + req.body.email + ". It will expire after one day. If you did not get a verification email, click on resend verification email."
         });
       }
     });
