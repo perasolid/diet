@@ -11340,6 +11340,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.router = router;
         this.toastr = toastr;
         this.isRecaptchaValid = false;
+        this.resendVerifEmailCount = 0;
         this.credentials = {
           name: '',
           email: '',
@@ -11396,7 +11397,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "resend",
         value: function resend() {
+          var _this18 = this;
+
           console.log(this.credentials.email);
+          console.log(this.resendVerifEmailCount);
+
+          if (this.resendVerifEmailCount < 5) {
+            var req = {
+              email: this.credentials.email
+            };
+            this.auth.resendVerificationEmail(req).subscribe(function (res) {
+              _this18.resendVerifEmailCount++;
+
+              _this18.toastr.success('Resent verification email to: ' + _this18.credentials.email, 'Success');
+            }, function (err) {
+              _this18.toastr.error(err.error.message, 'Error');
+            });
+          } else {
+            this.toastr.error('Already sent 5 (five) verification emails. Cannot send more.', 'Error');
+          }
         }
       }]);
 
@@ -11864,20 +11883,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SearchAndAddNutritionComponent, [{
         key: "getNutritions",
         value: function getNutritions() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.isLoaded = false;
           this.nutritionService.getNutritionNamesAndIds(this.search).subscribe(function (nutritions) {
-            _this18.nutritions = nutritions;
-            _this18.isLoaded = true;
+            _this19.nutritions = nutritions;
+            _this19.isLoaded = true;
 
-            _this18.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this19.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
         key: "addNutrition",
         value: function addNutrition(id) {
-          var _this19 = this;
+          var _this20 = this;
 
           var x = document.getElementById(id.toString());
           console.log(x);
@@ -11895,13 +11914,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               nutrition_id: id
             };
             this.userNutritionService.addNutrition(nutrition).subscribe(function () {
-              _this19.nutritions = [];
+              _this20.nutritions = [];
 
-              _this19.toastr.success('You successfully added the food!', 'Success');
+              _this20.toastr.success('You successfully added the food!', 'Success');
 
               window.scrollTo(0, 0);
             }, function (err) {
-              _this19.toastr.error(err.error.message, 'Error');
+              _this20.toastr.error(err.error.message, 'Error');
             });
           }
         }
@@ -12106,14 +12125,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SignInComponent, [{
         key: "login",
         value: function login() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.auth.login(this.credentials).subscribe(function () {
-            _this20.router.navigateByUrl('/my-diet');
+            _this21.router.navigateByUrl('/my-diet');
 
-            _this20.toastr.success('You successfully signed-in!', 'Welcome ' + _this20.auth.getUserDetails().name);
+            _this21.toastr.success('You successfully signed-in!', 'Welcome ' + _this21.auth.getUserDetails().name);
           }, function (err) {
-            _this20.toastr.error('Check email and password fields!', 'Error');
+            _this21.toastr.error('Check email and password fields!', 'Error');
           });
         }
       }, {
@@ -12387,7 +12406,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StatsComponent, [{
         key: "onDateChange",
         value: function onDateChange(date) {
-          var _this21 = this;
+          var _this22 = this;
 
           this.isLoaded = false;
           this.sumQuantity = 0;
@@ -12398,17 +12417,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date_of_consumption: date
           };
           this.userNutritionService.getUserNutritions(body).subscribe(function (nutritions) {
-            _this21.nutritions = nutritions;
+            _this22.nutritions = nutritions;
 
-            _this21.calculateSum(nutritions);
+            _this22.calculateSum(nutritions);
 
-            _this21.assignColor();
+            _this22.assignColor();
 
-            _this21.updateCharts();
+            _this22.updateCharts();
 
-            _this21.isLoaded = true;
+            _this22.isLoaded = true;
 
-            _this21.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this22.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
@@ -12873,12 +12892,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.driService.getUserActiveDris().subscribe(function (dris) {
-            Object.assign(_this22.dri, dris[0]);
+            Object.assign(_this23.dri, dris[0]);
 
-            _this22.onDateChange(_this22.dateOfConsumption.toISOString().split('T')[0]);
+            _this23.onDateChange(_this23.dateOfConsumption.toISOString().split('T')[0]);
           });
         }
       }]);
@@ -13334,40 +13353,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersComponent, [{
         key: "getUsers",
         value: function getUsers() {
-          var _this23 = this;
+          var _this24 = this;
 
           if (this.search === '') {
             this.userService.getUsersWithPagination(this.currentPage, this.currnetLimit).subscribe(function (users) {
-              _this23.users = users;
+              _this24.users = users;
             });
             this.userService.getUsersCount().subscribe(function (res) {
-              _this23.numberOfPages = Math.ceil(res.numberOfUsers / _this23.currnetLimit);
+              _this24.numberOfPages = Math.ceil(res.numberOfUsers / _this24.currnetLimit);
             });
           } else {
             this.userService.getUsers(this.search).subscribe(function (users) {
-              _this23.users = users;
+              _this24.users = users;
 
-              _this23.toastr.success('Found ' + users.length + ' user/s', 'Success');
+              _this24.toastr.success('Found ' + users.length + ' user/s', 'Success');
             });
           }
         }
       }, {
         key: "addUser",
         value: function addUser() {
-          var _this24 = this;
+          var _this25 = this;
 
           if (this.credentials.password === this.confirmationPassword) {
             this.credentials.name = this.firstName + ' ' + this.lastName;
             this.userService.addUser(this.credentials).subscribe(function () {
-              _this24.toastr.success('You successfully added a user!', 'Success');
+              _this25.toastr.success('You successfully added a user!', 'Success');
 
               document.getElementById('id01').style.display = 'none';
 
-              _this24.clearDialog();
+              _this25.clearDialog();
 
-              _this24.getUsers();
+              _this25.getUsers();
             }, function (err) {
-              _this24.toastr.error(err.error.message, 'Error');
+              _this25.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Password and Confirmation password do not match!', 'Error');
@@ -13376,50 +13395,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateUser",
         value: function updateUser() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.userService.updateUser(this.selectedUser).subscribe(function (data) {
             document.getElementById('id02').style.display = 'none';
 
-            _this25.toastr.success('You successfully updated this user!', 'Success');
+            _this26.toastr.success('You successfully updated this user!', 'Success');
 
-            _this25.getUsers();
-          }, function (err) {
-            _this25.toastr.error(err.error.message, 'Error');
-          });
-        }
-      }, {
-        key: "deleteUser",
-        value: function deleteUser() {
-          var _this26 = this;
-
-          this.userService.deleteUser(this.selectedUser._id).subscribe(function (data) {
-            document.getElementById('id03').style.display = 'none';
-
-            _this26.toastr.success('You successfully deleted this user!', 'Success');
-
-            if (data.n == 1) {
-              for (var i = 0; i < _this26.users.length; i++) {
-                if (_this26.selectedUser._id == _this26.users[i]._id) {
-                  _this26.users.splice(i, 1);
-                }
-              }
-            }
+            _this26.getUsers();
           }, function (err) {
             _this26.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
-        key: "resetPassword",
-        value: function resetPassword() {
+        key: "deleteUser",
+        value: function deleteUser() {
           var _this27 = this;
 
+          this.userService.deleteUser(this.selectedUser._id).subscribe(function (data) {
+            document.getElementById('id03').style.display = 'none';
+
+            _this27.toastr.success('You successfully deleted this user!', 'Success');
+
+            if (data.n == 1) {
+              for (var i = 0; i < _this27.users.length; i++) {
+                if (_this27.selectedUser._id == _this27.users[i]._id) {
+                  _this27.users.splice(i, 1);
+                }
+              }
+            }
+          }, function (err) {
+            _this27.toastr.error(err.error.message, 'Error');
+          });
+        }
+      }, {
+        key: "resetPassword",
+        value: function resetPassword() {
+          var _this28 = this;
+
           this.userService.resetPassword(this.selectedUser).subscribe(function () {
-            _this27.toastr.success('You successfully reset the password for user!', 'Success');
+            _this28.toastr.success('You successfully reset the password for user!', 'Success');
 
             document.getElementById('id02').style.display = 'none';
           }, function (err) {
-            _this27.toastr.error(err.error.message, 'Error');
+            _this28.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -14523,7 +14542,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "request",
         value: function request(method, type, user) {
-          var _this28 = this;
+          var _this29 = this;
 
           var base;
 
@@ -14539,7 +14558,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var request = base.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
             if (data.token) {
-              _this28.saveToken(data.token);
+              _this29.saveToken(data.token);
             }
 
             return data;
@@ -14577,6 +14596,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "updateUser",
         value: function updateUser(user) {
           return this.http.put(this.BACKEND_URL_USERS + '/update/' + user._id, user, httpOptions);
+        }
+      }, {
+        key: "resendVerificationEmail",
+        value: function resendVerificationEmail(req) {
+          return this.http.post(this.BACKEND_URL_USERS + '/resend-verification-email', req, httpOptions);
         }
       }, {
         key: "verifyRecaptcha",

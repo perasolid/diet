@@ -5450,6 +5450,7 @@ class RegisterComponent {
         this.router = router;
         this.toastr = toastr;
         this.isRecaptchaValid = false;
+        this.resendVerifEmailCount = 0;
         this.credentials = {
             name: '',
             email: '',
@@ -5496,6 +5497,21 @@ class RegisterComponent {
     }
     resend() {
         console.log(this.credentials.email);
+        console.log(this.resendVerifEmailCount);
+        if (this.resendVerifEmailCount < 5) {
+            var req = {
+                email: this.credentials.email
+            };
+            this.auth.resendVerificationEmail(req).subscribe(res => {
+                this.resendVerifEmailCount++;
+                this.toastr.success('Resent verification email to: ' + this.credentials.email, 'Success');
+            }, (err) => {
+                this.toastr.error(err.error.message, 'Error');
+            });
+        }
+        else {
+            this.toastr.error('Already sent 5 (five) verification emails. Cannot send more.', 'Error');
+        }
     }
 }
 RegisterComponent.ɵfac = function RegisterComponent_Factory(t) { return new (t || RegisterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"])); };
@@ -7124,6 +7140,9 @@ class AuthenticationService {
     }
     updateUser(user) {
         return this.http.put(this.BACKEND_URL_USERS + '/update/' + user._id, user, httpOptions);
+    }
+    resendVerificationEmail(req) {
+        return this.http.post(this.BACKEND_URL_USERS + '/resend-verification-email', req, httpOptions);
     }
     verifyRecaptcha(responseFromClientSide) {
         responseFromClientSide.secret = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].recaptcha.secreatKey;
