@@ -21,6 +21,7 @@ router.get('/profile', auth, ctrlProfile.profileRead);
 
 // authentication
 router.post('/register', ctrlAuth.register);
+router.post('/resend-verification-email', ctrlAuth.resendVerificationToken);
 router.post('/login', ctrlAuth.login);
 
 
