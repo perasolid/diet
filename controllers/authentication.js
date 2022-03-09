@@ -83,29 +83,29 @@ module.exports.register = function(req, res) {
 
 module.exports.resendVerificationToken = function(req, res) {
   Verification_token.findOne({email: req.body.email}, function(err, verification_token) {
-    if(err) {
-      return res.status(404).json({"message": "No verification token available."})
-    }
-    var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verification_token.token;
-    var mailOptions = {
-      from: process.env.EMAIL,
-      to: req.body.email,
-      subject: 'Dietaty Habits - Account verification',
-      html: verification_email_template.verification_email.replace(/####/g, url)
-    };
-  
-    email_config.transport.sendMail(mailOptions, function(err, info) {
-      if (err) {
-        console.log(err)
-      } else {
-        console.log(info);
-        res.status(200);
-        res.json({
-          "message" : "A verification email has been sent to " + req.body.email + ". It will expire after one day. If you did not get a verification email, click on resend verification email."
-        });
-      }
-    });
-  })
+    if (err) {
+      res.status(404).json({"message": "No verification token available."})
+    } else {
+      var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verification_token.token;
+      var mailOptions = {
+        from: process.env.EMAIL,
+        to: req.body.email,
+        subject: 'Dietaty Habits - Account verification',
+        html: verification_email_template.verification_email.replace(/####/g, url)
+      };
+      email_config.transport.sendMail(mailOptions, function(err, info) {
+        if (err) {
+          console.log(err)
+        } else {
+          console.log(info);
+          res.status(200);
+          res.json({
+            "message" : "A verification email has been sent to " + req.body.email + ". It will expire after one day. If you did not get a verification email, click on resend verification email."
+          });
+        }
+      });
+    })
+  }
 }
 
 module.exports.verifyAccount = function(req, res) {
