@@ -107,6 +107,7 @@ module.exports.resendVerificationToken = function(req, res) {
 
 module.exports.verifyAccount = function(req, res) {
   token = req.query.id;
+  console.log(token);
   if (token) {
     try {
         jwt.verify(token, process.env.SECRET, (e, decoded) => {
@@ -115,23 +116,47 @@ module.exports.verifyAccount = function(req, res) {
               return res.sendStatus(403)
           } else {
               var id = mongoose.Types.ObjectId(decoded.id);
-              User.update({"_id": id}, {"$set": {"isVerified": true}}, {"multi": true}, 
-                (err, writeResult) => {
-                  if(err) {
-                  console.log(err);
-                  res.status(400);
-                  res.send(err);
-                  }
-                  else {
-                    res.status(200);
-                    res.sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));;
-                  }
+              console.log(id);
+              (async () => {
+                var user = await User.findOne({ _id: id }).exec();
+                console.log(user);
+                if (!user) {
+                  res.status(404).json({"message": "User does not exist."});
                 }
-              );
+                else if (user.isVerified) {
+                  res.status(200).json({"message": "Account is already verified."});
+                } else {
+                  User.update({"_id": id}, {"$set": {"isVerified": true}}, 
+                    (err, oldUser) => {
+                      if(err) {
+                      console.log(err);
+                      res.status(400);
+                      res.send(err);
+                      }
+                      else {
+                        console.log(oldUser);
+                        Verification_token.remove({email: oldUser.email}, function(err, result){
+                          if(err) {
+                              res.json(err);
+                          }
+                          else {
+                              res.json(result);
+                              res.status(200);
+                              res.sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));
+                          }
+                        });
+                      }
+                    }
+                  );
+                }
+
+              })().catch(error => {
+                next(error);
+              });
+              
           }
         });
       } catch (err) {
-
           console.log(err)
           return res.sendStatus(403)
       }
@@ -163,8 +188,7 @@ module.exports.login = function(req, res) {
     if(user){
       if(user.isVerified) {
         token = user.generateJwt();
-        res.status(200);
-        res.json({
+        res.status(200).json({
           "token" : token
         });
       } else {
@@ -181,14 +205,14 @@ module.exports.verifyRecaptcha = function(req, res) {
 	var clientServerOptions = {
 		uri: 'https://www.google.com/recaptcha/api/siteverify?response='+ req.body.response +
 		'&secret='+req.body.secret,
-		body: JSON.stringify(req.body),
-		method: 'POST',
-		headers: {
+		//body: JSON.stringify(req.body),
+		method: 'POST'//,
+		/*headers: {
 			'Content-Type': 'application/json'
-		}
+		}*/
 	}
 	request(clientServerOptions, function (error, response) {
-		console.log(error,response.body);
+		//console.log(error,response.body);
 		res.status(200).json(response.body);
 		return;
 	});
