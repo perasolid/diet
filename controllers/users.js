@@ -141,39 +141,30 @@ module.exports.resetPassword = function(req, res) {
 				console.log(result);
 			}
 		});
-	/*let transport = nodemailer.createTransport({
-		host: 'smtp.zoho.eu',
-		port: 465,
-		secure: true, //ssl
-		auth: {
-				user:process.env.EMAIL,
-				pass:process.env.EMAIL_PASSWORD
-		}
-	});*/
-	var mailOptions = {
-		from: process.env.EMAIL,
-		to: req.body.email,
-		subject: 'Reset password',
-		html: `<p>Dear Sir or Madam,</p>
-			   <p>Your password was reset to: <b>${password}</b></p>
-			   <p>After you sign-in to Dietary-habits please change the password from the "My profile" section.</p>
-			   <p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
-			   <p>Dietary-habits team</p>
-			   <p>Email: contact@dietary-habits.com</p>
-			   <p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
-	};
+		var mailOptions = {
+			from: process.env.EMAIL,
+			to: req.body.email,
+			subject: 'Reset password',
+			html: `<p>Dear Sir or Madam,</p>
+					<p>Your password was reset to: <b>${password}</b></p>
+					<p>After you sign-in to Dietary-habits please change the password from the "My profile" section.</p>
+					<p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
+					<p>Dietary-habits team</p>
+					<p>Email: contact@dietary-habits.com</p>
+					<p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
+		};
 
-	email_config.transport.sendMail(mailOptions, function(err, info) {
-		if (err) {
-		  console.log(err)
-		} else {
-		  console.log(info);
-		  res.status(200);
-		  res.json({
-			"message" : "Password reset successfully!"
-		  });
-		}
-	});
+		email_config.transport.sendMail(mailOptions, function(err, info) {
+			if (err) {
+				console.log(err)
+			} else {
+				console.log(info);
+				res.status(200);
+				res.json({
+				"message" : "Password reset successfully!"
+				});
+			}
+		});
 }
 
 module.exports.getUsersByPagination = function(req, res) {

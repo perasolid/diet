@@ -56,16 +56,6 @@ module.exports.register = function(req, res) {
           if(err){
             return res.status(500).send({msg:err.message});
           }
-          /*
-          let transport = nodemailer.createTransport({
-            host: 'smtp.zoho.eu',
-            port: 465,
-            secure: true, //ssl
-            auth: {
-                user:process.env.EMAIL,
-                pass:process.env.EMAIL_PASSWORD
-            }
-          });*/
           var mailOptions = {
             from: process.env.EMAIL,
             to: req.body.email,
@@ -94,15 +84,6 @@ module.exports.register = function(req, res) {
 module.exports.resendVerificationToken = function(req, res) {
   Verification_token.findOne({email: req.body.email}, function(err, verification_token) {
     var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verification_token.token;
-    /*let transport = nodemailer.createTransport({
-      host: 'smtp.zoho.eu',
-      port: 465,
-      secure: true, //ssl
-      auth: {
-          user:process.env.EMAIL,
-          pass:process.env.EMAIL_PASSWORD
-      }
-    });*/
     var mailOptions = {
       from: process.env.EMAIL,
       to: req.body.email,
