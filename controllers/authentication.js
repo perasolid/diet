@@ -140,7 +140,6 @@ module.exports.verifyAccount = function(req, res) {
                               res.json(err);
                           }
                           else {
-                              res.json(result);
                               res.status(200);
                               res.sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));
                           }
