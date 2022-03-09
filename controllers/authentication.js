@@ -104,8 +104,8 @@ module.exports.resendVerificationToken = function(req, res) {
           });
         }
       });
-    })
-  }
+    }
+  })
 }
 
 module.exports.verifyAccount = function(req, res) {
