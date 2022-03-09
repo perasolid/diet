@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var crypto = require('crypto');
 var nodemailer = require('nodemailer');
+const email_config = require('../config/email_config');
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);
@@ -140,7 +141,7 @@ module.exports.resetPassword = function(req, res) {
 				console.log(result);
 			}
 		});
-	let transport = nodemailer.createTransport({
+	/*let transport = nodemailer.createTransport({
 		host: 'smtp.zoho.eu',
 		port: 465,
 		secure: true, //ssl
@@ -148,7 +149,7 @@ module.exports.resetPassword = function(req, res) {
 				user:process.env.EMAIL,
 				pass:process.env.EMAIL_PASSWORD
 		}
-	});
+	});*/
 	var mailOptions = {
 		from: process.env.EMAIL,
 		to: req.body.email,
@@ -162,7 +163,7 @@ module.exports.resetPassword = function(req, res) {
 			   <p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
 	};
 
-	transport.sendMail(mailOptions, function(err, info) {
+	email_config.transport.sendMail(mailOptions, function(err, info) {
 		if (err) {
 		  console.log(err)
 		} else {
