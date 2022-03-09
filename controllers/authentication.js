@@ -123,16 +123,16 @@ module.exports.verifyAccount = function(req, res) {
                 else if (user.isVerified) {
                   res.status(200).json({"message": "Account is already verified."});
                 } else {
-                  User.update({"_id": id}, {"$set": {"isVerified": true}}, 
-                    (err, oldUser) => {
+                  User.updateOne({"_id": id}, {"$set": {"isVerified": true}}, 
+                    (err, writeResults) => {
                       if(err) {
                       console.log(err);
                       res.status(400);
                       res.send(err);
                       }
                       else {
-                        console.log(oldUser.email);
-                        Verification_token.deleteOne({"email": oldUser.email}, function(err, result){
+                        console.log(user.email);
+                        Verification_token.deleteOne({email: user.email}, function(err, result){
                           if(err) {
                               res.json(err);
                           }
