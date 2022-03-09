@@ -107,7 +107,6 @@ module.exports.resendVerificationToken = function(req, res) {
 
 module.exports.verifyAccount = function(req, res) {
   token = req.query.id;
-  console.log(token);
   if (token) {
     try {
         jwt.verify(token, process.env.SECRET, (e, decoded) => {
@@ -116,10 +115,8 @@ module.exports.verifyAccount = function(req, res) {
               return res.sendStatus(403)
           } else {
               var id = mongoose.Types.ObjectId(decoded.id);
-              console.log(id);
               (async () => {
                 var user = await User.findOne({ _id: id }).exec();
-                console.log(user);
                 if (!user) {
                   res.status(404).json({"message": "User does not exist."});
                 }
@@ -134,8 +131,8 @@ module.exports.verifyAccount = function(req, res) {
                       res.send(err);
                       }
                       else {
-                        console.log(oldUser);
-                        Verification_token.deleteOne({email: oldUser.email}, function(err, result){
+                        console.log(oldUser.email);
+                        Verification_token.deleteOne({"email": oldUser.email}, function(err, result){
                           if(err) {
                               res.json(err);
                           }
@@ -161,7 +158,6 @@ module.exports.verifyAccount = function(req, res) {
       }
   } else {
       return res.sendStatus(403)
-
   }
 };
 
@@ -204,14 +200,9 @@ module.exports.verifyRecaptcha = function(req, res) {
 	var clientServerOptions = {
 		uri: 'https://www.google.com/recaptcha/api/siteverify?response='+ req.body.response +
 		'&secret='+req.body.secret,
-		//body: JSON.stringify(req.body),
-		method: 'POST'//,
-		/*headers: {
-			'Content-Type': 'application/json'
-		}*/
+		method: 'POST'
 	}
 	request(clientServerOptions, function (error, response) {
-		//console.log(error,response.body);
 		res.status(200).json(response.body);
 		return;
 	});
