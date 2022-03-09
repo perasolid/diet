@@ -135,7 +135,7 @@ module.exports.verifyAccount = function(req, res) {
                       }
                       else {
                         console.log(oldUser);
-                        Verification_token.remove({email: oldUser.email}, function(err, result){
+                        Verification_token.deleteOne({email: oldUser.email}, function(err, result){
                           if(err) {
                               res.json(err);
                           }
