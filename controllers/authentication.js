@@ -83,6 +83,9 @@ module.exports.register = function(req, res) {
 
 module.exports.resendVerificationToken = function(req, res) {
   Verification_token.findOne({email: req.body.email}, function(err, verification_token) {
+    if(err) {
+      return res.status(404).json({"message": "No verification token available."})
+    }
     var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verification_token.token;
     var mailOptions = {
       from: process.env.EMAIL,
