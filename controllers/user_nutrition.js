@@ -1,11 +1,6 @@
 var mongoose = require('mongoose');
 var User_nutrition = mongoose.model('User_nutrition');
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
 module.exports.getAll = function(req, res) {
 	User_nutrition.find()
 	.sort({ _id: -1 })

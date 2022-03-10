@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var crypto = require('crypto');
 var nodemailer = require('nodemailer');
-const email_config = require('../config/email_config');
+const email_config = require('../config/email');
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);

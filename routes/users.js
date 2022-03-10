@@ -22,19 +22,18 @@ router.get('/profile', auth, ctrlProfile.profileRead);
 // authentication
 router.post('/register', ctrlAuth.register);
 router.post('/resend-verification-email', ctrlAuth.resendVerificationToken);
+router.get('/verifyAccount', ctrlAuth.verifyAccount);
+router.post('/verifyRecaptcha', ctrlAuth.verifyRecaptcha)
 router.post('/login', ctrlAuth.login);
 
-
-//retreving data from database
+//from database
 router.get('/all', ctrlUser.getAll);
 router.get('/withPagination', ctrlUser.getUsersByPagination);
 router.get('/numberOfUsers', ctrlUser.numberOfUsers);
-router.get('/verifyAccount', ctrlAuth.verifyAccount);
 router.post('/add', ctrlUser.addUser);
 router.put('/update/:id', ctrlUser.updateUser);
 router.put('/admin/update/:id', ctrlUser.updateUserByAdmin);
 router.post('/hash', ctrlUser.getHash);
-router.post('/verifyRecaptcha', ctrlAuth.verifyRecaptcha)
 router.delete('/delete/:id', ctrlUser.deleteUser);
 
 //reset password

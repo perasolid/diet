@@ -1,11 +1,6 @@
 var mongoose = require('mongoose');
 var Dri = mongoose.model('Dri');
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
 module.exports.getAll = function(req, res) {
 	Dri.find({})
 	.sort({ _id: -1 })
@@ -52,7 +47,6 @@ module.exports.setStatusToActive = function(req, res) {
 	var id = mongoose.Types.ObjectId(req.body._id);
 	Dri.update({"user_id": user_id}, {"$set": {"active": false}}, {"multi": true}, 
 		(err, writeResult) => {
-			
 			Dri.update({"_id": id}, {"$set": {"active": true}}, {"multi": true}, 
 				(err, writeResult) => {
 					if(err) {

@@ -8,8 +8,8 @@ const path = require('path');
 var request = require('request');
 const jwt = require('jsonwebtoken');
 var nodemailer = require('nodemailer');
-const email_config = require('../config/email_config');
-const verification_email_template = require('../config/verification_email_template');
+const email_config = require('../config/email');
+const html_templates = require('../config/html_templates'); 
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);
@@ -60,7 +60,7 @@ module.exports.register = function(req, res) {
             from: process.env.EMAIL,
             to: req.body.email,
             subject: 'Dietaty Habits - Account verification',
-            html: verification_email_template.verification_email.replace(/####/g, url)
+            html: html_templates.verification_email.replace(/####/g, url)
           };
         
           email_config.transport.sendMail(mailOptions, function(err, info) {
@@ -83,7 +83,6 @@ module.exports.register = function(req, res) {
 
 module.exports.resendVerificationToken = function(req, res) {
   Verification_token.findOne({email: req.body.email}, function(err, verification_token) {
-    console.log(verification_email_template);
     if (verification_token === null) {
       return res.status(404).json({"message": "No verification token for this email."})
     }
@@ -92,7 +91,7 @@ module.exports.resendVerificationToken = function(req, res) {
       from: process.env.EMAIL,
       to: req.body.email,
       subject: 'Dietaty Habits - Account verification',
-      html: verification_email_template.verification_email.replace(/####/g, url)
+      html: html_templates.verification_email.replace(/####/g, url)
     };
     email_config.transport.sendMail(mailOptions, function(err, info) {
       if (err) {
@@ -129,12 +128,11 @@ module.exports.verifyAccount = function(req, res) {
                   User.updateOne({"_id": id}, {"$set": {"isVerified": true}}, 
                     (err, writeResults) => {
                       if(err) {
-                      console.log(err);
-                      res.status(400);
-                      res.send(err);
+                        console.log(err);
+                        res.status(400);
+                        res.send(err);
                       }
                       else {
-                        console.log(user.email);
                         Verification_token.deleteOne({email: user.email}, function(err, result){
                           if(err) {
                               res.json(err);
@@ -148,11 +146,9 @@ module.exports.verifyAccount = function(req, res) {
                     }
                   );
                 }
-
               })().catch(error => {
                 next(error);
               });
-              
           }
         });
       } catch (err) {

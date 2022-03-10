@@ -1,11 +1,6 @@
 var mongoose = require('mongoose');
 var Nutrition = mongoose.model('Nutrition');
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
 module.exports.getAll = function(req, res) {
 	const regex = new RegExp(req.query.search, 'i')
 	Nutrition.find({name: {$regex: regex}})
