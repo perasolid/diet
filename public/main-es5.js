@@ -11399,9 +11399,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function resend() {
           var _this18 = this;
 
-          console.log(this.credentials.email);
-          console.log(this.resendVerifEmailCount);
-
           if (this.resendVerifEmailCount < 5) {
             var req = {
               email: this.credentials.email
@@ -11630,7 +11627,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](50, "br");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, " If the email is not in your Inbox section, check for it in the Spam sections. If you have not recevied a verification mail, click on the button below to resend a new one. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, " If the email is not in your Inbox section, check for it in the Spam sections. If you have not recevied a verification mail, click on the button below to resend a new one. The verification link will expire in 24 hours. ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12373,13 +12370,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function StatsComponent_div_6_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 22);
       }
     }
 
     function StatsComponent_h3_7_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "No data for this date");
 
@@ -12469,11 +12466,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "onClick",
         value: function onClick(e) {
           document.getElementById('id01').style.display = 'block';
+          console.log(e);
           var chartOptions = {
             animationEnabled: true,
+            toolTip: {
+              content: "{name}"
+            },
             data: [{
               type: "pie",
               indexLabelPlacement: "inside",
+              indexLabelFontWeight: "bold",
+              indexLabelFontColor: "white",
               indexLabel: "#percent%",
               showInLegend: true,
               dataPoints: []
@@ -12495,6 +12498,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           pieNutritionFood['render']();
           document.getElementById('myDiv').innerHTML = e.dataPoint.label.toString() + " from food";
           document.getElementById('myContainer').style.backgroundColor = e.dataPoint.color;
+          document.getElementById('percentage').innerHTML = "Total <span style='color:" + e.dataPoint.color + "'>" + e.dataPoint.y.toFixed(2) + "%</span> of DRI";
         }
       }, {
         key: "updateCharts",
@@ -12512,7 +12516,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             axisY: {
               viewportMinimum: 0,
               viewportMaximum: 150,
-              valueFormatString: "#' %'"
+              valueFormatString: "#'%'"
             },
             toolTip: {
               enabled: false
@@ -12520,6 +12524,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             data: [{
               type: "bar",
               click: this.onClick,
+              indexLabelPlacement: "inside",
+              indexLabelFontWeight: "bold",
+              indexLabelFormatter: function indexLabelFormatter(e) {
+                return e.dataPoint.y.toFixed(2) + "%";
+              },
               dataPoints: [{
                 label: "Water",
                 y: this.sumNutritions.water_g / this.dri.water_g * 100,
@@ -12584,7 +12593,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }, {
               type: "error",
               name: "Healthy range",
-              color: "black",
+              color: "grey",
               dataPoints: [{
                 y: [100, this.dri.water_g_max / this.dri.water_g * 100],
                 label: "Water"
@@ -12632,7 +12641,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             axisY: {
               viewportMinimum: 0,
               viewportMaximum: 150,
-              valueFormatString: "#' %'"
+              valueFormatString: "#'%'"
             },
             toolTip: {
               enabled: false
@@ -12640,6 +12649,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             data: [{
               type: "bar",
               click: this.onClick,
+              indexLabelPlacement: "inside",
+              indexLabelFontWeight: "bold",
+              indexLabelFormatter: function indexLabelFormatter(e) {
+                return e.dataPoint.y.toFixed(2) + "%";
+              },
               dataPoints: [{
                 label: "Vitamin K",
                 y: this.sumNutritions.vitamin_k_mcg / this.dri.vitamin_k_mcg * 100,
@@ -12722,7 +12736,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }, {
               type: "error",
               name: "Healthy range",
-              color: "black",
+              color: "grey",
               dataPoints: [{
                 y: [100, this.dri.vitamin_k_mcg_max / this.dri.vitamin_k_mcg * 100],
                 label: "Vitamin K"
@@ -12779,7 +12793,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             axisY: {
               viewportMinimum: 0,
               viewportMaximum: 150,
-              valueFormatString: "#' %'"
+              valueFormatString: "#'%'"
             },
             toolTip: {
               enabled: false
@@ -12787,7 +12801,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             data: [{
               type: "bar",
               click: this.onClick,
-              yValueFormatString: "#.00",
+              indexLabelPlacement: "inside",
+              indexLabelFontWeight: "bold",
+              indexLabelFormatter: function indexLabelFormatter(e) {
+                return e.dataPoint.y.toFixed(2) + "%";
+              },
               dataPoints: [{
                 label: "Zink",
                 y: this.sumNutritions.zink_mg / this.dri.zink_mg * 100,
@@ -12852,8 +12870,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }, {
               type: "error",
               name: "Healthy",
-              color: "black",
-              yValueFormatString: "#.00",
+              color: "grey",
               dataPoints: [{
                 y: [100, this.dri.zink_mg_max / this.dri.zink_mg * 100],
                 label: "Zink"
@@ -12912,9 +12929,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     StatsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: StatsComponent,
       selectors: [["app-stats"]],
-      decls: 33,
+      decls: 36,
       vars: 6,
-      consts: [[2, "display", "table", "margin-top", "10px", "margin-left", "auto", "margin-right", "auto", "margin-bottom", "10px"], ["id", "date_label", 1, "w3-center", "w3-padding", 2, "font-size", "20px", "display", "table-cell"], ["type", "date", 3, "ngModel", "ngModelChange"], ["class", "loader", 4, "ngIf"], ["class", "w3-center w3-padding", 4, "ngIf"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-zoom", "w3-card-4"], ["id", "myContainer", 1, "w3-container", "w3-text-white"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], ["id", "myDiv"], [2, "display", "flex", "align-items", "center", "justify-content", "center"], ["id", "pie-chart", 2, "width", "100%", "height", "100%"], [1, "wrapper"], [1, "graph-div"], ["id", "macronutrients", 1, "canvas-graph"], ["id", "vitamins", 1, "canvas-graph"], ["id", "minerals", 1, "canvas-graph"], [1, "box", 2, "background-color", "#2196F3"], [1, "box", 2, "background-color", "#4CAF50"], [1, "box", 2, "background-color", "#f44336"], [1, "loader"], [1, "w3-center", "w3-padding"]],
+      consts: [[2, "display", "table", "margin-top", "10px", "margin-left", "auto", "margin-right", "auto", "margin-bottom", "10px"], ["id", "date_label", 1, "w3-center", "w3-padding", 2, "font-size", "20px", "display", "table-cell"], ["type", "date", 3, "ngModel", "ngModelChange"], ["class", "loader", 4, "ngIf"], ["class", "w3-center w3-padding", 4, "ngIf"], ["id", "id01", 1, "w3-modal"], [1, "w3-modal-content", "w3-animate-zoom", "w3-card-4"], ["id", "myContainer", 1, "w3-container", "w3-text-white"], ["onclick", "document.getElementById('id01').style.display='none'", 1, "w3-button", "w3-display-topright"], ["id", "myDiv"], ["id", "percentage", 1, "w3-center"], [1, "w3-center"], [2, "display", "flex", "align-items", "center", "justify-content", "center"], ["id", "pie-chart", 2, "width", "100%", "height", "100%"], [1, "wrapper"], [1, "graph-div"], ["id", "macronutrients", 1, "canvas-graph"], ["id", "vitamins", 1, "canvas-graph"], ["id", "minerals", 1, "canvas-graph"], [1, "box", 2, "background-color", "#2196F3"], [1, "box", 2, "background-color", "#4CAF50"], [1, "box", 2, "background-color", "#f44336"], [1, "loader"], [1, "w3-center", "w3-padding"]],
       template: function StatsComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -12961,9 +12978,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "h5", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "div", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "h3", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Distribution from food");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "div", 13);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -12971,51 +12996,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "div", 14);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "div", 16);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "div", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "div", 18);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "div", 17);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " - Below DRI");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "div", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "div", 19);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " - Between DRI and UI");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " - Below DRI");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "div", 19);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "div", 20);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " - Above UI");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " - Between DRI and UI");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " - Above UI");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
