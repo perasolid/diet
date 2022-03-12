@@ -1,5 +1,3 @@
-var mongoose = require( 'mongoose' );
-
 var verification_tokenSchema = new mongoose.Schema({
   email: {
     type: String,

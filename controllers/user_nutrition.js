@@ -1,4 +1,3 @@
-var mongoose = require('mongoose');
 var User_nutrition = mongoose.model('User_nutrition');
 
 module.exports.getAll = function(req, res) {

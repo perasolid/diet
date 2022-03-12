@@ -1,13 +1,11 @@
 var passport = require('passport');
-var mongoose = require('mongoose');
 var User = mongoose.model('User');
-var Verification_token = require('./../models/verification_token');
-const Dri = require('./../models/dri');
+var Verification_token = mongoose.model('Verification_token');
+var Dri = mongoose.model('Dri');
 const fs = require('fs');
 const path = require('path');
 var request = require('request');
 const jwt = require('jsonwebtoken');
-var nodemailer = require('nodemailer');
 const email_config = require('../config/email');
 const html_templates = require('../config/html_templates'); 
 

@@ -1,6 +1,5 @@
-var express = require('express');
 var router = express.Router();
-const User_nutrition = require('../models/user_nutrition');
+
 var ctrlUser_nutrition = require('../controllers/user_nutrition');
 
 //retreving data from database

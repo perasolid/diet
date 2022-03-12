@@ -1,16 +1,11 @@
-var express = require('express');
 var router = express.Router();
 var jwt = require('express-jwt');
-const User = require('../models/users');
-const multer = require('multer');
-const path=require('path');
 
 var auth = jwt({
   secret: process.env.SECRET,
   userProperty: 'payload',
   algorithms: ['HS256']
 });
-
 
 var ctrlProfile = require('../controllers/profile');
 var ctrlAuth = require('../controllers/authentication');

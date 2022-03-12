@@ -1,4 +1,3 @@
-var mongoose = require('mongoose');
 var Dri = mongoose.model('Dri');
 
 module.exports.getAll = function(req, res) {

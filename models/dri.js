@@ -1,5 +1,3 @@
-var mongoose = require( 'mongoose' );
-
 var driSchema = new mongoose.Schema({
 	user_id: {
 	  type: mongoose.Schema.Types.ObjectId,

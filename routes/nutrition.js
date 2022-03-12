@@ -1,8 +1,4 @@
-var express = require('express');
 var router = express.Router();
-const Nutrition = require('../models/nutrition');
-const multer = require('multer');
-const path = require('path');
 
 var ctrlNutrition = require('../controllers/nutrition');
 

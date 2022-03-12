@@ -1,5 +1,3 @@
-var mongoose = require( 'mongoose' );
-
 var nutritionSchema = new mongoose.Schema({
 	name: {
 		type: String,
