@@ -2,10 +2,10 @@
   "name": "Dietary-habits-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "start": "node app"
+    "test": "./node_modules/.bin/jest --colors --testTimeout=10000 --coverage --silent",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
