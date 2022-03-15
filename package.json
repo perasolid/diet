@@ -19,6 +19,7 @@
   "homepage": "https://github.com/krjovan/Dietary-habits-backend#readme",
   "jest": {
     "testEnvironment": "node",
+    "modulePathIgnorePatterns": ["/__tests__/config/"],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/public/",
