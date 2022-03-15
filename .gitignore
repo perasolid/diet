@@ -1,3 +1,3 @@
 node_modules
-__test__/config/testConfig.js
+__tests__/config/testConfig.js
 coverage
