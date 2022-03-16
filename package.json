@@ -24,7 +24,8 @@
       "/node_modules/",
       "/public/",
       "/postman/",
-      "/defaults/"
+      "/defaults/",
+      "/routes/"
     ]
   },
   "dependencies": {
