@@ -49,26 +49,10 @@ module.exports.addUser = function(req, res) {
 };
 
 module.exports.updateUser = function(req, res) {
-	if(req.body.newPassword !== '') {
-		User.findOneAndUpdate({_id: req.params.id},{
-			$set:{
-			  hash: crypto.pbkdf2Sync(req.body.newPassword, req.body.salt, 1000, 64, 'sha512').toString('hex')
-			}
-		},
-		function(err,result){
-			if(err) {
-				console.log(err);
-			}
-			else {
-				console.log(result);
-			}
-		});
-	}
+	if (req.body.newPassword !== '')
+		req.body.hash = crypto.pbkdf2Sync(req.body.newPassword, req.body.salt, 1000, 64, 'sha512').toString('hex')
 	User.findOneAndUpdate({_id: req.params.id},{
-		$set:{
-			name:req.body.name,
-			email:req.body.email
-		}
+		$set: req.body
 	},
 	function(err,result){
 		if(err) {
