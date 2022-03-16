@@ -18,6 +18,12 @@ afterEach(async () => {
   await User.deleteMany({});
 });
 
+afterAll(done => {
+  // Close open connection in mongoose
+  mongoose.connection.close();
+  done();
+});
+
 describe('Get user', () => {
   it('should get user John Doe', async () => {
     const res = await request(app)
