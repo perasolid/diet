@@ -3,48 +3,34 @@ var crypto = require('crypto');
 const email_config = require('../config/email');
 const html_templates = require('../config/html_templates'); 
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
 module.exports.getAll = function(req, res) {
   const regex = new RegExp(req.query.search, 'i')
 	User.find({name: {$regex: regex}})
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
-        if(err) { res.status(500).json(err); return; };
-        res.status(200).json(doc);
+			if(err)
+				return res.status(500).json(err);
+			res.status(200).json(doc);
     });
 };
 
 module.exports.addUser = function(req, res) {
-	if(!req.body.name || !req.body.email || !req.body.password) {
-    sendJSONresponse(res, 400, {
-      "message": "All fields required"
-    });
-    return;
-  }
+	if(!req.body.name || !req.body.email || !req.body.password)
+    return res.status(400).json({"message": "All fields required"});
 
-  User.findOne({email: req.body.email}, function(err, user){
-    if(err) {
-      console.log(err);
-    }
-    if(user) {
-      sendJSONresponse(res, 400, {
-        "message": "Email taken"
-      });
-      return;
-    } else {
+  User.findOne({email: req.body.email}, function(err, user) {
+    if(err)
+      return console.log(err);
+    if(user)
+      return res.status(400).json({"message": "Email taken"});
+    else {
       var user = new User();
       user.name = req.body.name;
       user.email = req.body.email;
-      user.setPassword(req.body.password);
-	  res.status(200);
-	  res.json({
-	    "message" : "User created successfully"
-	  });
-      user.save();
+			user.setPassword(req.body.password);
+			user.save().then(() => {
+				res.status(200).json({"message" : "User created successfully"});
+			});
     }
   });
 };
@@ -55,13 +41,11 @@ module.exports.updateUser = function(req, res) {
 	User.findOneAndUpdate({_id: req.params.id},{
 		$set: req.body
 	},
-	function(err,result){
-		if(err) {
+	function(err, result){
+		if(err)
 			res.json(err);
-		}
-		else {
+		else
 			res.json(result);
-		}	
 	});
 };
 
@@ -73,13 +57,11 @@ module.exports.updateUserByAdmin = function(req, res) {
 		  role:req.body.role
 		}
 	},
-	function(err,result){
-		if(err) {
+	function(err, result){
+		if(err)
 			res.json(err);
-		}
-		else {
+		else
 			res.json(result);
-		}	
 	});
 };
 
@@ -89,24 +71,21 @@ module.exports.getHash = function(req, res) {
 };
 
 module.exports.deleteUser = function(req, res) {
-  User.remove({_id: req.params.id}, function(err, result){
-        if(err) {
-            res.json(err);
-        }
-        else {
-            res.json(result);
-        }
-    });
+  User.remove({_id: req.params.id}, function(err, result) {
+        if(err)
+          res.json(err);
+        else
+          res.json(result);
+  });
 };
 
 function makeid(length) {
-   var result = '';
-   var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
-   var charactersLength = characters.length;
-   for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-   }
-   return result;
+	var result = '';
+	var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+	var charactersLength = characters.length;
+	for ( var i = 0; i < length; i++ )
+		result += characters.charAt(Math.floor(Math.random() * charactersLength));
+	return result;
 }
 
 module.exports.resetPassword = function(req, res) {
@@ -140,21 +119,22 @@ module.exports.getUsersByPagination = function(req, res) {
 		page: parseInt(req.query.page, 10) || 0,
 		limit: parseInt(req.query.limit, 10) || 10
 	}
-
 	User.find()
 	.sort({ _id: -1 })
     .skip(pageOptions.page * pageOptions.limit)
     .limit(pageOptions.limit)
     .exec(function (err, doc) {
-        if(err) { res.status(500).json(err); return; };
-        res.status(200).json(doc);
+			if(err)
+				return res.status(500).json(err);
+      res.status(200).json(doc);
     });
 }
 
 module.exports.numberOfUsers = function(req, res) {
 	User.countDocuments()
     .exec(function (err, doc) {
-        if(err) { res.status(500).json(err); return; };
-        res.status(200).json({"numberOfUsers":doc});
+			if(err)
+				return res.status(500).json(err);
+			res.status(200).json({"numberOfUsers":doc});
     });
 }
