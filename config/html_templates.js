@@ -16,5 +16,13 @@ module.exports = {
      <a href="####" target="_blank">####</a> </p> <p style="margin: 0;">Cheers, <br> 
      Dietary Habits</p> <p style="margin: 0;">Dietary Habits, John Kennedy 36, New Belgrade, Serbia</p> 
      <p style="margin: 0;"> <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.com</a> 
-     </p> <p style="margin: 0;">contact@dhab.com</p> </div> </div> </div></body></html>`
+     </p> <p style="margin: 0;">contact@dhab.com</p> </div> </div> </div></body></html>`,
+     
+     reset_password: `<p>Dear Sir or Madam,</p>
+     <p>Your password was reset to: <b>####</b></p>
+     <p>After you sign-in to Dietary-habits please change the password from the "My profile" section.</p>
+     <p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
+     <p>Dietary-habits team</p>
+     <p>Email: contact@dietary-habits.com</p>
+     <p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
 }

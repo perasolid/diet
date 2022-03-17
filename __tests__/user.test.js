@@ -186,6 +186,20 @@ describe("PUT /users/admin/update/:id", () => {
   });
 });
 
+describe("PUT /users/resetPassword", () => {
+  it("should reset user password and send it via mail", async () => {
+    const user = await User.findOne({name: 'John Doe'});
+    const res = await request(app)
+      .put('/users/resetPassword')
+      .send({ _id: user._id, email: user.email, salt: user.salt});
+    const updatedUser = await User.findOne({name: 'John Doe'});
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("Password reset successfully!");
+    expect(res.statusCode).toBe(200);
+    expect(user.hash).not.toBe(updatedUser.hash);
+  });
+});
+
 describe("DELETE /users/delete/:id", () => {
   it("should respond with a message of Deleted", async () => {
     const user = await User.findOne({name: 'John Doe'});

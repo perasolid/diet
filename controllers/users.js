@@ -1,6 +1,7 @@
 var User = mongoose.model('User');
 var crypto = require('crypto');
 const email_config = require('../config/email');
+const html_templates = require('../config/html_templates'); 
 
 var sendJSONresponse = function(res, status, content) {
   res.status(status);
@@ -8,7 +9,7 @@ var sendJSONresponse = function(res, status, content) {
 };
 
 module.exports.getAll = function(req, res) {
-  	const regex = new RegExp(req.query.search, 'i')
+  const regex = new RegExp(req.query.search, 'i')
 	User.find({name: {$regex: regex}})
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
@@ -114,39 +115,24 @@ module.exports.resetPassword = function(req, res) {
 			$set:{
 			  hash: crypto.pbkdf2Sync(password, req.body.salt, 1000, 64, 'sha512').toString('hex')
 			}
-		},
-		function(err,result){
-			if(err) {
-				console.log(err);
-			}
-			else {
-				console.log(result);
-			}
-		});
+	})
+	.then(() => {
 		var mailOptions = {
 			from: process.env.EMAIL,
 			to: req.body.email,
 			subject: 'Reset password',
-			html: `<p>Dear Sir or Madam,</p>
-					<p>Your password was reset to: <b>${password}</b></p>
-					<p>After you sign-in to Dietary-habits please change the password from the "My profile" section.</p>
-					<p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
-					<p>Dietary-habits team</p>
-					<p>Email: contact@dietary-habits.com</p>
-					<p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
+			html: html_templates.reset_password.replace(/####/g, password)
 		};
-
 		email_config.transport.sendMail(mailOptions, function(err, info) {
-			if (err) {
-				console.log(err)
-			} else {
-				console.log(info);
-				res.status(200);
-				res.json({
-				"message" : "Password reset successfully!"
-				});
-			}
+			if (err)
+				res.status(503).json({"message" : err.message});
+			else
+				res.status(200).json({"message" : "Password reset successfully!"});
 		});
+	})
+	.catch((err) => {
+		res.status(503).json({"message" : err.message});
+	})
 }
 
 module.exports.getUsersByPagination = function(req, res) {
