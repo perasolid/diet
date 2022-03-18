@@ -5,8 +5,8 @@ module.exports.getAll = function(req, res) {
 	Nutrition.find({name: {$regex: regex}})
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
-		console.log(doc);
-        if(err) { res.status(500).json(err); return; };
+        if(err)
+            return res.status(500).json(err);
         res.status(200).json(doc);
     });
 };
@@ -16,8 +16,8 @@ module.exports.getNutritionsNameAndId = function(req, res) {
 	Nutrition.find({name: {$regex: regex}}, 'name')
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
-		console.log(doc);
-        if(err) { res.status(500).json(err); return; };
+        if(err)
+            return res.status(500).json(err);
         res.status(200).json(doc);
     });
 };
