@@ -2,25 +2,49 @@ var Nutrition = mongoose.model('Nutrition');
 const isValidObjectId = require('../config/is_object_id');
 
 module.exports.getAll = function(req, res) {
-	const regex = new RegExp(req.query.search, 'i')
-	Nutrition.find({name: {$regex: regex}})
-	.sort({ _id: -1 })
-	.exec(function (err, doc) {
-        if(err)
-            return res.status(500).json(err);
-        res.status(200).json(doc);
-    });
+    if (req.query.search) {
+        let nameFilter = req.query.search.split(" ").map((s) => {       
+            return { name: { $regex: s, $options: "i" } };     
+        });
+        Nutrition.find({$and: nameFilter})
+        .sort({ _id: -1 })
+        .exec(function (err, doc) {
+            if(err)
+                return res.status(500).json(err);
+            res.status(200).json(doc);
+        });
+    } else {
+        Nutrition.find()
+        .sort({ _id: -1 })
+        .exec(function (err, doc) {
+            if(err)
+                return res.status(500).json(err);
+            res.status(200).json(doc);
+        });
+    }
 };
 
 module.exports.getNutritionsNameAndId = function(req, res) {
-	const regex = new RegExp(req.query.search, 'i')
-	Nutrition.find({name: {$regex: regex}}, 'name')
-	.sort({ _id: -1 })
-	.exec(function (err, doc) {
-        if(err)
-            return res.status(500).json(err);
-        res.status(200).json(doc);
-    });
+    if (req.query.search) {
+        let nameFilter = req.query.search.split(" ").map((s) => {       
+            return { name: { $regex: s, $options: "i" } };     
+        });
+        Nutrition.find({$and: nameFilter}, 'name')
+        .sort({ _id: -1 })
+        .exec(function (err, doc) {
+            if(err)
+                return res.status(500).json(err);
+            res.status(200).json(doc);
+        });
+    } else {
+        Nutrition.find({}, 'name')
+        .sort({ _id: -1 })
+        .exec(function (err, doc) {
+            if(err)
+                return res.status(500).json(err);
+            res.status(200).json(doc);
+        });
+    }
 };
 
 module.exports.addNutrition = function(req, res) {

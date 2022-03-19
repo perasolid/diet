@@ -82,6 +82,18 @@ describe('GET nutritions/getNutritionsNameAndId', () => {
     expect(res.body[0]).not.toHaveProperty("carbohydrate_g");
     expect(res.statusCode).toBe(200);
   })
+
+  it('should get nutritions that contain all search words split by space', async () => {
+    const res = await request(app)
+      .get('/nutritions/getNutritionsNameAndId?search=apples')
+    expect(res.body.length).toBe(1);
+    expect(res.body[0]).toHaveProperty("_id");
+    expect(res.body[0]).toHaveProperty("name");
+    expect(res.body[0].name).toBe('Apples');
+    expect(res.body[0]).not.toHaveProperty("calories");
+    expect(res.body[0]).not.toHaveProperty("carbohydrate_g");
+    expect(res.statusCode).toBe(200);
+  })
 })
 
 describe('GET nutritions/withPagination', () => {
