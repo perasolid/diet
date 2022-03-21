@@ -4,8 +4,8 @@ module.exports.getAll = function(req, res) {
 	User_nutrition.find()
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
-		console.log(doc);
-        if(err) { res.status(500).json(err); return; };
+        if(err)
+            return res.status(500).json(err);
         res.status(200).json(doc);
     });
 };
@@ -43,26 +43,19 @@ module.exports.addUser_nutrition = function(req, res) {
 	var user_nutrition = new User_nutrition(req.body);
 
 	user_nutrition.save(function(err) {
-        if(err) {
-            console.log(err);
-            res.status(400);
-            res.send(err);
-        }
-        else {
-            res.status(200);
-            res.json({
-                message: 'Successfully added food to diet!'
-            });
-        }
+        if(err) 
+            res.status(400).json(err);
+        else
+            res.status(200).json({message: 'Successfully added food to diet!'});
     });
 };
 
 module.exports.updateUser_nutrition = function(req, res) {
 	User_nutrition.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
-    .then(function (success) {
-      res.json();
+    .then(function () {
+        res.status(200).json();
     })
-    .catch(function (error) {
+    .catch(function (err) {
         res.status(404).send(err);
     });
 };
