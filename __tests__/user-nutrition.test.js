@@ -107,6 +107,18 @@ describe("PUT /user-nutrition/update/:id", () => {
     expect(updatedUserNutrition.nutrition_id).toStrictEqual(userNutrition.nutrition_id);
     expect(updatedUserNutrition.date_of_consumption).toStrictEqual(userNutrition.date_of_consumption);
   });
+
+  it("should respond with 400", async () => {
+    const res = await request(app)
+      .put(`/user-nutrition/update/thisDoesNotPassAsId`)
+      .send({})
+    expect(res.statusCode).toBe(400);
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("Invalid user-nutrition id format");
+
+    const response = await request(app).get("/user-nutrition/all");
+    expect(response.body.length).toBe(2);
+});
 })
 
 describe("DELETE /user-nutrition/delete/:id", () => {
@@ -120,5 +132,17 @@ describe("DELETE /user-nutrition/delete/:id", () => {
 
     const response = await request(app).get("/user-nutrition/all");
     expect(response.body.length).toBe(1);
+  });
+
+  it("should catch invalid nutrition id query parameter", async () => {
+    const res = await request(app).delete(
+      `/user-nutrition/delete/notValidQueryParameter`
+    );
+    expect(res.statusCode).toBe(400);
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("Invalid user-nutrition id format");
+
+    const response = await request(app).get("/user-nutrition/all");
+    expect(response.body.length).toBe(2);
   });
 });

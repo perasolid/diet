@@ -1,4 +1,5 @@
 var User_nutrition = mongoose.model('User_nutrition');
+const isValidObjectId = require('../config/is_object_id');
 
 module.exports.getAll = function(req, res) {
 	User_nutrition.find()
@@ -51,6 +52,8 @@ module.exports.addUser_nutrition = function(req, res) {
 };
 
 module.exports.updateUser_nutrition = function(req, res) {
+	if(!isValidObjectId(req.params.id))
+        return res.status(400).json({message: "Invalid user-nutrition id format"})
 	User_nutrition.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
     .then(function () {
         res.status(200).json();
@@ -61,12 +64,12 @@ module.exports.updateUser_nutrition = function(req, res) {
 };
 
 module.exports.deleteUser_nutrition = function(req, res) {
-  User_nutrition.remove({_id: req.params.id},function(err, result){
-        if(err){
-            res.json(err);
-        }
-        else{
-            res.json(result);
-        }
-    });
+	if(!isValidObjectId(req.params.id))
+		return res.status(400).json({message: "Invalid user-nutrition id format"})
+	User_nutrition.remove({_id: req.params.id},function(err, result){
+		if(err)
+			res.json(err);
+		else
+			res.json(result);
+	});
 };
