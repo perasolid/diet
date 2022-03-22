@@ -4,6 +4,7 @@ require('./config/testConfig')
 const app = require('../app')
 
 var User_nutrition = mongoose.model('User_nutrition');
+var Nutrition = mongoose.model('Nutrition');
 
 beforeEach(async () => {
   // seed with some data
@@ -44,6 +45,39 @@ describe('GET user-nutrition/all', () => {
     expect(res.body[1]).toHaveProperty("nutrition_id");
     expect(res.body[1].quantity).toBe(35);
     expect(res.body[1].user_id).toBe("61e5c51c7a1fa80016a74b1d");
+    expect(res.statusCode).toBe(200);
+  })
+})
+
+describe('GET user-nutrition/get-user-nutritions', () => {
+  it('should get all specific user-nutritions for user on exact date', async () => {
+    const respnse = await request(app)
+    .post("/nutritions/add")
+    .send({
+      _id: "61e9a608407e9d84bb768ce7", name: 'Test name',calories: 200, carbohydrate_g: 200, fiber_g: 200, protein_g: 200,
+      total_fat_g: 200, saturated_fat_g: 200, fatty_acids_total_trans_g: 200, cholesterol_mg: 200,
+      sugars_g: 200,water_g: 200, vitamin_a_rae_mcg: 200, thiamin_mg: 200, riboflavin_mg: 200,
+      niacin_mg: 200, pantothenic_acid_mg: 200, vitamin_b6_mg: 200, folate_mcg: 200, vitamin_b12_mcg: 200,
+      choline_mg: 200, vitamin_c_mg: 200, vitamin_d_IU: 200, vitamin_e_mg: 200, vitamin_k_mcg: 200,
+      calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
+      phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200
+    });
+
+    const res = await request(app)
+      .get(`/user-nutrition/get-user-nutritions?id=61e5c51c7a1fa80016a74b1d&date_of_consumption=2022-03-19T11:00:00.000Z`)
+    expect(res.body.length).toBe(1);
+    expect(res.body[0]).toHaveProperty("_id");
+    expect(res.body[0]).toHaveProperty("quantity");
+    expect(res.body[0]).toHaveProperty("date_of_consumption");
+    expect(res.body[0]).toHaveProperty("user_id");
+    expect(res.body[0]).toHaveProperty("nutrition_id");
+    expect(res.body[0]).toHaveProperty("nutrition");
+    expect(res.body[0].quantity).toBe(35);
+    expect(res.body[0].user_id).toBe("61e5c51c7a1fa80016a74b1d");
+    expect(res.body[0].nutrition_id).toBe("61e9a608407e9d84bb768ce7");
+    expect(res.body[0].date_of_consumption).toBe("2022-03-19T11:00:00.000Z");
+    expect(res.body[0].nutrition._id).toBe("61e9a608407e9d84bb768ce7");
+    expect(res.body[0].nutrition.calories).toBe(200);
     expect(res.statusCode).toBe(200);
   })
 })

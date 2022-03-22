@@ -33,10 +33,10 @@ module.exports.getUser_nutrition = function(req, res) {
 			}
 		},
 		{ $unwind : "$nutrition" }
-	]).exec( (err, list) => {
-        if (err) throw err;
-		res.status(200);
-		res.json(list);
+	]).exec((err, list) => {
+        if (err)
+			throw err;
+		res.status(200).json(list);
     }); 
 };
 
