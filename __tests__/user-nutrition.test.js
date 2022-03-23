@@ -25,6 +25,7 @@ beforeEach(async () => {
 
 afterEach(async () => {
   await User_nutrition.deleteMany({});
+  await Nutrition.deleteMany({});
 });
 
 afterAll(done => {

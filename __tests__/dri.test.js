@@ -233,7 +233,6 @@ describe("PUT /dri/update/:id", () => {
             copper_mg_max: 400, irom_mg_max: 400, magnesium_mg_max: 400, manganese_mg_max: 400, phosphorous_mg_max: 400,
             potassium_mg_max: 400, selenium_mcg_max: 400, sodium_mg_max: 400, zink_mg_max: 400
           })
-        console.log(res);
       expect(res.statusCode).toBe(200);
   
       const response = await request(app).get("/dri/all");
