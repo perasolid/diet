@@ -43,25 +43,16 @@ module.exports.getUserActiveDri = function(req, res) {
 module.exports.setStatusToActive = function(req, res) {
 	var user_id = mongoose.Types.ObjectId(req.body.user_id);
 	var id = mongoose.Types.ObjectId(req.body._id);
-	Dri.update({"user_id": user_id}, {"$set": {"active": false}}, {"multi": true}, 
-		(err, writeResult) => {
-			Dri.update({"_id": id}, {"$set": {"active": true}}, {"multi": true}, 
-				(err, writeResult) => {
-					if(err) {
-					console.log(err);
-					res.status(400);
-					res.send(err);
-				}
-				else {
-					res.status(200);
-					res.json({
-						message:'Successfully set active status for DRI!'
-					});
-				}
-				}
-			);
-		}
-	);
+	Dri.updateMany({user_id: user_id}, {active: false})
+		.then(() => {
+			Dri.updateOne({_id: id}, {"active": true})
+			.then(() => {
+				res.status(200).json({message:'Successfully set active status for DRI!'});
+			})
+		})
+		.catch((err) => {
+			res.status(400).json(err);
+		})
 };
 
 module.exports.addDri = function(req, res) {
@@ -100,16 +91,14 @@ module.exports.updateDri = function(req, res) {
 		return res.status(400).json({message: "Invalid dri id format"})
 	var dri = new Dri(req.body);
 	dri.validate(function(err) {
-		if (err) {
-			console.log(err);
-			res.status(400);
-			res.send(err);
-		} else {
+		if (err)
+			res.status(400).json(err);
+		else {
 			Dri.update({ _id: mongoose.Types.ObjectId(req.params.id) }, req.body)
 				.then(function (success) {
 				  res.json();
 				})
-				.catch(function (error) {
+				.catch(function (err) {
 					res.status(404).send(err);
 				});
 		}

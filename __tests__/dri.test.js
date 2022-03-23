@@ -237,27 +237,80 @@ describe("PUT /dri/update/:id", () => {
   
       const response = await request(app).get("/dri/all");
       expect(response.body.length).toBe(2);
-  
-      const updatedDri = await request(app).get("/dri/all");
-      expect(updatedDri.body[1].name).toBe('Updated name');
-      expect(updatedDri.body[1].calories).toBe(200);
-      expect(updatedDri.body[1].calories_max).toBe(400);
-      expect(updatedDri.body[1].active).toBe(false);
-      expect(updatedDri.body.length).toBe(2);
+      expect(response.body[1].name).toBe('Updated name');
+      expect(response.body[1].calories).toBe(200);
+      expect(response.body[1].calories_max).toBe(400);
+      expect(response.body[1].active).toBe(false);
     });
-  
+
     it("should respond with 400", async () => {
-        const res = await request(app)
-          .put(`/dri/update/thisDoesNotPassAsId`)
-          .send({})
-        expect(res.statusCode).toBe(400);
-        expect(res.body).toHaveProperty("message");
-        expect(res.body.message).toBe("Invalid dri id format");
-    
-        const response = await request(app).get("/dri/all");
-        expect(response.body.length).toBe(2);
+      const dri = await Dri.findOne({name: 'Detox'});
+      dri.name = 'Updated name';
+      const res = await request(app)
+        .put(`/dri/update/${dri._id}`)
+        .send({
+            user_id: '61e5c51c7a1fa80016a74b1d',
+            name: 'Updated name', calories: 200, carbohydrate_g: 200, fiber_g: 200, protein_g: 200,
+            total_fat_g: 200, saturated_fat_g: 200, fatty_acids_total_trans_g: 200, cholesterol_mg: 200,
+            sugars_g: 200,water_g: 200, vitamin_a_rae_mcg: 200, thiamin_mg: 200, riboflavin_mg: 200,
+            niacin_mg: 200, pantothenic_acid_mg: 200, vitamin_b6_mg: 200, folate_mcg: 200, vitamin_b12_mcg: 200,
+            choline_mg: 200, vitamin_c_mg: 200, vitamin_d_IU: 200, vitamin_e_mg: 200, vitamin_k_mcg: 200,
+            calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
+            phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200,
+            calories_max: 400, carbohydrate_g_max: 400, fiber_g_max: 400, protein_g_max: 400, total_fat_g_max: 400,
+            saturated_fat_g_max: 400, fatty_acids_total_trans_g_max: 400, cholesterol_mg_max: 400, sugars_g_max: 400,
+            water_g_max: 400, vitamin_a_rae_mcg_max: 400, thiamin_mg_max: 400, riboflavin_mg_max: 400, niacin_mg_max: 400,
+            pantothenic_acid_mg_max: 400, vitamin_b6_mg_max: 400, folate_mcg_max: 400, vitamin_b12_mcg_max: 400, choline_mg_max: 400,
+            vitamin_c_mg_max: 400, vitamin_d_IU_max: 400, vitamin_e_mg_max: 400, vitamin_k_mcg_max: 400, calcium_mg_max: 400,
+            copper_mg_max: 400, irom_mg_max: 400, magnesium_mg_max: 400, manganese_mg_max: 400, phosphorous_mg_max: 400,
+            potassium_mg_max: 400, selenium_mcg_max: 400, sodium_mg_max: 400, zink_mg_max: 400
+          })
+      expect(res.statusCode).toBe(400);
+      expect(res.body).toHaveProperty("message");
+      expect(res.body.message).toBe("Dri validation failed: active: Path `active` is required.");
+  
+      const response = await request(app).get("/dri/all");
+      expect(response.body.length).toBe(2);
+      expect(response.body[1].name).toBe('Detox');
+      expect(response.body[1].calories).toBe(100);
+      expect(response.body[1].calories_max).toBe(200);
+      expect(response.body[1].active).toBe(true);
     });
-  })
+  
+  it("should respond with 400 invalid dri id format", async () => {
+      const res = await request(app)
+        .put(`/dri/update/thisDoesNotPassAsId`)
+        .send({})
+      expect(res.statusCode).toBe(400);
+      expect(res.body).toHaveProperty("message");
+      expect(res.body.message).toBe("Invalid dri id format");
+  
+      const response = await request(app).get("/dri/all");
+      expect(response.body.length).toBe(2);
+  });
+})
+
+describe("PUT /user-nutrition/setStatusToActive", () => {
+  it("should respond with 200 and success message", async () => {
+    const dri = await Dri.findOne({name: 'Protein'});
+    const res = await request(app)
+      .put(`/dri/setStatusToActive`)
+      .send({ 
+        user_id: "61e5c51c7a1fa80016a74b1d",
+        _id: dri._id
+      });
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("Successfully set active status for DRI!");
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(2);
+    expect(response.body[0].name).toBe('Protein');
+    expect(response.body[0].active).toBe(true);
+    expect(response.body[1].name).toBe('Detox');
+    expect(response.body[1].active).toStrictEqual(false);
+  });
+})
 
 describe("DELETE /dri/delete/:id", () => {
     it("should respond with a message of deleted", async () => {

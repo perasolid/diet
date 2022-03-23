@@ -153,7 +153,7 @@ describe("PUT /user-nutrition/update/:id", () => {
 
     const response = await request(app).get("/user-nutrition/all");
     expect(response.body.length).toBe(2);
-});
+  });
 })
 
 describe("DELETE /user-nutrition/delete/:id", () => {
