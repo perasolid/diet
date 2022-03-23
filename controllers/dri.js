@@ -1,11 +1,12 @@
 var Dri = mongoose.model('Dri');
+const isValidObjectId = require('../config/is_object_id');
 
 module.exports.getAll = function(req, res) {
 	Dri.find({})
 	.sort({ _id: -1 })
 	.exec(function (err, doc) {
-		console.log(doc);
-        if(err) { res.status(500).json(err); return; };
+        if(err)
+			return res.status(500).json(err);
         res.status(200).json(doc);
     });
 };
@@ -18,10 +19,9 @@ module.exports.getUserDris = function(req, res) {
 				user_id: id
 			}
 		}
-	]).exec( (err, list) => {
+	]).exec((err, list) => {
         if (err) throw err;
-		res.status(200);
-		res.json(list);
+		res.status(200).json(list);
     }); 
 };
 
@@ -34,10 +34,9 @@ module.exports.getUserActiveDri = function(req, res) {
 				active: true
 			}
 		}
-	]).exec( (err, list) => {
+	]).exec((err, list) => {
         if (err) throw err;
-		res.status(200);
-		res.json(list);
+		res.status(200).json(list);
     }); 
 };
 
@@ -97,6 +96,8 @@ module.exports.addDri = function(req, res) {
 };
 
 module.exports.updateDri = function(req, res) {
+	if(!isValidObjectId(req.params.id))
+		return res.status(400).json({message: "Invalid dri id format"})
 	var dri = new Dri(req.body);
 	dri.validate(function(err) {
 		if (err) {
@@ -116,12 +117,12 @@ module.exports.updateDri = function(req, res) {
 };
 
 module.exports.deleteDri = function(req, res) {
-  Dri.remove({_id: req.params.id},function(err, result){
-        if(err){
-            res.json(err);
-        }
-        else{
+	if(!isValidObjectId(req.params.id))
+		return res.status(400).json({message: "Invalid dri id format"})
+  	Dri.remove({_id: req.params.id},function(err, result){
+        if(err)
+        	res.json(err);
+        else
             res.json(result);
-        }
     });
 };
