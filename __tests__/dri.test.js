@@ -210,6 +210,128 @@ describe('GET user active dris', () => {
     })
 })
 
+describe("POST /dri/add", () => {
+  it("should respond with a success message", async () => {
+    const res = await request(app)
+      .post("/dri/add")
+      .send({
+        user_id: '61e5c51c7a1fa80016a74b1d', active: true, name: 'Test POST', calories: 100, carbohydrate_g: 100, fiber_g: 100,
+        protein_g: 100, total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+        water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+        vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100, vitamin_e_mg: 100,
+        vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100, manganese_mg: 100, phosphorous_mg: 100,
+        potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100, calories_max: 200, carbohydrate_g_max: 200, fiber_g_max: 200,
+        protein_g_max: 200, total_fat_g_max: 200, saturated_fat_g_max: 200, fatty_acids_total_trans_g_max: 200, cholesterol_mg_max: 200,
+        sugars_g_max: 200, water_g_max: 200, vitamin_a_rae_mcg_max: 200, thiamin_mg_max: 200, riboflavin_mg_max: 200, niacin_mg_max: 200,
+        pantothenic_acid_mg_max: 200, vitamin_b6_mg_max: 200, folate_mcg_max: 200, vitamin_b12_mcg_max: 200, choline_mg_max: 200, vitamin_c_mg_max: 200,
+        vitamin_d_IU_max: 200, vitamin_e_mg_max: 200, vitamin_k_mcg_max: 200, calcium_mg_max: 200, copper_mg_max: 200, irom_mg_max: 200, magnesium_mg_max: 200,
+        manganese_mg_max: 200, phosphorous_mg_max: 200, potassium_mg_max: 200, selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("Successfully created DRI!");
+    expect(res.statusCode).toBe(200);
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(3);
+  });
+
+  it("should respond with a Bad Request message missing field", async () => {
+    const res = await request(app)
+      .post("/dri/add")
+      .send({
+        user_id: '61e5c51c7a1fa80016a74b1d', name: 'Test POST', calories: 100, carbohydrate_g: 100, fiber_g: 100,
+        protein_g: 100, total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+        water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+        vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100, vitamin_e_mg: 100,
+        vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100, manganese_mg: 100, phosphorous_mg: 100,
+        potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100, calories_max: 200, carbohydrate_g_max: 200, fiber_g_max: 200,
+        protein_g_max: 200, total_fat_g_max: 200, saturated_fat_g_max: 200, fatty_acids_total_trans_g_max: 200, cholesterol_mg_max: 200,
+        sugars_g_max: 200, water_g_max: 200, vitamin_a_rae_mcg_max: 200, thiamin_mg_max: 200, riboflavin_mg_max: 200, niacin_mg_max: 200,
+        pantothenic_acid_mg_max: 200, vitamin_b6_mg_max: 200, folate_mcg_max: 200, vitamin_b12_mcg_max: 200, choline_mg_max: 200, vitamin_c_mg_max: 200,
+        vitamin_d_IU_max: 200, vitamin_e_mg_max: 200, vitamin_k_mcg_max: 200, calcium_mg_max: 200, copper_mg_max: 200, irom_mg_max: 200, magnesium_mg_max: 200,
+        manganese_mg_max: 200, phosphorous_mg_max: 200, potassium_mg_max: 200, selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe('Dri validation failed: active: Path `active` is required.');
+    expect(res.statusCode).toBe(400);
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(2);
+  });
+
+  it("should respond with a Bad Request message max value greater than min calories", async () => {
+    const res = await request(app)
+      .post("/dri/add")
+      .send({
+        user_id: '61e5c51c7a1fa80016a74b1d', active: true, name: 'Test POST', calories: 500, carbohydrate_g: 100, fiber_g: 100,
+        protein_g: 100, total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+        water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+        vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100, vitamin_e_mg: 100,
+        vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100, manganese_mg: 100, phosphorous_mg: 100,
+        potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100, calories_max: 200, carbohydrate_g_max: 200, fiber_g_max: 200,
+        protein_g_max: 200, total_fat_g_max: 200, saturated_fat_g_max: 200, fatty_acids_total_trans_g_max: 200, cholesterol_mg_max: 200,
+        sugars_g_max: 200, water_g_max: 200, vitamin_a_rae_mcg_max: 200, thiamin_mg_max: 200, riboflavin_mg_max: 200, niacin_mg_max: 200,
+        pantothenic_acid_mg_max: 200, vitamin_b6_mg_max: 200, folate_mcg_max: 200, vitamin_b12_mcg_max: 200, choline_mg_max: 200, vitamin_c_mg_max: 200,
+        vitamin_d_IU_max: 200, vitamin_e_mg_max: 200, vitamin_k_mcg_max: 200, calcium_mg_max: 200, copper_mg_max: 200, irom_mg_max: 200, magnesium_mg_max: 200,
+        manganese_mg_max: 200, phosphorous_mg_max: 200, potassium_mg_max: 200, selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe('Dri validation failed: calories_max: DRI must be less or equal to UI for calories');
+    expect(res.statusCode).toBe(400);
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(2);
+  });
+
+  it("should respond with a Bad Request message, invalid user_id format", async () => {
+    const res = await request(app)
+      .post("/dri/add")
+      .send({
+        user_id: 'thisIsAInvalidId', active: true, name: 'Test POST', calories: 500, carbohydrate_g: 100, fiber_g: 100,
+        protein_g: 100, total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+        water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+        vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100, vitamin_e_mg: 100,
+        vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100, manganese_mg: 100, phosphorous_mg: 100,
+        potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100, calories_max: 200, carbohydrate_g_max: 200, fiber_g_max: 200,
+        protein_g_max: 200, total_fat_g_max: 200, saturated_fat_g_max: 200, fatty_acids_total_trans_g_max: 200, cholesterol_mg_max: 200,
+        sugars_g_max: 200, water_g_max: 200, vitamin_a_rae_mcg_max: 200, thiamin_mg_max: 200, riboflavin_mg_max: 200, niacin_mg_max: 200,
+        pantothenic_acid_mg_max: 200, vitamin_b6_mg_max: 200, folate_mcg_max: 200, vitamin_b12_mcg_max: 200, choline_mg_max: 200, vitamin_c_mg_max: 200,
+        vitamin_d_IU_max: 200, vitamin_e_mg_max: 200, vitamin_k_mcg_max: 200, calcium_mg_max: 200, copper_mg_max: 200, irom_mg_max: 200, magnesium_mg_max: 200,
+        manganese_mg_max: 200, phosphorous_mg_max: 200, potassium_mg_max: 200, selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe('Invalid user_id format for Dri creation');
+    expect(res.statusCode).toBe(400);
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(2);
+  });
+
+  it("should respond with a Bad Request message, missing user_id", async () => {
+    const res = await request(app)
+      .post("/dri/add")
+      .send({
+        active: true, name: 'Test POST', calories: 500, carbohydrate_g: 100, fiber_g: 100,
+        protein_g: 100, total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+        water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+        vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100, vitamin_e_mg: 100,
+        vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100, manganese_mg: 100, phosphorous_mg: 100,
+        potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100, calories_max: 200, carbohydrate_g_max: 200, fiber_g_max: 200,
+        protein_g_max: 200, total_fat_g_max: 200, saturated_fat_g_max: 200, fatty_acids_total_trans_g_max: 200, cholesterol_mg_max: 200,
+        sugars_g_max: 200, water_g_max: 200, vitamin_a_rae_mcg_max: 200, thiamin_mg_max: 200, riboflavin_mg_max: 200, niacin_mg_max: 200,
+        pantothenic_acid_mg_max: 200, vitamin_b6_mg_max: 200, folate_mcg_max: 200, vitamin_b12_mcg_max: 200, choline_mg_max: 200, vitamin_c_mg_max: 200,
+        vitamin_d_IU_max: 200, vitamin_e_mg_max: 200, vitamin_k_mcg_max: 200, calcium_mg_max: 200, copper_mg_max: 200, irom_mg_max: 200, magnesium_mg_max: 200,
+        manganese_mg_max: 200, phosphorous_mg_max: 200, potassium_mg_max: 200, selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe('Invalid user_id format for Dri creation');
+    expect(res.statusCode).toBe(400);
+
+    const response = await request(app).get("/dri/all");
+    expect(response.body.length).toBe(2);
+  });
+})
+
 describe("PUT /dri/update/:id", () => {
     it("should respond with 200 OK", async () => {
       const dri = await Dri.findOne({name: 'Detox'});
