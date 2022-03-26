@@ -3,14 +3,16 @@ require('./config/testConfig')
 
 const app = require('../app')
 
-var User = mongoose.model('User');
-var Verification_token = mongoose.model('Verification_token');
+const User = mongoose.model('User');
+const Verification_token = mongoose.model('Verification_token');
+const Dri = mongoose.model('Dri');
 
 const jwt = require('jsonwebtoken');
 
 afterEach(async () => {
   await User.deleteMany({});
   await Verification_token.deleteMany({});
+  await Dri.deleteMany({});
 });
 
 afterAll(done => {
@@ -90,7 +92,7 @@ describe("POST /login", () => {
     expect(res.body).toHaveProperty("token");
     try {
       const decoded = jwt.verify(res.body.token, process.env.SECRET);
-      expect(decoded.email).toHaveProperty("john@email.com");
+      expect(decoded.email).toBe("john@email.com");
      }
      catch (ex) { console.log(ex.message); }
     expect(res.statusCode).toBe(200);
@@ -160,5 +162,101 @@ describe("POST /login", () => {
     
     const response = await request(app).get("/users/all");
     expect(response.body.length).toBe(1);
+  });
+})
+
+describe("POST /resend-verification-email", () => {
+  it("should respond with a 200 success message", async () => { 
+    let verificationToken = new Verification_token();
+    verificationToken.email = 'test@email.com';
+    verificationToken.token = 'sometoken';
+    await verificationToken.save();
+    
+    const res = await request(app)
+      .post("/users/resend-verification-email")
+      .send({
+        email: 'test@email.com'
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("A verification email has been resent to test@email.com.");
+    expect(res.statusCode).toBe(200);
+  });
+
+  it("should respond with a 404 Not Found", async () => {   
+    const res = await request(app)
+      .post("/users/resend-verification-email")
+      .send({
+        email: 'noverification@email.com'
+      });
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("No verification token for this email.");
+    expect(res.statusCode).toBe(404);
+  });
+})
+
+describe("GET /verifyAccount", () => {
+  it("should respond with a 200", async () => {
+    var user = new User();
+    user.name = 'John Doe';
+    user.email = 'john@email.com';
+    user.setPassword('John123!');   
+    let insertedUser = await user.save();
+
+    var infoForToken = { "id": insertedUser._id }
+    const token = jwt.sign(infoForToken, process.env.SECRET, { expiresIn: '1d' });
+
+    let verificationToken = new Verification_token();
+    verificationToken.email = 'john@email.com';
+    verificationToken.token = token;
+    await verificationToken.save();
+    
+    const res = await request(app)
+      .get(`/users/verifyAccount?id=${token}`)
+
+    expect(res.statusCode).toBe(200);
+
+    let verifiedUser = await User.findOne({email: 'john@email.com'});
+    expect(verifiedUser.isVerified).toBe(true);
+  });
+
+  it("should respond with a 200 account already verified", async () => {
+    var user = new User();
+    user.name = 'John Doe';
+    user.email = 'john@email.com';
+    user.setPassword('John123!');   
+    let insertedUser = await user.save();
+
+    var infoForToken = { "id": insertedUser._id }
+    const token = jwt.sign(infoForToken, process.env.SECRET, { expiresIn: '1d' });
+
+    let verificationToken = new Verification_token();
+    verificationToken.email = 'john@email.com';
+    verificationToken.token = token;
+    await verificationToken.save();
+    
+    const res = await request(app)
+      .get(`/users/verifyAccount?id=${token}`)
+
+    const secondRes = await request(app)
+      .get(`/users/verifyAccount?id=${token}`)
+
+    expect(secondRes.statusCode).toBe(200);
+    expect(secondRes.body).toHaveProperty("message");
+    expect(secondRes.body.message).toBe("Account is already verified.");
+
+    let verifiedUser = await User.findOne({email: 'john@email.com'});
+    expect(verifiedUser.isVerified).toBe(true);
+  });
+
+  it("should respond with a 404 user does not exist", async () => {
+    var infoForToken = { "id": "61e5c51c7a1fa80016a74b1d" }
+    const token = jwt.sign(infoForToken, process.env.SECRET, { expiresIn: '1d' });
+    
+    const res = await request(app)
+      .get(`/users/verifyAccount?id=${token}`)
+
+    expect(res.statusCode).toBe(404);
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("User does not exist.");
   });
 })
