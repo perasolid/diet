@@ -6,186 +6,130 @@ const fs = require('fs');
 const path = require('path');
 var request = require('request');
 const jwt = require('jsonwebtoken');
-const email_config = require('../config/email');
+const emailConfig = require('../config/email');
 const html_templates = require('../config/html_templates'); 
 
-var sendJSONresponse = function(res, status, content) {
-  res.status(status);
-  res.json(content);
-};
-
 module.exports.register = function(req, res) {
+  if (!req.body.name || !req.body.email || !req.body.password)
+    return res.status(400).json({"message": "All fields required"});
 
-  if(!req.body.name || !req.body.email || !req.body.password) {
-    sendJSONresponse(res, 400, {
-      "message": "All fields required"
-    });
-    return;
-  }
-
-  User.findOne({email: req.body.email}, function(err, user) {
-    if(err) {
-      console.log(err);
-    }
-    if(user) {
-      sendJSONresponse(res, 400, {
-        "message": "Email taken"
-      });
-      return;
-    } else {
+  User.findOne({email: req.body.email})
+  .then((user) => {
+    if (user)
+      return res.status(400).json({"message": "Email taken"});
+    else {
       var user = new User();
       user.name = req.body.name;
       user.email = req.body.email;
       user.setPassword(req.body.password);
-      user.save(function(err, insertedUser) {
+      user.save()
+      .then((insertedUser) => {
         let rawdata = fs.readFileSync(path.join(__dirname, '../defaults/dri.json'));
         let dri = JSON.parse(rawdata);
         dri.user_id = insertedUser._id;
-        var newDri = new Dri(dri);
+        let newDri = new Dri(dri);
         newDri.save();
 
-        var infoForToken = {
-          "id": insertedUser._id
-        }
-        const token = jwt.sign(infoForToken, process.env.SECRET, { expiresIn: '1d' });
-        var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + token;        
-        var verification_token = new Verification_token({ email: insertedUser.email, token: token });
-        verification_token.save(function (err) {
-          if(err){
-            return res.status(500).send({msg:err.message});
-          }
-          var mailOptions = {
+        const token = jwt.sign({"id": insertedUser._id}, process.env.SECRET, { expiresIn: '1d' });
+        let url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + token;        
+        let verification_token = new Verification_token({ email: insertedUser.email, token: token });
+        verification_token.save()
+        .then(() => {
+          let mailOptions = {
             from: process.env.EMAIL,
             to: req.body.email,
             subject: 'Dietaty Habits - Account verification',
             html: html_templates.verification_email.replace(/####/g, url)
           };
-        
-          email_config.transport.sendMail(mailOptions, function(err, info) {
-            if (err) {
-              console.log(err)
-            } else {
-              console.log(info);
-              res.status(200);
-              res.json({
-                "message" : "A verification email has been sent to " + user.email + ". It will expire after one day. If you did not get a verification email, click on resend verification email."
-              });
-            }
+          emailConfig.transport.sendMail(mailOptions).then(() => {
+              return res.status(200).json({"message" : "A verification email has been sent to " + user.email
+              + ". It will expire after one day. If you did not get a verification email, click on resend verification email."});
           });
-        });
+        })
       });
     }
-  });
+  })
+  .catch((err) => {
+    return res.status(500).send({msg:err.message});
+  })
 
 };
 
 module.exports.resendVerificationToken = function(req, res) {
-  Verification_token.findOne({email: req.body.email}, function(err, verification_token) {
-    if (verification_token === null) {
+  Verification_token.findOne({email: req.body.email})
+  .then((verificationToken) => {
+    if (verificationToken === null)
       return res.status(404).json({"message": "No verification token for this email."})
-    }
-    var url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verification_token.token;
+
+    let url = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=" + verificationToken.token;
     var mailOptions = {
       from: process.env.EMAIL,
       to: req.body.email,
       subject: 'Dietaty Habits - Account verification',
       html: html_templates.verification_email.replace(/####/g, url)
     };
-    email_config.transport.sendMail(mailOptions, function(err, info) {
-      if (err) {
-        console.log(err)
-      } else {
-        console.log(info);
-        res.status(200);
-        res.json({
-          "message" : "A verification email has been resent to " + req.body.email + "."
-        });
-      }
+    emailConfig.transport.sendMail(mailOptions)
+    .then(() => {
+      return res.status(200).json({"message" : "A verification email has been resent to " + req.body.email + "."});
     });
+  })
+  .catch((err) => {
+    return res.status(500).send({msg:err.message});
   })
 }
 
 module.exports.verifyAccount = function(req, res) {
-  token = req.query.id;
-  if (token) {
-    try {
-        jwt.verify(token, process.env.SECRET, (e, decoded) => {
-          if (e) {
-              console.log(e)
-              return res.sendStatus(403)
-          } else {
-              var id = mongoose.Types.ObjectId(decoded.id);
-              (async () => {
-                var user = await User.findOne({ _id: id }).exec();
-                if (!user) {
-                  res.status(404).json({"message": "User does not exist."});
+  if (!req.query.id)
+    return res.status(400).json({"message": "No id specified"})
+  try {
+    jwt.verify(req.query.id, process.env.SECRET, (err, decoded) => {
+      if (err)
+          return res.status(403).json({"message": "Invalid token"});
+      else {
+        let id = mongoose.Types.ObjectId(decoded.id);
+        (async () => {
+          let user = await User.findOne({ _id: id }).exec();
+          if (!user)
+            res.status(404).json({"message": "User does not exist."});
+          else if (user.isVerified)
+            res.status(200).json({"message": "Account is already verified."});
+          else {
+            User.updateOne({_id: id}, {isVerified: true}, (err) => {
+                if(err)
+                  res.status(400).send(err);
+                else {
+                  Verification_token.deleteOne({email: user.email}, function(err, result){
+                    if(err)
+                        res.status(500).json(err);
+                    else
+                        res.status(200).sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));
+                  });
                 }
-                else if (user.isVerified) {
-                  res.status(200).json({"message": "Account is already verified."});
-                } else {
-                  User.updateOne({"_id": id}, {"$set": {"isVerified": true}}, 
-                    (err, writeResults) => {
-                      if(err) {
-                        console.log(err);
-                        res.status(400);
-                        res.send(err);
-                      }
-                      else {
-                        Verification_token.deleteOne({email: user.email}, function(err, result){
-                          if(err) {
-                              res.json(err);
-                          }
-                          else {
-                              res.status(200);
-                              res.sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));
-                          }
-                        });
-                      }
-                    }
-                  );
-                }
-              })().catch(error => {
-                next(error);
-              });
+              }
+            );
           }
-        });
-      } catch (err) {
-          console.log(err)
-          return res.sendStatus(403)
+        })();
       }
-  } else {
-      return res.sendStatus(403)
+    });
+  } catch (err) {
+      return res.status(403).json({"message": err.message});
   }
 };
 
 module.exports.login = function(req, res) {
 
-  if(!req.body.email || !req.body.password) {
-    sendJSONresponse(res, 400, {
-      "message": "All fields required"
-    });
-    return;
-  }
+  if(!req.body.email || !req.body.password)
+    return res.status(400).json({"message": "All fields required"});
 
   passport.authenticate('local', function(err, user, info){
-    var token;
+    if (err)
+      return res.status(404).json(err);
 
-    //If Passport throws/catches an error
-    if (err) {
-      res.status(404).json(err);
-      return;
-    }
-
-    //If a user is found
     if(user){
-      if(user.isVerified) {
-        token = user.generateJwt();
-        res.status(200).json({
-          "token" : token
-        });
-      } else {
+      if(user.isVerified)
+        res.status(200).json({"token": user.generateJwt()});
+      else
         return res.status(401).json({msg:'Your Email has not been verified.'});
-      }
     } else {
       //If user is not found
       res.status(401).json(info);
@@ -194,13 +138,12 @@ module.exports.login = function(req, res) {
 };
 
 module.exports.verifyRecaptcha = function(req, res) {
-	var clientServerOptions = {
+	let clientServerOptions = {
 		uri: 'https://www.google.com/recaptcha/api/siteverify?response='+ req.body.response +
 		'&secret='+req.body.secret,
 		method: 'POST'
 	}
 	request(clientServerOptions, function (error, response) {
-		res.status(200).json(response.body);
-		return;
+		return res.status(200).json(response.body);
 	});
 };

@@ -21,6 +21,14 @@ afterAll(done => {
   done();
 });
 
+describe("GET /profile", () => {
+  it("should respond 401 Unauthorized", async () => {
+    const res = await request(app)
+      .get("/users/profile")
+    expect(res.statusCode).toBe(401);
+  });
+})
+
 describe("POST /register", () => {
   it("should register user and respond with a success message", async () => {
     const res = await request(app)
