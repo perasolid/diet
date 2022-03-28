@@ -29,6 +29,49 @@ describe("GET /profile", () => {
   });
 })
 
+describe("GET /profile", () => {
+  it("should respond 200 User info", async () => {
+    var user = new User();
+    user.name = 'John Doe';
+    user.email = 'john@email.com';
+    user.isVerified = true;
+    user.setPassword('John123!');   
+    await user.save();
+
+    const responseFromLogIn = await request(app)
+      .post("/users/login")
+      .send({
+        email: 'john@email.com',
+        password: 'John123!'
+      });
+    expect(responseFromLogIn.body).toHaveProperty("token");
+    
+    const res = await request(app)
+      .get("/users/profile")
+      .set('Authorization', `Bearer ${responseFromLogIn.body.token}`)
+
+    expect(res.statusCode).toBe(200);
+
+    const storedUser = await User.findOne({email: 'john@email.com'});
+    expect(res.body.email).toBe(storedUser.email);
+    expect(res.body.hash).toBe(storedUser.hash);
+    expect(res.body.salt).toBe(storedUser.salt);
+    expect(res.body.name).toBe(storedUser.name);
+    expect(res.body.isVerified).toBe(storedUser.isVerified);
+  });
+
+  it("should respond 401 UnauthorizedError: private profile", async () => {
+    const token = jwt.sign({email: 'some@email.com'}, process.env.SECRET);
+    const res = await request(app)
+      .get("/users/profile")
+      .set('Authorization', `Bearer ${token}`)
+
+    expect(res.statusCode).toBe(401);
+    expect(res.body).toHaveProperty("message");
+    expect(res.body.message).toBe("UnauthorizedError: private profile");
+  });
+})
+
 describe("POST /register", () => {
   it("should register user and respond with a success message", async () => {
     const res = await request(app)
