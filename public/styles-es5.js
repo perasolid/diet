@@ -590,15 +590,15 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! E:\Dietary_habits_project\Dietary-habits-frontend\src\styles.css */
+    /*! E:\Dietary-habits-project\Dietary-habits-frontend\src\styles.css */
     "./src/styles.css");
 
     __webpack_require__(
-    /*! E:\Dietary_habits_project\Dietary-habits-frontend\node_modules\font-awesome\css\font-awesome.min.css */
+    /*! E:\Dietary-habits-project\Dietary-habits-frontend\node_modules\font-awesome\css\font-awesome.min.css */
     "./node_modules/font-awesome/css/font-awesome.min.css");
 
     module.exports = __webpack_require__(
-    /*! E:\Dietary_habits_project\Dietary-habits-frontend\node_modules\ngx-toastr\toastr.css */
+    /*! E:\Dietary-habits-project\Dietary-habits-frontend\node_modules\ngx-toastr\toastr.css */
     "./node_modules/ngx-toastr/toastr.css");
     /***/
   }
