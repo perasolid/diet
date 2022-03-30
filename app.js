@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const config = require('./config/database');
 const logger = require('morgan');
-var passport = require('passport');
+//const passport = require('passport');
 const fs = require('fs');
 const join = require('path').join;
 
@@ -16,13 +16,17 @@ fs.readdirSync(models)
   .filter(file => ~file.search(/^[^.].*\.js$/))
   .forEach(file => require(join(models, file)));
 
+// Passport uses User model
+require('./config/passport');
+
 // Load services
 const users = require('./routes/users');
 const nutritions = require('./routes/nutrition');
 const user_nutrition = require('./routes/user_nutrition');
 const dri = require('./routes/dri');
 
-const app=express();
+const app = express();
+
 // Connect to database
 mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected',()=>{
@@ -32,7 +36,6 @@ mongoose.connection.on('error',(err)=>{
     console.log('Error with connection to database: ' + err);
 });
 
-require('./config/passport');
 
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
