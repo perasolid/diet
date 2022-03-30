@@ -5,13 +5,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const config = require('./config/database');
 const logger = require('morgan');
-//const passport = require('passport');
 const fs = require('fs');
 const join = require('path').join;
 
-const models = join(__dirname, '/models');
-
 // Load models
+const models = join(__dirname, '/models');
 fs.readdirSync(models)
   .filter(file => ~file.search(/^[^.].*\.js$/))
   .forEach(file => require(join(models, file)));
