@@ -1088,9 +1088,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: HomeComponent,
       selectors: [["app-home"]],
-      decls: 129,
+      decls: 133,
       vars: 0,
-      consts: [[1, "siva"], ["id", "home", 1, "w3-display-container", "w3-content", 2, "line-height", "1", "max-width", "1500px"], ["src", "../../../assets/bg.jpg", "alt", "Food table", "width", "1500", "height", "800", 1, "w3-image"], [1, "w3-display-middle", "w3-center", 2, "background-color", "rgba(255,255,255, 0.8)"], [2, "font-size", "8vw"], ["routerLink", "/register", 1, "w3-btn", "w3-blue"], [1, "w3-padding-16", "w3-container"], [1, "w3-content"], [1, "w3-padding-16"], [1, "row"], [1, "column", 2, "background-color", "rgb(107, 163, 228)"], [2, "line-height", "1.2"], [1, "column", 2, "background-color", "rgb(125, 174, 230)"], [1, "column", 2, "background-color", "rgb(138, 182, 233)"], [1, "w3-center"], ["srcset", "../../../assets/gifs/my-diet-mobile.gif 270w,\n                      ../../../assets/gifs/my-diet.gif 800w", "sizes", "(max-width: 800px) 270px,\n                      800px", "src", "../../../assets/gifs/my-diet.gif", "alt", "Adding food"], [1, "w3-light-grey", "w3-padding-16", "w3-container"]],
+      consts: [[1, "siva"], ["id", "home", 1, "w3-display-container", "w3-content", 2, "line-height", "1", "max-width", "1500px"], ["src", "../../../assets/bg.jpg", "alt", "Food table", "width", "1500", "height", "800", 1, "w3-image"], [1, "w3-display-middle", "w3-center", 2, "background-color", "rgba(255,255,255, 0.8)"], [2, "font-size", "8vw"], ["routerLink", "/register", 1, "w3-btn", "w3-blue"], [1, "w3-padding-16", "w3-container"], [1, "w3-content"], [1, "w3-padding-16"], [1, "row"], [1, "column", 2, "background-color", "rgb(107, 163, 228)"], [2, "line-height", "1.2"], [1, "column", 2, "background-color", "rgb(125, 174, 230)"], [1, "column", 2, "background-color", "rgb(138, 182, 233)"], [1, "w3-center"], ["srcset", "../../../assets/gifs/my-diet-mobile.gif 270w,\n                      ../../../assets/gifs/my-diet.gif 800w", "sizes", "(max-width: 800px) 270px,\n                      800px", "src", "../../../assets/gifs/my-diet.gif", "alt", "Adding food"], [1, "w3-light-grey", "w3-padding-16", "w3-container"], ["srcset", "../../../assets/gifs/my-dri-mobile.gif 228w,\n                      ../../../assets/gifs/my-dri.gif 800w", "sizes", "(max-width: 800px) 228px,\n                      800px", "src", "../../../assets/gifs/my-dri.gif", "alt", "Adding food"]],
       template: function HomeComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1447,49 +1447,61 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "h3", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "Using custom DRIs");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "div", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "div", 7);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "h2");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "Analytics");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "h5", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "The ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "b");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "Dietary habits app");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, " analytics section shows you in a graphic way how you are doing in regards to all of the nutrition values. This is based on the set DRI values and shows daily intakes as well as per certain nutrition from foods.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](117, "img", 17);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "div", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125, "If you haven't already, sign up");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "div", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "h2");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "Analytics");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "h5", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "button", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, "The ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, "Sign up");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "b");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125, "Dietary habits app");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, " analytics section shows you in a graphic way how you are doing in regards to all of the nutrition values. This is based on the set DRI values and shows daily intakes as well as per certain nutrition from foods.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "div", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "h3");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "If you haven't already, sign up");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "button", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, "Sign up");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
