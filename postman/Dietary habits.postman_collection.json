@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a85defcc-da92-4a21-8b18-9ab0a2753dbf",
+		"_postman_id": "75f245fb-5828-4d28-965d-3a93f2e4a1b7",
 		"name": "Dietary habits",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -545,6 +545,40 @@
 								"dri",
 								"delete",
 								"61f6b9b374e8f92afc948023"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Composite_food",
+			"item": [
+				{
+					"name": "COMPOSITE FOOD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"calculatedNutrition\": {\r\n        \"name\": \"Composite Test\",\r\n        \"calories\": \"42\",\r\n        \"carbohydrate_g\": \"6.7\",\r\n        \"fiber_g\": \"3.7\",\r\n        \"protein_g\": \"4.98\",\r\n        \"total_fat_g\": \"0.7\",\r\n        \"saturated_fat_g\": \"0.2\",\r\n        \"fatty_acids_total_trans_g\": \"0\",\r\n        \"cholesterol_mg\": \"0\",\r\n        \"sugars_g\": \"3.01\",\r\n        \"water_g\": \"85.66\",\r\n        \"vitamin_a_rae_mcg\": \"241\",\r\n        \"thiamin_mg\": \"0.209\",\r\n        \"riboflavin_mg\": \"0.456\",\r\n        \"niacin_mg\": \"1.513\",\r\n        \"pantothenic_acid_mg\": \"0.084\",\r\n        \"vitamin_b6_mg\": \"0.146\",\r\n        \"folate_mcg\": \"126\",\r\n        \"vitamin_b12_mcg\": \"0\",\r\n        \"choline_mg\": \"12.8\",\r\n        \"vitamin_c_mg\": \"52\",\r\n        \"vitamin_d_IU\": \"0\",\r\n        \"vitamin_e_mg\": \"2.02\",\r\n        \"vitamin_k_mcg\": \"108.6\",\r\n        \"calcium_mg\": \"107\",\r\n        \"copper_mg\": \"0.27\",\r\n        \"irom_mg\": \"2.25\",\r\n        \"magnesium_mg\": \"45\",\r\n        \"manganese_mg\": \"0.714\",\r\n        \"phosphorous_mg\": \"60\",\r\n        \"potassium_mg\": \"648\",\r\n        \"selenium_mcg\": \"0.9\",\r\n        \"sodium_mg\": \"3\",\r\n        \"zink_mg\": \"0.41\"\r\n    },\r\n    \"ingredients\": [\r\n        {\r\n            \"ingredient_id\": \"620796f571bdbb00163544d5\",\r\n            \"ingredient_quantity\": 80\r\n        },\r\n        {\r\n            \"ingredient_id\": \"6207931271bdbb00163544d3\",\r\n            \"ingredient_quantity\": 20\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/composite-food/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"composite-food",
+								"add"
 							]
 						}
 					},
