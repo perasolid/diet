@@ -22,6 +22,7 @@ const users = require('./routes/users');
 const nutritions = require('./routes/nutrition');
 const user_nutrition = require('./routes/user_nutrition');
 const dri = require('./routes/dri');
+const compositeFood = require('./routes/composite_food');
 
 const app = express();
 
@@ -48,6 +49,7 @@ app.use('/users', users);
 app.use('/nutritions', nutritions);
 app.use('/user-nutrition', user_nutrition);
 app.use('/dri', dri);
+app.use('/composite-food', compositeFood);
 
 app.get('**', (req, res)=>{
     res.sendFile(__dirname+'/public/index.html');
