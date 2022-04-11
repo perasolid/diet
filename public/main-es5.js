@@ -924,25 +924,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var src_app_models_summed_up_nutritions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/models/summed-up-nutritions */
+    "./src/app/models/summed-up-nutritions.ts");
+    /* harmony import */
+
+
+    var src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! src/app/services/nutrition.service */
     "./src/app/services/nutrition.service.ts");
     /* harmony import */
 
 
-    var ngx_toastr__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var src_app_services_composite_food_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/composite-food.service */
+    "./src/app/services/composite-food.service.ts");
+    /* harmony import */
+
+
+    var ngx_toastr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ngx-toastr */
     "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -1218,7 +1230,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Add some! ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "To create composite food you need to add at least 2 ingredients. ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 39);
 
@@ -1241,10 +1253,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
 
     var CompositeFoodCreationComponent = /*#__PURE__*/function () {
-      function CompositeFoodCreationComponent(nutritionService, toastr) {
+      function CompositeFoodCreationComponent(nutritionService, compositeFoodService, toastr) {
         _classCallCheck(this, CompositeFoodCreationComponent);
 
         this.nutritionService = nutritionService;
+        this.compositeFoodService = compositeFoodService;
         this.toastr = toastr;
         this.search = '';
         this.compositeName = '';
@@ -1276,10 +1289,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else {
             this.ingredients.push({
               nutrition: nutrition,
-              ingredient_quantity: qunatity.value
+              ingredient_quantity: Number(qunatity.value)
             });
             this.nutritions = [];
-            console.table(this.ingredients);
           }
         }
       }, {
@@ -1294,13 +1306,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return element.nutrition._id;
           }).indexOf(id);
           this.ingredients.splice(indexOfIngredientToBeRemoved, 1);
-          console.table(this.ingredients);
         }
       }, {
         key: "createCompositeFood",
         value: function createCompositeFood() {
-          console.log(this.compositeName);
-          console.log(this.ingredients);
+          var _this2 = this;
+
+          var calculatedNutritionValues = new src_app_models_summed_up_nutritions__WEBPACK_IMPORTED_MODULE_1__["SummedUpNutritions"]();
+          var initialValue = 0;
+          var totalQuantity = this.ingredients.reduce(function (previousValue, currentValue) {
+            return previousValue + currentValue.ingredient_quantity;
+          }, initialValue);
+          var ingredientRatios = this.ingredients.map(function (ingredient) {
+            return {
+              ingredient_ratio: ingredient.ingredient_quantity / totalQuantity,
+              ingredient_id: ingredient.nutrition._id
+            };
+          });
+          var nutritionKeys = Object.keys(calculatedNutritionValues);
+
+          var _loop = function _loop(i) {
+            nutritionKeys.forEach(function (key) {
+              calculatedNutritionValues[key] += _this2.ingredients[i].nutrition[key] * ingredientRatios[i].ingredient_ratio;
+            });
+          };
+
+          for (var i = 0; i < this.ingredients.length; i++) {
+            _loop(i);
+          }
+
+          var nutrition = JSON.parse(JSON.stringify(calculatedNutritionValues));
+          nutrition.name = this.compositeName;
+          var compositeFood = {
+            calculatedNutrition: nutrition,
+            ingredients: ingredientRatios
+          };
+          this.compositeFoodService.addCompositeFood(compositeFood).subscribe(function () {
+            _this2.toastr.success('Created "' + _this2.compositeName + '" composite food!', 'Success');
+          }, function (err) {
+            _this2.toastr.error(err.message, 'Error');
+          });
         }
       }, {
         key: "ngOnInit",
@@ -1311,7 +1356,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     CompositeFoodCreationComponent.ɵfac = function CompositeFoodCreationComponent_Factory(t) {
-      return new (t || CompositeFoodCreationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_1__["NutritionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]));
+      return new (t || CompositeFoodCreationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_2__["NutritionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_composite_food_service__WEBPACK_IMPORTED_MODULE_3__["CompositeFoodService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"]));
     };
 
     CompositeFoodCreationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -1468,14 +1513,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ingredients.length > 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ingredients.length > 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.ingredients.length === 0);
         }
       },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["MinLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["MinLengthValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"]],
       styles: [".column[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 23%;\r\n    margin: 1%;\r\n}\r\n\r\n\r\n\r\n.row[_ngcontent-%COMP%]:after {\r\n    content: \"\";\r\n    display: table;\r\n    clear: both;\r\n}\r\n\r\n.scrollable-text[_ngcontent-%COMP%] {\r\n    overflow: auto;\r\n    height: 15vh;\r\n}\r\n\r\n\r\n\r\n.tooltip[_ngcontent-%COMP%] {\r\n    position: relative;\r\n    display: inline-block;\r\n}\r\n\r\n.tooltip[_ngcontent-%COMP%]   .tooltiptext[_ngcontent-%COMP%] {\r\n    visibility: hidden;\r\n    width: 200px;\r\n    background-color: black;\r\n    color: #fff;\r\n    text-align: center;\r\n    border-radius: 6px;\r\n    padding: 5px;\r\n\r\n    \r\n    position: absolute;\r\n    z-index: 1;\r\n    bottom: 100%;\r\n    left: 50%;\r\n    margin-left: -200px;\r\n}\r\n\r\n.centered-input[_ngcontent-%COMP%] {\r\n    margin-left: 30vw;\r\n}\r\n\r\n.tooltip[_ngcontent-%COMP%]:hover   .tooltiptext[_ngcontent-%COMP%] {\r\n    visibility: visible;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n[_ngcontent-%COMP%]::-webkit-scrollbar {\r\n    width: 3px;\r\n}\r\n\r\n\r\n\r\n[_ngcontent-%COMP%]::-webkit-scrollbar-track {\r\n    background: #f1f1f1;\r\n}\r\n\r\n\r\n\r\n[_ngcontent-%COMP%]::-webkit-scrollbar-thumb {\r\n    background: #888;\r\n}\r\n\r\n\r\n\r\n[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover {\r\n    background: #555;\r\n}\r\n\r\n\r\n\r\n#divForTable[_ngcontent-%COMP%] {\r\n    margin: 0 auto;\r\n    margin-bottom: 15px;\r\n    overflow: auto;\r\n    max-height: 60vh;\r\n    width: 95vw;\r\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nthead[_ngcontent-%COMP%], tfoot[_ngcontent-%COMP%] {\r\n    position: -webkit-sticky;\r\n    position: sticky;\r\n    background-color: #000;\r\n    color: #fff;\r\n}\r\n\r\nthead[_ngcontent-%COMP%] {\r\n    top: 0;\r\n}\r\n\r\ntfoot[_ngcontent-%COMP%] {\r\n    bottom: 0;\r\n}\r\n\r\ntr[_ngcontent-%COMP%]:hover {\r\n    background-color: #bdf79c;\r\n}\r\n\r\ntr[_ngcontent-%COMP%]:nth-child(even):hover {\r\n    background-color: #bdf79c;\r\n}\r\n\r\ntable[_ngcontent-%COMP%] {\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n}\r\n\r\nth[_ngcontent-%COMP%], td[_ngcontent-%COMP%] {\r\n    padding: 8px 16px;\r\n}\r\n\r\nthead[_ngcontent-%COMP%] {\r\n    background: #2196F3;\r\n}\r\n\r\ntr[_ngcontent-%COMP%]:nth-child(even) {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n@media screen and (max-width: 900px) {\r\n    .column[_ngcontent-%COMP%] {\r\n        width: 97%;\r\n        display: block;\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .scrollable-text[_ngcontent-%COMP%] {\r\n        overflow: visible;\r\n        height: auto;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 500px) {\r\n    .centered-input[_ngcontent-%COMP%] {\r\n        margin: 0;\r\n    } \r\n\r\n    .tooltip[_ngcontent-%COMP%]   .tooltiptext[_ngcontent-%COMP%] {\r\n        margin-left: -175px;\r\n    }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb21wb3NpdGUtZm9vZC1jcmVhdGlvbi9jb21wb3NpdGUtZm9vZC1jcmVhdGlvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFVBQVU7SUFDVixVQUFVO0FBQ2Q7O0FBRUEsbUNBQW1DOztBQUNuQztJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QsV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYztJQUNkLFlBQVk7QUFDaEI7O0FBR0EsVUFBVTs7QUFDVjtJQUNJLGtCQUFrQjtJQUNsQixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixZQUFZOztJQUVaLHlCQUF5QjtJQUN6QixrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLFlBQVk7SUFDWixTQUFTO0lBQ1QsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBLGNBQWM7O0FBRWQsMkJBQTJCOztBQUMzQjtJQUNJLFVBQVU7QUFDZDs7QUFFQSxVQUFVOztBQUNWO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBLFdBQVc7O0FBQ1g7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUEsb0JBQW9COztBQUNwQjtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQSxRQUFROztBQUNSO0lBQ0ksY0FBYztJQUNkLG1CQUFtQjtJQUNuQixjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCw0RUFBNEU7QUFDaEY7O0FBRUE7O0lBRUksd0JBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixzQkFBc0I7SUFDdEIsV0FBVztBQUNmOztBQUVBO0lBQ0ksTUFBTTtBQUNWOztBQUVBO0lBQ0ksU0FBUztBQUNiOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFdBQVc7QUFDZjs7QUFFQTs7SUFFSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7O0FBQ0EsWUFBWTs7QUFFWix5QkFBeUI7O0FBQ3pCO0lBQ0k7UUFDSSxVQUFVO1FBQ1YsY0FBYztRQUNkLG1CQUFtQjtJQUN2Qjs7SUFFQTtRQUNJLGlCQUFpQjtRQUNqQixZQUFZO0lBQ2hCO0FBQ0o7O0FBRUE7SUFDSTtRQUNJLFNBQVM7SUFDYjs7SUFFQTtRQUNJLG1CQUFtQjtJQUN2QjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb21wb3NpdGUtZm9vZC1jcmVhdGlvbi9jb21wb3NpdGUtZm9vZC1jcmVhdGlvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbHVtbiB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxuICAgIHdpZHRoOiAyMyU7XHJcbiAgICBtYXJnaW46IDElO1xyXG59XHJcblxyXG4vKiBDbGVhciBmbG9hdHMgYWZ0ZXIgdGhlIGNvbHVtbnMgKi9cclxuLnJvdzphZnRlciB7XHJcbiAgICBjb250ZW50OiBcIlwiO1xyXG4gICAgZGlzcGxheTogdGFibGU7XHJcbiAgICBjbGVhcjogYm90aDtcclxufVxyXG5cclxuLnNjcm9sbGFibGUtdGV4dCB7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICAgIGhlaWdodDogMTV2aDtcclxufVxyXG5cclxuXHJcbi8qVG9vbHRpcCovXHJcbi50b29sdGlwIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG5cclxuLnRvb2x0aXAgLnRvb2x0aXB0ZXh0IHtcclxuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcclxuICAgIHdpZHRoOiAyMDBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcblxyXG4gICAgLyogUG9zaXRpb24gdGhlIHRvb2x0aXAgKi9cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHotaW5kZXg6IDE7XHJcbiAgICBib3R0b206IDEwMCU7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICBtYXJnaW4tbGVmdDogLTIwMHB4O1xyXG59XHJcblxyXG4uY2VudGVyZWQtaW5wdXQge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwdnc7XHJcbn1cclxuXHJcbi50b29sdGlwOmhvdmVyIC50b29sdGlwdGV4dCB7XHJcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xyXG59XHJcblxyXG4vKlRvb2x0aXAtZW5kKi9cclxuXHJcbi8qU2Nyb2xsYmFyIGRlc2lnbiAtIHN0YXJ0Ki9cclxuOjotd2Via2l0LXNjcm9sbGJhciB7XHJcbiAgICB3aWR0aDogM3B4O1xyXG59XHJcblxyXG4vKiBUcmFjayAqL1xyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcclxuICAgIGJhY2tncm91bmQ6ICNmMWYxZjE7XHJcbn1cclxuXHJcbi8qIEhhbmRsZSAqL1xyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHtcclxuICAgIGJhY2tncm91bmQ6ICM4ODg7XHJcbn1cclxuXHJcbi8qIEhhbmRsZSBvbiBob3ZlciAqL1xyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQ6ICM1NTU7XHJcbn1cclxuXHJcbi8qdGFibGUqL1xyXG4jZGl2Rm9yVGFibGUge1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG4gICAgb3ZlcmZsb3c6IGF1dG87XHJcbiAgICBtYXgtaGVpZ2h0OiA2MHZoO1xyXG4gICAgd2lkdGg6IDk1dnc7XHJcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xyXG59XHJcblxyXG50aGVhZCxcclxudGZvb3Qge1xyXG4gICAgcG9zaXRpb246IHN0aWNreTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxufVxyXG5cclxudGhlYWQge1xyXG4gICAgdG9wOiAwO1xyXG59XHJcblxyXG50Zm9vdCB7XHJcbiAgICBib3R0b206IDA7XHJcbn1cclxuXHJcbnRyOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNiZGY3OWM7XHJcbn1cclxuXHJcbnRyOm50aC1jaGlsZChldmVuKTpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjYmRmNzljO1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbnRoLFxyXG50ZCB7XHJcbiAgICBwYWRkaW5nOiA4cHggMTZweDtcclxufVxyXG5cclxudGhlYWQge1xyXG4gICAgYmFja2dyb3VuZDogIzIxOTZGMztcclxufVxyXG5cclxudHI6bnRoLWNoaWxkKGV2ZW4pIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7XHJcbn1cclxuLyp0YWJsZS1lbmQqL1xyXG5cclxuLypTY3JvbGxiYXIgZGVzaWduIC0gZW5kKi9cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcclxuICAgIC5jb2x1bW4ge1xyXG4gICAgICAgIHdpZHRoOiA5NyU7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIH1cclxuXHJcbiAgICAuc2Nyb2xsYWJsZS10ZXh0IHtcclxuICAgICAgICBvdmVyZmxvdzogdmlzaWJsZTtcclxuICAgICAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDUwMHB4KSB7XHJcbiAgICAuY2VudGVyZWQtaW5wdXQge1xyXG4gICAgICAgIG1hcmdpbjogMDtcclxuICAgIH0gXHJcblxyXG4gICAgLnRvb2x0aXAgLnRvb2x0aXB0ZXh0IHtcclxuICAgICAgICBtYXJnaW4tbGVmdDogLTE3NXB4O1xyXG4gICAgfVxyXG59Il19 */"]
     });
     /*@__PURE__*/
@@ -1490,9 +1535,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [{
-          type: src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_1__["NutritionService"]
+          type: src_app_services_nutrition_service__WEBPACK_IMPORTED_MODULE_2__["NutritionService"]
         }, {
-          type: ngx_toastr__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]
+          type: src_app_services_composite_food_service__WEBPACK_IMPORTED_MODULE_3__["CompositeFoodService"]
+        }, {
+          type: ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"]
         }];
       }, null);
     })();
@@ -4012,7 +4059,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyDietComponent, [{
         key: "onDateChange",
         value: function onDateChange(date) {
-          var _this2 = this;
+          var _this3 = this;
 
           this.isLoaded = false;
           this.sumQuantity = 0;
@@ -4023,12 +4070,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date_of_consumption: date
           };
           this.userNutritionService.getUserNutritions(body).subscribe(function (nutritions) {
-            _this2.nutritions = nutritions;
+            _this3.nutritions = nutritions;
 
-            _this2.calculateSum(nutritions);
+            _this3.calculateSum(nutritions);
 
-            _this2.isLoaded = true;
-            if (nutritions.length > 0) _this2.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this3.isLoaded = true;
+            if (nutritions.length > 0) _this3.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
@@ -4052,7 +4099,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateUserNutrition",
         value: function updateUserNutrition(nutrition) {
-          var _this3 = this;
+          var _this4 = this;
 
           var req = JSON.parse(JSON.stringify(nutrition));
           var x = document.getElementById(req._id.toString());
@@ -4063,25 +4110,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             delete req.nutrition;
             req.quantity = Number(x.value);
             this.userNutritionService.updateNutrition(req).subscribe(function () {
-              _this3.onDateChange(_this3.dateOfConsumption.toISOString().split('T')[0]);
+              _this4.onDateChange(_this4.dateOfConsumption.toISOString().split('T')[0]);
 
-              _this3.toastr.success('You successfully updated the quantity!', 'Success');
+              _this4.toastr.success('You successfully updated the quantity!', 'Success');
             }, function (err) {
-              _this3.toastr.error(err.error.message, 'Error');
+              _this4.toastr.error(err.error.message, 'Error');
             });
           }
         }
       }, {
         key: "deleteUserNutrition",
         value: function deleteUserNutrition(id) {
-          var _this4 = this;
+          var _this5 = this;
 
           this.userNutritionService.deleteNutrition(id).subscribe(function () {
-            _this4.onDateChange(_this4.dateOfConsumption.toISOString().split('T')[0]);
+            _this5.onDateChange(_this5.dateOfConsumption.toISOString().split('T')[0]);
 
-            _this4.toastr.success('You successfully deleted the food!', 'Success');
+            _this5.toastr.success('You successfully deleted the food!', 'Success');
           }, function (err) {
-            _this4.toastr.error(err.error.message, 'Error');
+            _this5.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -4098,12 +4145,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.driService.getUserActiveDris().subscribe(function (dris) {
-            _this5.onDateChange(_this5.dateOfConsumption.toISOString().split('T')[0]);
+            _this6.onDateChange(_this6.dateOfConsumption.toISOString().split('T')[0]);
 
-            Object.assign(_this5.dri, dris[0]);
+            Object.assign(_this6.dri, dris[0]);
           });
         }
       }]);
@@ -4550,12 +4597,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyDriComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.isLoaded = false;
           this.driService.getUserDris().subscribe(function (dris) {
-            _this6.dris = dris;
-            _this6.isLoaded = true;
+            _this7.dris = dris;
+            _this7.isLoaded = true;
           });
         }
       }, {
@@ -4567,16 +4614,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "add",
         value: function add() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.driService.addDri(this.dri).subscribe(function () {
             document.getElementById('id01').style.display = 'none';
 
-            _this7.toastr.success('You successfully added a DRI!', 'Success');
+            _this8.toastr.success('You successfully added a DRI!', 'Success');
 
-            _this7.ngOnInit();
+            _this8.ngOnInit();
           }, function (err) {
-            _this7.toastr.error(err.error.message, 'Error');
+            _this8.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -4588,18 +4635,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.driService.updateDri(this.dri).subscribe(function (data) {
             document.getElementById('id02').style.display = 'none';
 
-            _this8.toastr.success('You successfully updated your DRI!', 'Success');
+            _this9.toastr.success('You successfully updated your DRI!', 'Success');
 
-            _this8.ngOnInit();
+            _this9.ngOnInit();
           }, function (err) {
-            _this8.toastr.error(err.error.message, 'Error');
+            _this9.toastr.error(err.error.message, 'Error');
 
-            _this8.ngOnInit();
+            _this9.ngOnInit();
           });
         }
       }, {
@@ -4611,37 +4658,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "delete",
         value: function _delete() {
-          var _this9 = this;
+          var _this10 = this;
 
           this.driService.deleteDri(this.dri._id).subscribe(function (data) {
             document.getElementById('id03').style.display = 'none';
 
-            _this9.toastr.success('You successfully deleted this DRI!', 'Success');
+            _this10.toastr.success('You successfully deleted this DRI!', 'Success');
 
             if (data.n == 1) {
-              for (var i = 0; i < _this9.dris.length; i++) {
-                if (_this9.dri._id == _this9.dris[i]._id) {
-                  _this9.dris.splice(i, 1);
+              for (var i = 0; i < _this10.dris.length; i++) {
+                if (_this10.dri._id == _this10.dris[i]._id) {
+                  _this10.dris.splice(i, 1);
                 }
               }
             }
           }, function (err) {
-            _this9.toastr.error(err.error.message, 'Error');
+            _this10.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
         key: "setAsActive",
         value: function setAsActive(dri) {
-          var _this10 = this;
+          var _this11 = this;
 
           dri.active = true;
           this.isLoaded = false;
           this.driService.setStatusToActive(dri).subscribe(function (data) {
-            _this10.toastr.success('"' + dri.name + '" set as currently active DRI!', 'Success');
+            _this11.toastr.success('"' + dri.name + '" set as currently active DRI!', 'Success');
 
-            _this10.ngOnInit();
+            _this11.ngOnInit();
           }, function (err) {
-            _this10.toastr.error(err.error.message, 'Error');
+            _this11.toastr.error(err.error.message, 'Error');
           });
         }
       }]);
@@ -9870,52 +9917,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NutritionComponent, [{
         key: "getNutritions",
         value: function getNutritions() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.isLoaded = false;
           this.nutrition = new _models_nutrition__WEBPACK_IMPORTED_MODULE_1__["Nutrition"]();
 
           if (this.search === '') {
             this.nutritionService.getNutritionsWithPagination(this.currentPage, this.currnetLimit).subscribe(function (nutritions) {
-              _this11.nutritions = nutritions;
-              _this11.isLoaded = true;
+              _this12.nutritions = nutritions;
+              _this12.isLoaded = true;
             });
             this.nutritionService.getNutritionsCount().subscribe(function (res) {
-              _this11.numberOfPages = Math.ceil(res.numberOfNutritions / _this11.currnetLimit);
+              _this12.numberOfPages = Math.ceil(res.numberOfNutritions / _this12.currnetLimit);
             });
           } else {
             this.nutritionService.getNutritions(this.search).subscribe(function (nutritions) {
-              _this11.nutritions = nutritions;
-              _this11.isLoaded = true;
+              _this12.nutritions = nutritions;
+              _this12.isLoaded = true;
 
-              _this11.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+              _this12.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
             });
           }
         }
       }, {
         key: "addNutrition",
         value: function addNutrition() {
-          var _this12 = this;
-
-          this.nutritionService.addNutrition(this.nutrition).subscribe(function () {
-            _this12.toastr.success('You successfully added a nutrition!', 'Success');
-
-            document.getElementById('id01').style.display = 'none'; //this.clearDialog();
-
-            _this12.getNutritions();
-          }, function (err) {
-            _this12.toastr.error(err.error.message, 'Error');
-          });
-        }
-      }, {
-        key: "updateNutrition",
-        value: function updateNutrition() {
           var _this13 = this;
 
-          this.nutritionService.updateNutrition(this.selectedNutrition).subscribe(function (data) {
-            document.getElementById('id02').style.display = 'none';
+          this.nutritionService.addNutrition(this.nutrition).subscribe(function () {
+            _this13.toastr.success('You successfully added a nutrition!', 'Success');
 
-            _this13.toastr.success('You successfully updated this nutrition!', 'Success');
+            document.getElementById('id01').style.display = 'none'; //this.clearDialog();
 
             _this13.getNutritions();
           }, function (err) {
@@ -9923,24 +9955,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         }
       }, {
+        key: "updateNutrition",
+        value: function updateNutrition() {
+          var _this14 = this;
+
+          this.nutritionService.updateNutrition(this.selectedNutrition).subscribe(function (data) {
+            document.getElementById('id02').style.display = 'none';
+
+            _this14.toastr.success('You successfully updated this nutrition!', 'Success');
+
+            _this14.getNutritions();
+          }, function (err) {
+            _this14.toastr.error(err.error.message, 'Error');
+          });
+        }
+      }, {
         key: "deleteNutrition",
         value: function deleteNutrition() {
-          var _this14 = this;
+          var _this15 = this;
 
           this.nutritionService.deleteNutrition(this.selectedNutrition._id).subscribe(function (data) {
             document.getElementById('id03').style.display = 'none';
 
-            _this14.toastr.success('You successfully deleted this nutrition!', 'Success');
+            _this15.toastr.success('You successfully deleted this nutrition!', 'Success');
 
             if (data.n == 1) {
-              for (var i = 0; i < _this14.nutritions.length; i++) {
-                if (_this14.selectedNutrition._id == _this14.nutritions[i]._id) {
-                  _this14.nutritions.splice(i, 1);
+              for (var i = 0; i < _this15.nutritions.length; i++) {
+                if (_this15.selectedNutrition._id == _this15.nutritions[i]._id) {
+                  _this15.nutritions.splice(i, 1);
                 }
               }
             }
           }, function (err) {
-            _this14.toastr.error(err.error.message, 'Error');
+            _this15.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -12393,12 +12440,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.isLoaded = false;
           this.auth.profile().subscribe(function (user) {
-            _this15.details = user;
-            _this15.isLoaded = true;
+            _this16.details = user;
+            _this16.isLoaded = true;
           }, function (err) {
             console.error(err);
           });
@@ -12406,7 +12453,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "save",
         value: function save() {
-          var _this16 = this;
+          var _this17 = this;
 
           if (this.newPassword !== this.confirmationPassword) {
             this.toastr.error('New password and Confirmation password do not match!', 'Error');
@@ -12419,35 +12466,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this.auth.getHash(req).subscribe({
             next: function next(data) {
-              if (_this16.details.hash === data.hash) {
-                _this16.details.newPassword = _this16.newPassword;
+              if (_this17.details.hash === data.hash) {
+                _this17.details.newPassword = _this17.newPassword;
 
-                _this16.auth.updateUser(_this16.details).subscribe({
+                _this17.auth.updateUser(_this17.details).subscribe({
                   next: function next(data) {
-                    if (_this16.newPassword !== '') {
-                      _this16.details.password = _this16.newPassword;
+                    if (_this17.newPassword !== '') {
+                      _this17.details.password = _this17.newPassword;
                     } else {
-                      _this16.details.password = _this16.currentPassword;
+                      _this17.details.password = _this17.currentPassword;
                     }
 
-                    _this16.auth.login(_this16.details).subscribe(function () {
-                      _this16.toastr.success('Changes saved successfully!', 'Success');
+                    _this17.auth.login(_this17.details).subscribe(function () {
+                      _this17.toastr.success('Changes saved successfully!', 'Success');
                     }, function (err) {
-                      _this16.toastr.error('Could not update your profile!', 'Error');
+                      _this17.toastr.error('Could not update your profile!', 'Error');
                     });
 
-                    _this16.getUserDetails();
+                    _this17.getUserDetails();
 
-                    _this16.currentPassword = '';
-                    _this16.newPassword = '';
-                    _this16.confirmationPassword = '';
+                    _this17.currentPassword = '';
+                    _this17.newPassword = '';
+                    _this17.confirmationPassword = '';
                   },
                   error: function error(_error) {
-                    _this16.toastr.error('Could not update your profile!', 'Error');
+                    _this17.toastr.error('Could not update your profile!', 'Error');
                   }
                 });
               } else {
-                _this16.toastr.error('Current password is not correct!', 'Error');
+                _this17.toastr.error('Current password is not correct!', 'Error');
               }
             },
             error: function error(_error2) {
@@ -12589,18 +12636,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "resolved",
         value: function resolved(recaptchaResponse) {
-          var _this17 = this;
+          var _this18 = this;
 
           var req = {};
           req['response'] = recaptchaResponse;
           this.auth.verifyRecaptcha(req).subscribe(function (res) {
             if (JSON.parse(res).success) {
-              _this17.isRecaptchaValid = true;
+              _this18.isRecaptchaValid = true;
             } else {
-              _this17.isRecaptchaValid = false;
+              _this18.isRecaptchaValid = false;
             }
           }, function (err) {
-            _this17.toastr.error(err.error.message, 'Error');
+            _this18.toastr.error(err.error.message, 'Error');
 
             console.log(err.error.message);
           });
@@ -12608,7 +12655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "register",
         value: function register() {
-          var _this18 = this;
+          var _this19 = this;
 
           if (!this.isRecaptchaValid) {
             this.toastr.error('Must complete reCAPTCHA!', 'Error');
@@ -12622,7 +12669,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("register-form").style.display = 'none';
               document.getElementById("resend-verification").style.display = 'block';
             }, function (err) {
-              _this18.toastr.error(err.error.message, 'Error');
+              _this19.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Password and Confirmation password do not match!', 'Error');
@@ -12631,18 +12678,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "resend",
         value: function resend() {
-          var _this19 = this;
+          var _this20 = this;
 
           if (this.resendVerifEmailCount < 5) {
             var req = {
               email: this.credentials.email
             };
             this.auth.resendVerificationEmail(req).subscribe(function (res) {
-              _this19.resendVerifEmailCount++;
+              _this20.resendVerifEmailCount++;
 
-              _this19.toastr.success('Resent verification email to: ' + _this19.credentials.email, 'Success');
+              _this20.toastr.success('Resent verification email to: ' + _this20.credentials.email, 'Success');
             }, function (err) {
-              _this19.toastr.error(err.error.message, 'Error');
+              _this20.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Already sent 5 (five) verification emails. Cannot send more.', 'Error');
@@ -13114,20 +13161,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SearchAndAddNutritionComponent, [{
         key: "getNutritions",
         value: function getNutritions() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.isLoaded = false;
           this.nutritionService.getNutritionNamesAndIds(this.search).subscribe(function (nutritions) {
-            _this20.nutritions = nutritions;
-            _this20.isLoaded = true;
+            _this21.nutritions = nutritions;
+            _this21.isLoaded = true;
 
-            _this20.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this21.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
         key: "addNutrition",
         value: function addNutrition(id) {
-          var _this21 = this;
+          var _this22 = this;
 
           var x = document.getElementById(id.toString());
 
@@ -13143,13 +13190,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               nutrition_id: id
             };
             this.userNutritionService.addNutrition(nutrition).subscribe(function () {
-              _this21.nutritions = [];
+              _this22.nutritions = [];
 
-              _this21.toastr.success('You successfully added the food!', 'Success');
+              _this22.toastr.success('You successfully added the food!', 'Success');
 
               window.scrollTo(0, 0);
             }, function (err) {
-              _this21.toastr.error(err.error.message, 'Error');
+              _this22.toastr.error(err.error.message, 'Error');
             });
           }
         }
@@ -13366,14 +13413,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SignInComponent, [{
         key: "login",
         value: function login() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.auth.login(this.credentials).subscribe(function () {
-            _this22.router.navigateByUrl('/my-diet');
+            _this23.router.navigateByUrl('/my-diet');
 
-            _this22.toastr.success('You successfully signed-in!', 'Welcome ' + _this22.auth.getUserDetails().name);
+            _this23.toastr.success('You successfully signed-in!', 'Welcome ' + _this23.auth.getUserDetails().name);
           }, function (err) {
-            _this22.toastr.error('Check email and password fields!', 'Error');
+            _this23.toastr.error('Check email and password fields!', 'Error');
           });
         }
       }, {
@@ -13596,12 +13643,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SimpleFoodCreationComponent, [{
         key: "addNutrition",
         value: function addNutrition() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.nutritionService.addNutrition(this.nutrition).subscribe(function () {
-            _this23.toastr.success('You successfully added a nutrition!', 'Success');
+            _this24.toastr.success('You successfully added a nutrition!', 'Success');
           }, function (err) {
-            _this23.toastr.error(err.error.message, 'Error');
+            _this24.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -14681,7 +14728,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StatsComponent, [{
         key: "onDateChange",
         value: function onDateChange(date) {
-          var _this24 = this;
+          var _this25 = this;
 
           this.isLoaded = false;
           this.sumQuantity = 0;
@@ -14692,17 +14739,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date_of_consumption: date
           };
           this.userNutritionService.getUserNutritions(body).subscribe(function (nutritions) {
-            _this24.nutritions = nutritions;
+            _this25.nutritions = nutritions;
 
-            _this24.calculateSum(nutritions);
+            _this25.calculateSum(nutritions);
 
-            _this24.assignColor();
+            _this25.assignColor();
 
-            _this24.updateCharts();
+            _this25.updateCharts();
 
-            _this24.isLoaded = true;
+            _this25.isLoaded = true;
 
-            _this24.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
+            _this25.toastr.success('Found ' + nutritions.length + ' nutrition/s', 'Success');
           });
         }
       }, {
@@ -15187,12 +15234,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.driService.getUserActiveDris().subscribe(function (dris) {
-            Object.assign(_this25.dri, dris[0]);
+            Object.assign(_this26.dri, dris[0]);
 
-            _this25.onDateChange(_this25.dateOfConsumption.toISOString().split('T')[0]);
+            _this26.onDateChange(_this26.dateOfConsumption.toISOString().split('T')[0]);
           });
         }
       }]);
@@ -15656,40 +15703,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersComponent, [{
         key: "getUsers",
         value: function getUsers() {
-          var _this26 = this;
+          var _this27 = this;
 
           if (this.search === '') {
             this.userService.getUsersWithPagination(this.currentPage, this.currnetLimit).subscribe(function (users) {
-              _this26.users = users;
+              _this27.users = users;
             });
             this.userService.getUsersCount().subscribe(function (res) {
-              _this26.numberOfPages = Math.ceil(res.numberOfUsers / _this26.currnetLimit);
+              _this27.numberOfPages = Math.ceil(res.numberOfUsers / _this27.currnetLimit);
             });
           } else {
             this.userService.getUsers(this.search).subscribe(function (users) {
-              _this26.users = users;
+              _this27.users = users;
 
-              _this26.toastr.success('Found ' + users.length + ' user/s', 'Success');
+              _this27.toastr.success('Found ' + users.length + ' user/s', 'Success');
             });
           }
         }
       }, {
         key: "addUser",
         value: function addUser() {
-          var _this27 = this;
+          var _this28 = this;
 
           if (this.credentials.password === this.confirmationPassword) {
             this.credentials.name = this.firstName + ' ' + this.lastName;
             this.userService.addUser(this.credentials).subscribe(function () {
-              _this27.toastr.success('You successfully added a user!', 'Success');
+              _this28.toastr.success('You successfully added a user!', 'Success');
 
               document.getElementById('id01').style.display = 'none';
 
-              _this27.clearDialog();
+              _this28.clearDialog();
 
-              _this27.getUsers();
+              _this28.getUsers();
             }, function (err) {
-              _this27.toastr.error(err.error.message, 'Error');
+              _this28.toastr.error(err.error.message, 'Error');
             });
           } else {
             this.toastr.error('Password and Confirmation password do not match!', 'Error');
@@ -15698,50 +15745,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateUser",
         value: function updateUser() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.userService.updateUser(this.selectedUser).subscribe(function (data) {
             document.getElementById('id02').style.display = 'none';
 
-            _this28.toastr.success('You successfully updated this user!', 'Success');
+            _this29.toastr.success('You successfully updated this user!', 'Success');
 
-            _this28.getUsers();
-          }, function (err) {
-            _this28.toastr.error(err.error.message, 'Error');
-          });
-        }
-      }, {
-        key: "deleteUser",
-        value: function deleteUser() {
-          var _this29 = this;
-
-          this.userService.deleteUser(this.selectedUser._id).subscribe(function (data) {
-            document.getElementById('id03').style.display = 'none';
-
-            _this29.toastr.success('You successfully deleted this user!', 'Success');
-
-            if (data.n == 1) {
-              for (var i = 0; i < _this29.users.length; i++) {
-                if (_this29.selectedUser._id == _this29.users[i]._id) {
-                  _this29.users.splice(i, 1);
-                }
-              }
-            }
+            _this29.getUsers();
           }, function (err) {
             _this29.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
-        key: "resetPassword",
-        value: function resetPassword() {
+        key: "deleteUser",
+        value: function deleteUser() {
           var _this30 = this;
 
+          this.userService.deleteUser(this.selectedUser._id).subscribe(function (data) {
+            document.getElementById('id03').style.display = 'none';
+
+            _this30.toastr.success('You successfully deleted this user!', 'Success');
+
+            if (data.n == 1) {
+              for (var i = 0; i < _this30.users.length; i++) {
+                if (_this30.selectedUser._id == _this30.users[i]._id) {
+                  _this30.users.splice(i, 1);
+                }
+              }
+            }
+          }, function (err) {
+            _this30.toastr.error(err.error.message, 'Error');
+          });
+        }
+      }, {
+        key: "resetPassword",
+        value: function resetPassword() {
+          var _this31 = this;
+
           this.userService.resetPassword(this.selectedUser).subscribe(function () {
-            _this30.toastr.success('You successfully reset the password for user!', 'Success');
+            _this31.toastr.success('You successfully reset the password for user!', 'Success');
 
             document.getElementById('id02').style.display = 'none';
           }, function (err) {
-            _this30.toastr.error(err.error.message, 'Error');
+            _this31.toastr.error(err.error.message, 'Error');
           });
         }
       }, {
@@ -16845,7 +16892,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "request",
         value: function request(method, type, user) {
-          var _this31 = this;
+          var _this32 = this;
 
           var base;
 
@@ -16861,7 +16908,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var request = base.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
             if (data.token) {
-              _this31.saveToken(data.token);
+              _this32.saveToken(data.token);
             }
 
             return data;
@@ -16945,6 +16992,83 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
         }, {
           type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/composite-food.service.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/services/composite-food.service.ts ***!
+    \****************************************************/
+
+  /*! exports provided: CompositeFoodService */
+
+  /***/
+  function srcAppServicesCompositeFoodServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CompositeFoodService", function () {
+      return CompositeFoodService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+
+    var CompositeFoodService = /*#__PURE__*/function () {
+      function CompositeFoodService(httpClient) {
+        _classCallCheck(this, CompositeFoodService);
+
+        this.httpClient = httpClient;
+        this.API_URL = 'https://mydietaryhabits.herokuapp.com/composite-food';
+      }
+
+      _createClass(CompositeFoodService, [{
+        key: "addCompositeFood",
+        value: function addCompositeFood(compositeFood) {
+          return this.httpClient.post(this.API_URL + '/add', compositeFood);
+        }
+      }]);
+
+      return CompositeFoodService;
+    }();
+
+    CompositeFoodService.ɵfac = function CompositeFoodService_Factory(t) {
+      return new (t || CompositeFoodService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
+    };
+
+    CompositeFoodService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: CompositeFoodService,
+      factory: CompositeFoodService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CompositeFoodService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [{
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
         }];
       }, null);
     })();
