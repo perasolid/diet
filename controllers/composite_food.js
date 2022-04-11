@@ -5,7 +5,6 @@ module.exports.addCompositeFood = async function(req, res) {
     let nutrition = new Nutrition(req.body.calculatedNutrition);
 	nutrition.save()
     .then(nutrition => {
-        console.log(nutrition._id);
         let ingredientsToBeInserted = req.body.ingredients.map(ingredient => ({ ...ingredient, composite_food_id: nutrition._id }));
         CompositeFood.insertMany(ingredientsToBeInserted)
         .then(() => res.status(200).json({"message":"Created composite food!"}))

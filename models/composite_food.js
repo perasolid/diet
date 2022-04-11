@@ -7,10 +7,10 @@ let compositeFoodSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true
     },
-    ingredient_quantity: {
+    ingredient_ratio: {
         type: Number,
 		required: true,
-        min: [6, "Quantity for ingredient must be greater than 0 (zero)"]
+        min: [0, "Ratio of the ingredient must be greater than 0 (zero)"]
     }
 })
 
