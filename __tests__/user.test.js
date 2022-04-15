@@ -1,23 +1,24 @@
-const request = require('supertest')
-require('./config/testConfig')
+const request = require('supertest');
+require('./config/testConfig');
+const app = require('../app');
 
-const app = require('../app')
-
-var User = mongoose.model('User');
+const User = mongoose.model('User');
 
 beforeEach(async () => {
-  // seed with some data
-  var user = new User();
-  user.name = 'John Doe';
-  user.email = 'john@email.com';
-  user.setPassword('John123!');   
-  await user.save();
+  // Seed with some data
+  let userOne = new User({
+    name: 'John Doe',
+    email: 'john@email.com'
+  });
+  userOne.setPassword('John123!');   
+  await userOne.save();
 
-  var user = new User();
-  user.name = 'Jane Smith';
-  user.email = 'jane@email.com';
-  user.setPassword('Jane123!');   
-  await user.save();
+  let userTwo = new User({
+    name: 'Jane Smith',
+    email: 'jane@email.com'
+  });
+  userTwo.setPassword('Jane123!');   
+  await userTwo.save();
 });
 
 afterEach(async () => {
@@ -89,7 +90,8 @@ describe("POST /user", () => {
     expect(res.body.message).toBe("User created successfully");
     expect(res.statusCode).toBe(200);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(3);
   });
 
@@ -104,7 +106,8 @@ describe("POST /user", () => {
     expect(res.body.message).toBe("All fields required");
     expect(res.statusCode).toBe(400);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(2);
   });
 
@@ -120,7 +123,8 @@ describe("POST /user", () => {
     expect(res.body.message).toBe("Email taken");
     expect(res.statusCode).toBe(400);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(2);
   });
 });
@@ -145,10 +149,12 @@ describe("PUT /users/update/:id", () => {
     expect(oldUser.body.name).toBe('John Doe');
     expect(oldUser.statusCode).toBe(200);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(2);
 
-    const newUser = await request(app).get("/users/all?search=Test Name");
+    const newUser = await request(app)
+      .get("/users/all?search=Test Name");
     expect(newUser.body[0].name).toBe('Test Name');
     expect(newUser.body[0].email).toBe('test@email.com');
     expect(oldUser.body.hash).toBe(newUser.body[0].hash);
@@ -163,7 +169,8 @@ describe("PUT /users/update/:id", () => {
     expect(oldUser.body.name).toBe('John Doe');
     expect(oldUser.statusCode).toBe(200);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(2);
 
     const newUser = await User.findOne({name: 'Test Name'});
@@ -203,13 +210,13 @@ describe("PUT /users/resetPassword", () => {
 describe("DELETE /users/delete/:id", () => {
   it("should respond with a message of Deleted", async () => {
     const user = await User.findOne({name: 'John Doe'});
-    const removedUser = await request(app).delete(
-      `/users/delete/${user._id}`
-    );
+    const removedUser = await request(app)
+      .delete(`/users/delete/${user._id}`);
     expect(removedUser.body.deletedCount).toBe(1);
     expect(removedUser.statusCode).toBe(200);
 
-    const response = await request(app).get("/users/all");
+    const response = await request(app)
+      .get("/users/all");
     expect(response.body.length).toBe(1);
   });
 });
