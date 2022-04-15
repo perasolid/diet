@@ -1,47 +1,21 @@
-const request = require('supertest')
-require('./config/testConfig')
+const request = require('supertest');
+require('./config/testConfig');
+const app = require('../app');
 
-const app = require('../app')
+const Nutrition = mongoose.model('Nutrition');
 
-var Nutrition = mongoose.model('Nutrition');
+const validNutrition = {
+  name: 'Apples', calories: 100, carbohydrate_g: 100, fiber_g: 100, protein_g: 100,
+  total_fat_g: 100, saturated_fat_g: 100, fatty_acids_total_trans_g: 100, cholesterol_mg: 100, sugars_g: 100,
+  water_g: 100, vitamin_a_rae_mcg: 100, thiamin_mg: 100, riboflavin_mg: 100, niacin_mg: 100, pantothenic_acid_mg: 100,
+  vitamin_b6_mg: 100, folate_mcg: 100, vitamin_b12_mcg: 100, choline_mg: 100, vitamin_c_mg: 100, vitamin_d_IU: 100,
+  vitamin_e_mg: 100, vitamin_k_mcg: 100, calcium_mg: 100, copper_mg: 100, irom_mg: 100, magnesium_mg: 100,
+  manganese_mg: 100, phosphorous_mg: 100, potassium_mg: 100, selenium_mcg: 100, sodium_mg: 100, zink_mg: 100
+};
 
 beforeEach(async () => {
-  // seed with some data
-  var nutrition = new Nutrition();
-  nutrition.name = 'Apples';
-  nutrition.calories = 100;
-  nutrition.carbohydrate_g = 100;
-  nutrition.fiber_g = 100;
-  nutrition.protein_g = 100;
-  nutrition.total_fat_g = 100;
-  nutrition.saturated_fat_g = 100;
-  nutrition.fatty_acids_total_trans_g = 100;
-  nutrition.cholesterol_mg = 100;
-  nutrition.sugars_g = 100;
-  nutrition.water_g = 100;
-  nutrition.vitamin_a_rae_mcg = 100;
-  nutrition.thiamin_mg = 100;
-  nutrition.riboflavin_mg = 100;
-  nutrition.niacin_mg = 100;
-  nutrition.pantothenic_acid_mg = 100;
-  nutrition.vitamin_b6_mg = 100;
-  nutrition.folate_mcg = 100;
-  nutrition.vitamin_b12_mcg = 100;
-  nutrition.choline_mg = 100;
-  nutrition.vitamin_c_mg = 100;
-  nutrition.vitamin_d_IU = 100;
-  nutrition.vitamin_e_mg = 100;
-  nutrition.vitamin_k_mcg = 100;
-  nutrition.calcium_mg = 100;
-  nutrition.copper_mg = 100;
-  nutrition.irom_mg = 100;
-  nutrition.magnesium_mg = 100;
-  nutrition.manganese_mg = 100;
-  nutrition.phosphorous_mg = 100;
-  nutrition.potassium_mg = 100;
-  nutrition.selenium_mcg = 100;
-  nutrition.sodium_mg = 100;
-  nutrition.zink_mg = 100;
+  // Seed with some data
+  let nutrition = new Nutrition(validNutrition);
   await nutrition.save();
 });
   
@@ -118,72 +92,60 @@ describe('GET nutritions/numberOfNutritions', () => {
 
 describe("POST /nutritions", () => {
   it("should respond with a success message", async () => {
+    let nutrition = Object.assign({}, validNutrition);
+    nutrition.name = 'Test name';
+
     const res = await request(app)
       .post("/nutritions/add")
-      .send({
-        name: 'Test name',calories: 200, carbohydrate_g: 200, fiber_g: 200, protein_g: 200,
-        total_fat_g: 200, saturated_fat_g: 200, fatty_acids_total_trans_g: 200, cholesterol_mg: 200,
-        sugars_g: 200,water_g: 200, vitamin_a_rae_mcg: 200, thiamin_mg: 200, riboflavin_mg: 200,
-        niacin_mg: 200, pantothenic_acid_mg: 200, vitamin_b6_mg: 200, folate_mcg: 200, vitamin_b12_mcg: 200,
-        choline_mg: 200, vitamin_c_mg: 200, vitamin_d_IU: 200, vitamin_e_mg: 200, vitamin_k_mcg: 200,
-        calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
-        phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200
-      });
+      .send(nutrition);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Test name successfully created!");
     expect(res.statusCode).toBe(200);
 
-    const response = await request(app).get("/nutritions/all");
+    const response = await request(app)
+      .get("/nutritions/all");
     expect(response.body.length).toBe(2);
   });
 })
 
 describe('POST nutritions/add', () => {
   it('should respond with missing name field message', async () => {
+    let nutrition = Object.assign({}, validNutrition);
+    delete nutrition.name;
+
     const res = await request(app)
       .post('/nutritions/add')
-      .send({
-        calories: 200, carbohydrate_g: 200, fiber_g: 200, protein_g: 200,
-        total_fat_g: 200, saturated_fat_g: 200, fatty_acids_total_trans_g: 200, cholesterol_mg: 200,
-        sugars_g: 200,water_g: 200, vitamin_a_rae_mcg: 200, thiamin_mg: 200, riboflavin_mg: 200,
-        niacin_mg: 200, pantothenic_acid_mg: 200, vitamin_b6_mg: 200, folate_mcg: 200, vitamin_b12_mcg: 200,
-        choline_mg: 200, vitamin_c_mg: 200, vitamin_d_IU: 200, vitamin_e_mg: 200, vitamin_k_mcg: 200,
-        calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
-        phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200
-      })
+      .send(nutrition)
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Nutrition validation failed: name: Path `name` is required.");
     expect(res.statusCode).toBe(400);
 
-    const response = await request(app).get("/nutritions/all");
+    const response = await request(app)
+      .get("/nutritions/all");
     expect(response.body.length).toBe(1);
   })
 })
 
 describe("PUT /nutritions/update/:id", () => {
   it("should respond with 200 OK", async () => {
-    const nutrition = await Nutrition.findOne({name: 'Apples'});
+    let nutrition = Object.assign({}, validNutrition);
     nutrition.name = 'Updated name';
+    nutrition.calories = 300;
+
+    const existingNutrition = await Nutrition.findOne({name: 'Apples'});
     const res = await request(app)
-      .put(`/nutritions/update/${nutrition._id}`)
-      .send({
-          name: 'Updated name', calories: 300, carbohydrate_g: 200, fiber_g: 200, protein_g: 200,
-          total_fat_g: 200, saturated_fat_g: 200, fatty_acids_total_trans_g: 200, cholesterol_mg: 200,
-          sugars_g: 200,water_g: 200, vitamin_a_rae_mcg: 200, thiamin_mg: 200, riboflavin_mg: 200,
-          niacin_mg: 200, pantothenic_acid_mg: 200, vitamin_b6_mg: 200, folate_mcg: 200, vitamin_b12_mcg: 200,
-          choline_mg: 200, vitamin_c_mg: 200, vitamin_d_IU: 200, vitamin_e_mg: 200, vitamin_k_mcg: 200,
-          calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
-          phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200
-        })
+      .put(`/nutritions/update/${existingNutrition._id}`)
+      .send(nutrition)
     expect(res.statusCode).toBe(200);
 
-    const response = await request(app).get("/nutritions/all");
+    const response = await request(app)
+      .get("/nutritions/all");
     expect(response.body.length).toBe(1);
 
-    const newUser = await request(app).get("/nutritions/all?search=Updated name");
-    expect(newUser.body[0].name).toBe('Updated name');
-    expect(newUser.body[0].calories).toBe(300);
-    expect(newUser.body.length).toBe(1);
+    const updatedNutrition = await request(app).get("/nutritions/all?search=Updated name");
+    expect(updatedNutrition.body[0].name).toBe('Updated name');
+    expect(updatedNutrition.body[0].calories).toBe(300);
+    expect(updatedNutrition.body.length).toBe(1);
   });
 
   it("should respond with 400", async () => {
@@ -194,7 +156,8 @@ describe("PUT /nutritions/update/:id", () => {
       expect(res.body).toHaveProperty("message");
       expect(res.body.message).toBe("Invalid nutrition id format");
   
-      const response = await request(app).get("/nutritions/all");
+      const response = await request(app)
+        .get("/nutritions/all");
       expect(response.body.length).toBe(1);
   });
 })
@@ -208,7 +171,8 @@ describe("DELETE /nutritions/delete/:id", () => {
     expect(res.body.deletedCount).toBe(1);
     expect(res.statusCode).toBe(200);
 
-    const response = await request(app).get("/nutritions/all");
+    const response = await request(app)
+      .get("/nutritions/all");
     expect(response.body.length).toBe(0);
   });
 
@@ -220,7 +184,8 @@ describe("DELETE /nutritions/delete/:id", () => {
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Invalid nutrition id format");
 
-    const response = await request(app).get("/nutritions/all");
+    const response = await request(app)
+      .get("/nutritions/all");
     expect(response.body.length).toBe(1);
   });
 });
