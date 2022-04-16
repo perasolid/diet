@@ -1,7 +1,7 @@
 var User = mongoose.model('User');
 var crypto = require('crypto');
 const email_config = require('../config/email');
-const html_templates = require('../config/html_templates'); 
+const html_templates = require('../defaults/html_templates'); 
 
 module.exports.getAll = function(req, res) {
   const regex = new RegExp(req.query.search, 'i')

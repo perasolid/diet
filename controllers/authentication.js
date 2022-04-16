@@ -7,7 +7,7 @@ const path = require('path');
 var request = require('request');
 const jwt = require('jsonwebtoken');
 const emailConfig = require('../config/email');
-const html_templates = require('../config/html_templates'); 
+const html_templates = require('../defaults/html_templates'); 
 
 module.exports.register = function(req, res) {
   if (!req.body.name || !req.body.email || !req.body.password)
