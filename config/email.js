@@ -1,6 +1,6 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
-var transport;
+let transport;
 if (process.env.NODE_ENV === 'test') {
     transport = nodemailer.createTransport({
         host: 'smtp.mailtrap.io',
@@ -16,8 +16,8 @@ if (process.env.NODE_ENV === 'test') {
         port: 465,
         secure: true, //ssl
         auth: {
-            user:process.env.EMAIL,
-            pass:process.env.EMAIL_PASSWORD
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 }
