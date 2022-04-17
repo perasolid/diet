@@ -1,6 +1,5 @@
-var router = express.Router();
-
-var ctrlDri = require('../controllers/dri');
+const router = express.Router();
+const ctrlDri = require('../controllers/dri');
 
 router.get('/all', ctrlDri.getAll);
 router.get('/user-dris/:id', ctrlDri.getUserDris);

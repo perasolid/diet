@@ -1,6 +1,5 @@
-var router = express.Router();
-
-var ctrlNutrition = require('../controllers/nutrition');
+const router = express.Router();
+const ctrlNutrition = require('../controllers/nutrition');
 
 //retreving data from database
 router.get('/all', ctrlNutrition.getAll);
