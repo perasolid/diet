@@ -1,18 +1,23 @@
 const router = express.Router();
 const jwt = require('express-jwt');
 
-let auth = jwt({
+const checkUserAuthentication = jwt({
   secret: process.env.SECRET,
   userProperty: 'payload',
   algorithms: ['HS256']
 });
+
+const adminGuard = require('express-jwt-permissions')({
+  requestProperty: 'payload',
+  permissionsProperty: 'role'
+})
 
 var ctrlProfile = require('../controllers/profile');
 var ctrlAuth = require('../controllers/authentication');
 var ctrlUser = require('../controllers/users');
 
 // profile
-router.get('/profile', auth, ctrlProfile.profileRead);
+router.get('/profile', checkUserAuthentication, ctrlProfile.profileRead);
 
 // authentication
 router.post('/register', ctrlAuth.register);
@@ -22,7 +27,7 @@ router.post('/verifyRecaptcha', ctrlAuth.verifyRecaptcha)
 router.post('/login', ctrlAuth.login);
 
 //from database
-router.get('/all', ctrlUser.getAll);
+router.get('/all', checkUserAuthentication, adminGuard.check('admin'), ctrlUser.getAll);
 router.get('/withPagination', ctrlUser.getUsersByPagination);
 router.get('/numberOfUsers', ctrlUser.numberOfUsers);
 router.post('/add', ctrlUser.addUser);
