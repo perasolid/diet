@@ -7,6 +7,12 @@ const VerificationToken = mongoose.model('Verification_token');
 const Dri = mongoose.model('Dri');
 const jwt = require('jsonwebtoken');
 
+let token;
+
+beforeAll(async () => {
+  token = jwt.sign({ "role": "admin" }, process.env.SECRET, { expiresIn: '1d' });
+});
+
 afterEach(async () => {
   await User.deleteMany({});
   await VerificationToken.deleteMany({});
@@ -82,7 +88,8 @@ describe("POST /register", () => {
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 
@@ -104,7 +111,8 @@ describe("POST /register", () => {
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 
@@ -120,7 +128,8 @@ describe("POST /register", () => {
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(0);
   });
 })
@@ -150,7 +159,8 @@ describe("POST /login", () => {
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 
@@ -172,7 +182,8 @@ describe("POST /login", () => {
     expect(res.statusCode).toBe(401);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 
@@ -195,7 +206,8 @@ describe("POST /login", () => {
     expect(res.statusCode).toBe(401);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 
@@ -217,7 +229,8 @@ describe("POST /login", () => {
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/users/all");
+      .get("/users/all")
+      .set('Authorization', `Bearer ${token}`)
     expect(response.body.length).toBe(1);
   });
 })
