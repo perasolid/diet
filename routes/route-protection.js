@@ -1,4 +1,5 @@
 const jwt = require('express-jwt');
+const jwtPermissions = require('express-jwt-permissions');
 
 module.exports.checkUserAuthentication = jwt({
     secret: process.env.SECRET,
@@ -9,7 +10,7 @@ module.exports.checkUserAuthentication = jwt({
         '/verifyAccount', '/verifyRecaptcha'].map(relativeRoute => '/users' + relativeRoute)
 });
 
-module.exports.adminGuard = require('express-jwt-permissions')({
+module.exports.adminGuard = jwtPermissions({
     requestProperty: 'payload',
     permissionsProperty: 'role'
-})
+});
