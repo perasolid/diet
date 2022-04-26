@@ -37,6 +37,7 @@ describe("POST /composite-food", () => {
   it("should respond with a success message", async () => {
     const res = await request(app)
       .post("/composite-food/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send({
         calculatedNutrition: nutrition,
         ingredients: [
@@ -74,6 +75,7 @@ describe("POST /composite-food", () => {
 
     const res = await request(app)
       .post("/composite-food/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send({
         calculatedNutrition: wrongNutritionValues,
         ingredients: [
@@ -98,6 +100,7 @@ describe("POST /composite-food", () => {
   it("should respond with a error message", async () => {
     const res = await request(app)
       .post("/composite-food/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send({
         calculatedNutrition: nutrition,
         ingredients: [
