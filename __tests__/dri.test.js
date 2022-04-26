@@ -1,7 +1,8 @@
 const request = require('supertest');
 require('./config/testConfig');
-
 const app = require('../app');
+const jwt = require('jsonwebtoken');
+
 const Dri = mongoose.model('Dri');
 
 const firstDri = {
@@ -32,6 +33,14 @@ const secondDri = {
   selenium_mcg_max: 200, sodium_mg_max: 200, zink_mg_max: 200
 };
 
+let userToken;
+let adminToken;
+
+beforeAll(async () => {
+  userToken = jwt.sign({ "role": "user" }, process.env.SECRET, { expiresIn: '1d' });
+  adminToken = jwt.sign({ "role": "admin" }, process.env.SECRET, { expiresIn: '1d' });
+});
+
 beforeEach(async () => {
   // Seed with some data
   const driOne = new Dri(firstDri);
@@ -55,6 +64,7 @@ describe('GET dri/all', () => {
   it('should get all dris', async () => {
     const res = await request(app)
       .get('/dri/all')
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(res.body.length).toBe(2);
     expect(res.body[1]).toHaveProperty("_id");
     expect(res.body[1]).toHaveProperty("name");
@@ -71,6 +81,7 @@ describe('GET user specific dris', () => {
   it('should get all specific user dris', async () => {
     const res = await request(app)
       .get('/dri/user-dris/61e5c51c7a1fa80016a74b1d')
+      .set('Authorization', `Bearer ${userToken}`)
     expect(res.body.length).toBe(2);
     expect(res.body[0]).toHaveProperty("_id");
     expect(res.body[0]).toHaveProperty("name");
@@ -87,6 +98,7 @@ describe('GET user active dris', () => {
   it('should get active user dris', async () => {
     const res = await request(app)
       .get('/dri/user-active-dri/61e5c51c7a1fa80016a74b1d')
+      .set('Authorization', `Bearer ${userToken}`)
     expect(res.body.length).toBe(1);
     expect(res.body[0]).toHaveProperty("_id");
     expect(res.body[0]).toHaveProperty("name");
@@ -106,13 +118,15 @@ describe("POST /dri/add", () => {
 
     const res = await request(app)
       .post("/dri/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Successfully created DRI!");
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(3);
   });
 
@@ -122,13 +136,15 @@ describe("POST /dri/add", () => {
 
     const res = await request(app)
       .post("/dri/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe('Dri validation failed: active: Path `active` is required.');
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 
@@ -138,13 +154,15 @@ describe("POST /dri/add", () => {
 
     const res = await request(app)
       .post("/dri/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe('Dri validation failed: calories_max: DRI must be less or equal to UI for calories');
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 
@@ -153,13 +171,15 @@ describe("POST /dri/add", () => {
     body.user_id = 'thisIsAInvalidId';
     const res = await request(app)
       .post("/dri/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe('Invalid user_id format for Dri creation');
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 
@@ -169,13 +189,15 @@ describe("POST /dri/add", () => {
 
     const res = await request(app)
       .post("/dri/add")
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe('Invalid user_id format for Dri creation');
     expect(res.statusCode).toBe(400);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 })
@@ -191,11 +213,13 @@ describe("PUT /dri/update/:id", () => {
     const dri = await Dri.findOne({ name: 'Detox' });
     const res = await request(app)
       .put(`/dri/update/${dri._id}`)
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
     expect(response.body[1].name).toBe('Updated name');
     expect(response.body[1].calories).toBe(200);
@@ -209,13 +233,15 @@ describe("PUT /dri/update/:id", () => {
     const dri = await Dri.findOne({ name: 'Detox' });
     const res = await request(app)
       .put(`/dri/update/${dri._id}`)
+      .set('Authorization', `Bearer ${userToken}`)
       .send(body);
     expect(res.statusCode).toBe(400);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Dri validation failed: active: Path `active` is required.");
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
     expect(response.body[1].name).toBe('Detox');
     expect(response.body[1].calories).toBe(100);
@@ -226,13 +252,15 @@ describe("PUT /dri/update/:id", () => {
   it("should respond with 400 invalid dri id format", async () => {
     const res = await request(app)
       .put(`/dri/update/thisDoesNotPassAsId`)
+      .set('Authorization', `Bearer ${userToken}`)
       .send({})
     expect(res.statusCode).toBe(400);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Invalid dri id format");
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 })
@@ -242,6 +270,7 @@ describe("PUT /user-nutrition/setStatusToActive", () => {
     const dri = await Dri.findOne({ name: 'Protein' });
     const res = await request(app)
       .put(`/dri/setStatusToActive`)
+      .set('Authorization', `Bearer ${userToken}`)
       .send({
         user_id: "61e5c51c7a1fa80016a74b1d",
         _id: dri._id
@@ -251,7 +280,8 @@ describe("PUT /user-nutrition/setStatusToActive", () => {
     expect(res.body.message).toBe("Successfully set active status for DRI!");
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
     expect(response.body[0].name).toBe('Protein');
     expect(response.body[0].active).toBe(true);
@@ -265,24 +295,28 @@ describe("DELETE /dri/delete/:id", () => {
     const dri = await Dri.findOne({ name: 'Detox' });
 
     const res = await request(app)
-      .delete(`/dri/delete/${dri._id}`);
+      .delete(`/dri/delete/${dri._id}`)
+      .set('Authorization', `Bearer ${userToken}`)
     expect(res.body.deletedCount).toBe(1);
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(1);
   });
 
   it("should catch invalid dri id query parameter", async () => {
     const res = await request(app)
-      .delete(`/dri/delete/notValidQueryParameter`);
+      .delete(`/dri/delete/notValidQueryParameter`)
+      .set('Authorization', `Bearer ${userToken}`)
     expect(res.statusCode).toBe(400);
     expect(res.body).toHaveProperty("message");
     expect(res.body.message).toBe("Invalid dri id format");
 
     const response = await request(app)
-      .get("/dri/all");
+      .get("/dri/all")
+      .set('Authorization', `Bearer ${adminToken}`)
     expect(response.body.length).toBe(2);
   });
 });
