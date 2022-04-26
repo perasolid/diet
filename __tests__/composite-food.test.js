@@ -1,7 +1,8 @@
 const request = require('supertest');
 require('./config/testConfig');
-
 const app = require('../app');
+const jwt = require('jsonwebtoken');
+
 const CompositeFood = mongoose.model('CompositeFood');
 const Nutrition = mongoose.model('Nutrition');
 
@@ -14,6 +15,12 @@ let nutrition = {
   calcium_mg: 200, copper_mg: 200, irom_mg: 200, magnesium_mg: 200, manganese_mg: 200,
   phosphorous_mg: 200, potassium_mg: 200, selenium_mcg: 200, sodium_mg: 200, zink_mg: 200
 };
+
+let userToken;
+
+beforeAll(async () => {
+  userToken = jwt.sign({ "role": "user" }, process.env.SECRET, { expiresIn: '1d' });
+});
 
 afterEach(async () => {
   await Nutrition.deleteMany({});
@@ -49,7 +56,8 @@ describe("POST /composite-food", () => {
     expect(res.statusCode).toBe(200);
 
     const response = await request(app)
-      .get("/nutritions/all");
+      .get("/nutritions/all")
+      .set('Authorization', `Bearer ${userToken}`)
     expect(response.body.length).toBe(1);
     expect(response.body[0].name).toBe("Test name");
 
