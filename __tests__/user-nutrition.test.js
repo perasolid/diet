@@ -1,5 +1,5 @@
 const request = require('supertest');
-require('./config/testConfig');
+require('./config/test-config');
 const app = require('../app');
 const jwt = require('jsonwebtoken');
 
