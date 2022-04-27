@@ -2,9 +2,6 @@ const router = express.Router();
 const routeProtection = require('./route-protection');
 const ctrlNutrition = require('../controllers/nutrition');
 
-router.use(routeProtection.checkUserAuthentication);
-
-//retreving data from database
 router.get('/all', ctrlNutrition.getAll);
 router.get('/getNutritionsNameAndId', ctrlNutrition.getNutritionsNameAndId);
 router.get('/withPagination', routeProtection.adminGuard.check('admin'), ctrlNutrition.getNutritionsByPagination);

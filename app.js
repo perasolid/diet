@@ -7,6 +7,7 @@ const config = require('./config/database');
 const logger = require('morgan');
 const fs = require('fs');
 const join = require('path').join;
+const routeProtection = require('./routes/route-protection');
 
 // Load models
 const models = join(__dirname, '/models');
@@ -43,6 +44,8 @@ app.use(cors());
 app.use(express.static(join(__dirname,'public')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
+
+app.use(routeProtection.checkUserAuthentication);
 
 // Nasted routes from services
 app.use('/users', users);
