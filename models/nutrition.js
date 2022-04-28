@@ -1,4 +1,4 @@
-var nutritionSchema = new mongoose.Schema({
+let nutritionSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: true,
@@ -138,4 +138,4 @@ var nutritionSchema = new mongoose.Schema({
 	}
 });
 
-const Nutrition = module.exports = mongoose.model('Nutrition', nutritionSchema);
+module.exports = mongoose.model('Nutrition', nutritionSchema);

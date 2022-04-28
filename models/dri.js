@@ -1,4 +1,4 @@
-var driSchema = new mongoose.Schema({
+let driSchema = new mongoose.Schema({
 	user_id: {
 	  type: mongoose.Schema.Types.ObjectId,
 	  required: true
@@ -607,4 +607,4 @@ var driSchema = new mongoose.Schema({
 	}
 });
 
-const Dri = module.exports = mongoose.model('Dri', driSchema);
+module.exports = mongoose.model('Dri', driSchema);

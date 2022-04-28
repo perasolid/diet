@@ -1,4 +1,4 @@
-var user_nutritionSchema = new mongoose.Schema({
+let user_nutritionSchema = new mongoose.Schema({
   quantity: {
     type: Number,
     required: true

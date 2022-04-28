@@ -1,7 +1,7 @@
-var crypto = require('crypto');
-var jwt = require('jsonwebtoken');
+const crypto = require('crypto');
+const jwt = require('jsonwebtoken');
 
-var userSchema = new mongoose.Schema({
+let userSchema = new mongoose.Schema({
   email: {
     type: String,
     unique: true,
@@ -23,12 +23,12 @@ userSchema.methods.setPassword = function(password){
 };
 
 userSchema.methods.validPassword = function(password) {
-  var hash = crypto.pbkdf2Sync(password, this.salt, 1000, 64, 'sha512').toString('hex');
+  let hash = crypto.pbkdf2Sync(password, this.salt, 1000, 64, 'sha512').toString('hex');
   return this.hash === hash;
 };
 
 userSchema.methods.generateJwt = function() {
-  var expiry = new Date();
+  let expiry = new Date();
   expiry.setDate(expiry.getDate() + 7);
 
   return jwt.sign({
@@ -40,4 +40,4 @@ userSchema.methods.generateJwt = function() {
   }, process.env.SECRET);
 };
 
-const User = module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);
