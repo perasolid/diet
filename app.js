@@ -21,7 +21,7 @@ require('./config/passport');
 // Load services
 const users = require('./routes/users');
 const nutritions = require('./routes/nutrition');
-const user_nutrition = require('./routes/user_nutrition');
+const userNutrition = require('./routes/user-nutrition');
 const dri = require('./routes/dri');
 const compositeFood = require('./routes/composite-food');
 
@@ -50,7 +50,7 @@ app.use(routeProtection.checkUserAuthentication);
 // Nasted routes from services
 app.use('/users', users);
 app.use('/nutritions', nutritions);
-app.use('/user-nutrition', user_nutrition);
+app.use('/user-nutrition', userNutrition);
 app.use('/dri', dri);
 app.use('/composite-food', compositeFood);
 
