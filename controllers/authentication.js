@@ -105,7 +105,7 @@ module.exports.verifyAccount = (req, res) => {
                   if (err)
                     res.status(500).json(err);
                   else
-                    res.status(200).sendFile(path.join(__dirname, '../defaults/verifiedAccount.html'));
+                    res.status(200).sendFile(path.join(__dirname, '../defaults/verified-account.html'));
                 });
               }
             }
