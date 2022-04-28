@@ -23,7 +23,7 @@ const users = require('./routes/users');
 const nutritions = require('./routes/nutrition');
 const user_nutrition = require('./routes/user_nutrition');
 const dri = require('./routes/dri');
-const compositeFood = require('./routes/composite_food');
+const compositeFood = require('./routes/composite-food');
 
 const app = express();
 
