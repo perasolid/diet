@@ -17,4 +17,4 @@ var user_nutritionSchema = new mongoose.Schema({
   }
 });
 
-const User_nutrition = module.exports = mongoose.model('User_nutrition', user_nutritionSchema);
+module.exports = mongoose.model('User_nutrition', user_nutritionSchema);

@@ -7,4 +7,4 @@ var verification_tokenSchema = new mongoose.Schema({
   token: { type: String, required: true }
 });
 
-const Verification_token = module.exports = mongoose.model('Verification_token', verification_tokenSchema);
+module.exports = mongoose.model('Verification_token', verification_tokenSchema);
