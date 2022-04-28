@@ -1,5 +1,5 @@
 const Nutrition = mongoose.model('Nutrition');
-const isValidObjectId = require('../config/is_object_id');
+const isValidObjectId = require('../config/is-object-id');
 
 module.exports.getAll = (req, res) => {
     if (req.query.search) {
