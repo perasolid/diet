@@ -13,4 +13,4 @@ module.exports.checkUserAuthentication = jwt({
 module.exports.adminGuard = jwtPermissions({
     requestProperty: 'payload',
     permissionsProperty: 'role'
-});
+}).check('admin');
