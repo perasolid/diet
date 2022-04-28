@@ -1,7 +1,7 @@
 const User = mongoose.model('User');
 const crypto = require('crypto');
 const email_config = require('../config/email');
-const html_templates = require('../defaults/html_templates');
+const htmlTemplates = require('../defaults/html-templates');
 
 module.exports.getAll = (req, res) => {
 	const regex = new RegExp(req.query.search, 'i');
@@ -100,7 +100,7 @@ module.exports.resetPassword = (req, res) => {
 				from: process.env.EMAIL,
 				to: req.body.email,
 				subject: 'Reset password',
-				html: html_templates.reset_password.replace(/####/g, password)
+				html: htmlTemplates.reset_password.replace(/####/g, password)
 			};
 			email_config.transport.sendMail(mailOptions, (err) => {
 				if (err)
