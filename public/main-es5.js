@@ -691,147 +691,153 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./services/auth-interceptor.service */
+    "./src/app/services/auth-interceptor.service.ts");
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ../environments/environment */
     "./src/environments/environment.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./components/home/home.component */
     "./src/app/components/home/home.component.ts");
     /* harmony import */
 
 
-    var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./components/profile/profile.component */
     "./src/app/components/profile/profile.component.ts");
     /* harmony import */
 
 
-    var _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ./components/sign-in/sign-in.component */
     "./src/app/components/sign-in/sign-in.component.ts");
     /* harmony import */
 
 
-    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./services/auth-guard.service */
     "./src/app/services/auth-guard.service.ts");
     /* harmony import */
 
 
-    var _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _components_register_register_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./components/register/register.component */
     "./src/app/components/register/register.component.ts");
     /* harmony import */
 
 
-    var _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _components_users_users_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./components/users/users.component */
     "./src/app/components/users/users.component.ts");
     /* harmony import */
 
 
-    var _services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./services/admin-auth-guard.service */
     "./src/app/services/admin-auth-guard.service.ts");
     /* harmony import */
 
 
-    var _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ./components/nutrition/nutrition.component */
     "./src/app/components/nutrition/nutrition.component.ts");
     /* harmony import */
 
 
-    var _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./components/search-and-add-nutrition/search-and-add-nutrition.component */
     "./src/app/components/search-and-add-nutrition/search-and-add-nutrition.component.ts");
     /* harmony import */
 
 
-    var _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./components/my-diet/my-diet.component */
     "./src/app/components/my-diet/my-diet.component.ts");
     /* harmony import */
 
 
-    var _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! ./components/my-dri/my-dri.component */
     "./src/app/components/my-dri/my-dri.component.ts");
     /* harmony import */
 
 
-    var _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ./components/stats/stats.component */
     "./src/app/components/stats/stats.component.ts");
     /* harmony import */
 
 
-    var _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! ./components/create-food/create-food.component */
     "./src/app/components/create-food/create-food.component.ts");
     /* harmony import */
 
 
-    var _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! ./components/simple-food-creation/simple-food-creation.component */
     "./src/app/components/simple-food-creation/simple-food-creation.component.ts");
     /* harmony import */
 
 
-    var _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! ./components/composite-food-creation/composite-food-creation.component */
     "./src/app/components/composite-food-creation/composite-food-creation.component.ts");
 
     var routes = [{
       path: 'home',
-      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"]
+      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"]
     }, {
       path: 'sign-in',
-      component: _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"]
+      component: _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_13__["SignInComponent"]
     }, {
       path: 'register',
-      component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"]
+      component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"]
     }, {
       path: 'users',
-      component: _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"],
-      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__["AdminAuthGuardService"]]
+      component: _components_users_users_component__WEBPACK_IMPORTED_MODULE_16__["UsersComponent"],
+      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_17__["AdminAuthGuardService"]]
     }, {
       path: 'profile',
-      component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: 'nutrition',
-      component: _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"],
-      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__["AdminAuthGuardService"]]
+      component: _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["NutritionComponent"],
+      canActivate: [_services_admin_auth_guard_service__WEBPACK_IMPORTED_MODULE_17__["AdminAuthGuardService"]]
     }, {
       path: 'search-add',
-      component: _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_19__["SearchAndAddNutritionComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: 'my-diet',
-      component: _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_20__["MyDietComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: 'my-dri',
-      component: _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_21__["MyDriComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: 'stats',
-      component: _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_21__["StatsComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_22__["StatsComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: 'create-food',
-      component: _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_22__["CreateFoodComponent"],
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
+      component: _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_23__["CreateFoodComponent"],
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_14__["AuthGuardService"]]
     }, {
       path: '**',
       redirectTo: '/home',
@@ -844,7 +850,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
       type: AppModule,
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
     });
     AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
       factory: function AppModule_Factory(t) {
@@ -853,8 +859,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       providers: [{
         provide: ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RECAPTCHA_SETTINGS"],
         useValue: {
-          siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].recaptcha.siteKey
+          siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_9__["environment"].recaptcha.siteKey
         }
+      }, {
+        provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
+        useClass: _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_8__["AuthInterceptorService"],
+        multi: true
       }],
       imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
         positionClass: 'toast-bottom-center',
@@ -865,7 +875,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"], _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_21__["StatsComponent"], _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_22__["CreateFoodComponent"], _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_23__["SimpleFoodCreationComponent"], _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_24__["CompositeFoodCreationComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_13__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_16__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_19__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_20__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_21__["MyDriComponent"], _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_22__["StatsComponent"], _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_23__["CreateFoodComponent"], _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_24__["SimpleFoodCreationComponent"], _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_25__["CompositeFoodCreationComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"]]
       });
     })();
@@ -876,7 +886,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_12__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_15__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_17__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_19__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_20__["MyDriComponent"], _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_21__["StatsComponent"], _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_22__["CreateFoodComponent"], _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_23__["SimpleFoodCreationComponent"], _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_24__["CompositeFoodCreationComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"], _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_13__["SignInComponent"], _components_register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"], _components_users_users_component__WEBPACK_IMPORTED_MODULE_16__["UsersComponent"], _components_nutrition_nutrition_component__WEBPACK_IMPORTED_MODULE_18__["NutritionComponent"], _components_search_and_add_nutrition_search_and_add_nutrition_component__WEBPACK_IMPORTED_MODULE_19__["SearchAndAddNutritionComponent"], _components_my_diet_my_diet_component__WEBPACK_IMPORTED_MODULE_20__["MyDietComponent"], _components_my_dri_my_dri_component__WEBPACK_IMPORTED_MODULE_21__["MyDriComponent"], _components_stats_stats_component__WEBPACK_IMPORTED_MODULE_22__["StatsComponent"], _components_create_food_create_food_component__WEBPACK_IMPORTED_MODULE_23__["CreateFoodComponent"], _components_simple_food_creation_simple_food_creation_component__WEBPACK_IMPORTED_MODULE_24__["SimpleFoodCreationComponent"], _components_composite_food_creation_composite_food_creation_component__WEBPACK_IMPORTED_MODULE_25__["CompositeFoodCreationComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaModule"], ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RecaptchaFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot({
             positionClass: 'toast-bottom-center',
             closeButton: true,
@@ -885,10 +895,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           providers: [{
             provide: ng_recaptcha__WEBPACK_IMPORTED_MODULE_7__["RECAPTCHA_SETTINGS"],
             useValue: {
-              siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].recaptcha.siteKey
+              siteKey: _environments_environment__WEBPACK_IMPORTED_MODULE_9__["environment"].recaptcha.siteKey
             }
+          }, {
+            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
+            useClass: _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_8__["AuthInterceptorService"],
+            multi: true
           }],
-          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
         }]
       }], null, null);
     })();
@@ -16767,6 +16781,87 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           type: _authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]
         }, {
           type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/auth-interceptor.service.ts":
+  /*!******************************************************!*\
+    !*** ./src/app/services/auth-interceptor.service.ts ***!
+    \******************************************************/
+
+  /*! exports provided: AuthInterceptorService */
+
+  /***/
+  function srcAppServicesAuthInterceptorServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AuthInterceptorService", function () {
+      return AuthInterceptorService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _authentication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./authentication.service */
+    "./src/app/services/authentication.service.ts");
+
+    var AuthInterceptorService = /*#__PURE__*/function () {
+      function AuthInterceptorService(auth) {
+        _classCallCheck(this, AuthInterceptorService);
+
+        this.auth = auth;
+      }
+
+      _createClass(AuthInterceptorService, [{
+        key: "intercept",
+        value: function intercept(req, next) {
+          req = req.clone({
+            setHeaders: {
+              Authorization: "Bearer ".concat(this.auth.getToken())
+            }
+          });
+          return next.handle(req);
+        }
+      }]);
+
+      return AuthInterceptorService;
+    }();
+
+    AuthInterceptorService.ɵfac = function AuthInterceptorService_Factory(t) {
+      return new (t || AuthInterceptorService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]));
+    };
+
+    AuthInterceptorService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: AuthInterceptorService,
+      factory: AuthInterceptorService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthInterceptorService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [{
+          type: _authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]
         }];
       }, null);
     })();
