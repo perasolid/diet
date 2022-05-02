@@ -4,7 +4,7 @@ const jwtPermissions = require('express-jwt-permissions');
 let unprotectedRoutes = ['/login', '/register', '/resend-verification-email',
     '/verifyAccount', '/verifyRecaptcha']
     .map(relativeRoute => '/users' + relativeRoute);      
-unprotectedRoutes.push('/sign-in','/register', '/home');
+unprotectedRoutes.push('/sign-in','/register', '/home', '/my-diet', '/my-dri', '/stats', '/create-food', '/profile');
 
 module.exports.checkUserAuthentication = jwt({
     secret: process.env.SECRET,
