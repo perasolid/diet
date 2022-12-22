@@ -16931,7 +16931,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'https://mydietaryhabits.herokuapp.com/users';
+        this.BACKEND_URL_USERS = 'https://mydiet.onrender.com/users';
       }
 
       _createClass(AuthenticationService, [{
@@ -17136,7 +17136,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, CompositeFoodService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/composite-food';
+        this.API_URL = 'https://mydiet.onrender.com/composite-food';
       }
 
       _createClass(CompositeFoodService, [{
@@ -17220,7 +17220,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.httpClient = httpClient;
         this.auth = auth;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/dri';
+        this.API_URL = 'https://mydiet.onrender.com/dri';
       }
 
       _createClass(DriService, [{
@@ -17326,7 +17326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, NutritionService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/nutritions';
+        this.API_URL = 'https://mydiet.onrender.com/nutritions';
       }
 
       _createClass(NutritionService, [{
@@ -17433,7 +17433,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, UserNutritionService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/user-nutrition';
+        this.API_URL = 'https://mydiet.onrender.com/user-nutrition';
       }
 
       _createClass(UserNutritionService, [{
@@ -17525,7 +17525,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, UserService);
 
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/users';
+        this.API_URL = 'https://mydiet.onrender.com/users';
       }
 
       _createClass(UserService, [{

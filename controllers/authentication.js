@@ -8,7 +8,7 @@ const request = require('request');
 const jwt = require('jsonwebtoken');
 const emailConfig = require('../config/email');
 const htmlTemplates = require('../defaults/html-templates');
-const urlForVerification = "https://mydietaryhabits.herokuapp.com/users/verifyAccount?id=";
+const urlForVerification = "https://mydiet.onrender.com/users/verifyAccount?id=";
 
 module.exports.register = (req, res) => {
   if (!req.body.name || !req.body.email || !req.body.password)

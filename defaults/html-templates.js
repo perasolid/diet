@@ -6,7 +6,7 @@ module.exports = {
     background-color: white; margin:auto;"> <div style="padding:8px 16px!important;">
     <h2 style="text-align:center">Confirm your email address</h2> <p>Click the button below to
     confirm your email address. If you didn't create an account with 
-    <a href="https://mydietaryhabits.herokuapp.com"> Dietary Habits</a>, you can safely 
+    <a href="https://mydiet.onrender.com"> Dietary Habits</a>, you can safely 
     delete this email.</p> <div style="text-align:center;"> <a href="####" target="_blank"> 
     <button style="border:none;display:inline-block;padding:8px 16px;vertical-align:middle;
     overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;
@@ -15,7 +15,7 @@ module.exports = {
     <p>If that doesn't work, copy and paste the following link in your browser:</p> <p> 
     <a href="####" target="_blank">####</a> </p> <p style="margin: 0;">Cheers, <br> 
     Dietary Habits</p> <p style="margin: 0;">Dietary Habits, John Kennedy 36, New Belgrade, Serbia</p> 
-    <p style="margin: 0;"> <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.com</a> 
+    <p style="margin: 0;"> <a href="https://mydiet.onrender.com/">www.mydiet.onrender.com</a> 
     </p> <p style="margin: 0;">contact@dhab.com</p> </div> </div> </div></body></html>`,
 
     reset_password: `<p>Dear Sir or Madam,</p>
@@ -24,5 +24,5 @@ module.exports = {
     <p><i>If you have no connection to Dietary-habits just ignore this email.</i></p>
     <p>Dietary-habits team</p>
     <p>Email: contact@dietary-habits.com</p>
-    <p>Web: <a href="https://mydietaryhabits.herokuapp.com/">www.mydietaryhabits.herokuapp.com</a></p>`
+    <p>Web: <a href="https://mydiet.onrender.com/">www.mydiet.onrender.com</a></p>`
 }

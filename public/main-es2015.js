@@ -8233,7 +8233,7 @@ class AuthenticationService {
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.BACKEND_URL_USERS = 'https://mydietaryhabits.herokuapp.com/users';
+        this.BACKEND_URL_USERS = 'https://mydiet.onrender.com/users';
     }
     saveToken(token) {
         localStorage.setItem('mean-token', token);
@@ -8359,7 +8359,7 @@ __webpack_require__.r(__webpack_exports__);
 class CompositeFoodService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/composite-food';
+        this.API_URL = 'https://mydiet.onrender.com/composite-food';
     }
     addCompositeFood(compositeFood) {
         return this.httpClient.post(this.API_URL + '/add', compositeFood);
@@ -8398,7 +8398,7 @@ class DriService {
     constructor(httpClient, auth) {
         this.httpClient = httpClient;
         this.auth = auth;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/dri';
+        this.API_URL = 'https://mydiet.onrender.com/dri';
     }
     getUserActiveDris() {
         return this.httpClient.get(this.API_URL + '/user-active-dri/' + this.auth.getUserDetails()._id);
@@ -8451,7 +8451,7 @@ __webpack_require__.r(__webpack_exports__);
 class NutritionService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/nutritions';
+        this.API_URL = 'https://mydiet.onrender.com/nutritions';
     }
     getNutritions(search) {
         return this.httpClient.get(this.API_URL + '/all?search=' + search);
@@ -8505,7 +8505,7 @@ __webpack_require__.r(__webpack_exports__);
 class UserNutritionService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/user-nutrition';
+        this.API_URL = 'https://mydiet.onrender.com/user-nutrition';
     }
     getUserNutritions(body) {
         return this.httpClient.get(this.API_URL + '/get-user-nutritions?id=' + body.id + '&date_of_consumption=' + body.date_of_consumption);
@@ -8550,7 +8550,7 @@ __webpack_require__.r(__webpack_exports__);
 class UserService {
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.API_URL = 'https://mydietaryhabits.herokuapp.com/users';
+        this.API_URL = 'https://mydiet.onrender.com/users';
     }
     getUsers(search) {
         return this.httpClient.get(this.API_URL + '/all?search=' + search);
