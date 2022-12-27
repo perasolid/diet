@@ -8,6 +8,8 @@ const logger = require('morgan');
 const fs = require('fs');
 const join = require('path').join;
 const routeProtection = require('./routes/route-protection');
+const cron = require('node-cron');
+const https = require('https');
 
 // Load models
 const models = join(__dirname, '/models');
@@ -56,6 +58,13 @@ app.use('/composite-food', compositeFood);
 
 app.get('**', (req, res)=>{
     res.sendFile(__dirname+'/public/index.html');
+});
+
+cron.schedule('*/12 * * * *', () => {
+  https.get("https://mydiet.onrender.com", res => {
+    console.log('statusCode:', res.statusCode);
+  });
+  console.log(new Date().toLocaleString());
 });
 
 module.exports = app;
